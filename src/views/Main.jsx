@@ -16,7 +16,7 @@ import standardMarker from './../assets/icons/standard.svg'
 let marker = null
 let temporaryLines = []
 
-const imageFolder = require.context('./../assets/images/focus', true)
+const imageFolder = require.context('./../assets/images/gallery', true)
 
 export default class Main extends Component {
 
@@ -37,7 +37,7 @@ export default class Main extends Component {
             },
             pointOfInterestMenu: false, // true = open, false = close
             mapObject: false,
-            preload: ( props.preload ) ? true : false
+            preload: false
         }
 
         this.cardRef = createRef()
@@ -59,6 +59,19 @@ export default class Main extends Component {
                     iconSize: [45.5, 57.6],
                     iconAnchor: [22.75, 57.6]
                 })
+            }
+        }
+
+        if ( this.props.preload ) {
+            try {
+                let checkMapLoaded = setInterval(() => {
+                    if ( this.state.mapObject ) {
+                        clearInterval(checkMapLoaded)
+                        this.focusOn(this.props.points[this.props.match.params.id])
+                    }
+                }, 100)
+            } catch ( ex ) {
+                console.warn(ex)
             }
         }
     }
@@ -83,6 +96,7 @@ export default class Main extends Component {
             pointOfInterest: {
                 title: point.title,
                 description: point.description,
+                hours: point.hours,
                 coordinates: {
                     lat: point.coordinates.lat,
                     lng: point.coordinates.lng,
@@ -97,7 +111,7 @@ export default class Main extends Component {
         if (this.cardRef.current) {
             this.cardRef.current.setState({
                 currentTab: 0,
-                cardContent: this.generateInfoTab(point.description, point.images)
+                cardContent: this.generateInfoTab(point.description, point.images, point.hours)
             })
         }
     }
@@ -114,7 +128,7 @@ export default class Main extends Component {
         })
     }
 
-    generateInfoTab(description, imageList) {
+    generateInfoTab(description, imageList, hours) {
         let images = []
 
         if (imageList) {
@@ -124,24 +138,29 @@ export default class Main extends Component {
                     images.push(imgSrc.default)
                 } catch (ex) {
                     // invalid image
+                    console.warn(ex.message)
                 }
             })
         }
 
         return (
             <div className="p-4">
-                <h3 className="text-lg font-medium uppercase tracking-widest mb-2">About</h3>
+                <h3 className="font-medium uppercase tracking-widest mb-2">About</h3>
                 <div className="flex">
                     <Gallery images={images} variant="flex" />
                 </div>
                 {description}
+                { ( hours ) ? (
+                    <>
+                    <h3 className="font-medium uppercase tracking-widest my-2">Hours</h3>
+                    {hours}
+                    </>
+                ) : '' }
             </div>
         )
     }
 
     showOnMap(lat, lng, zoom, type, text = '') {
-
-        console.log(`Showing`, lat, lng, 'Zoom', zoom, 'Type', type, 'text', text)
 
         let myMarker = L.marker({
             lat: lat,
@@ -241,17 +260,18 @@ export default class Main extends Component {
 
     render() {
 
-        if ( this.state.preload ) {
-            if ( this.state.isPointOfInterestSelected ) {
-                console.log(this.state)
-            }
-        }
-        
-
         let pointsOfInterest = Object.keys(this.props.points).map((index) => {
             let point = this.props.points[index]
+
+            let isActive = false
+
+
+            if ( point.title == this.state.pointOfInterest.title ) {
+                isActive = true
+            }
+
             return (
-                <div key={`poi_${index}`} className="bg-white px-4 py-2 shadow-md rounded-xl cursor-pointer" onClick={() => { this.focusOn(point) }} >{point.title}</div>
+                <div key={`poi_${index}`} className={`${isActive ? 'bg-theme-colors-orange text-white' : 'bg-white'} px-4 py-2 shadow-md rounded-xl cursor-pointer text-sm overflow-hidden overflow-ellipsis whitespace-nowrap hover:bg-theme-colors-orange hover:text-white`} onClick={() => { this.clearMarkers(); this.focusOn(point) }} >{point.title}</div>
             )
         })
 
@@ -279,7 +299,7 @@ export default class Main extends Component {
 
         tabs.push({
             title: "Info",
-            content: this.generateInfoTab(this.state.pointOfInterest.description, this.state.pointOfInterest.images)
+            content: this.generateInfoTab(this.state.pointOfInterest.description, this.state.pointOfInterest.images, this.state.pointOfInterest.hours)
         })
 
         if (amenities) {
@@ -310,35 +330,31 @@ export default class Main extends Component {
                 <div className="map-wrapper fixed top-0 left-0 w-full h-full m-0 p-0 z-0">
                     <Map getMapObject={(obj) => { this.getMapObject(obj) }} showOnMap={this.showOnMap} />
                 </div>
-                <div className={`fixed bottom-0 left-0 w-full max-h-full p-5 pb-0 md:bottom-auto md:max-w-md md:left-auto md:right-0 md:top-0 component ${this.state.isPointOfInterestSelected ? '' : 'component-hidden'}`}>
+                <div className={`fixed top-0 right-0 w-8/12 max-h-full p-2 md:bottom-auto md:max-w-md md:left-auto md:right-0 md:top-0 dropdown`}>
+                    <div className="bg-white rounded-xl overflow-hidden p-0">
+                        <div className="flex flex-row bg-theme-colors-orange text-white shadow-lg rounded-xl transition uppercase tracking-widest items-end">
+                            <a href="#" className="block w-full p-2 text-center" onClick={() => { this.togglePointOfInterestMenu() }}>Waterfront Trail</a>
+                        </div>
+                        <div className="bg-gray-100 pl-0 pr-2 rounded-xl">
+                            <div className={`grid grid-cols-1 gap-4 rounded-xl overflow-hidden transition-all ${(this.state.pointOfInterestMenu) ? `pl-4 pr-2 py-4 overflow-y-auto scrollbar ${(this.state.isPointOfInterestSelected) ? 'max-h-96' : 'max-h-screen-90' }` : 'max-h-0'}`}>
+                                { pointsOfInterest }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className={`fixed bottom-0 left-0 w-full max-h-full p-5 pb-0 md:max-w-md md:left-auto md:right-0 md:top-auto component ${this.state.isPointOfInterestSelected ? '' : 'component-hidden'}`}>
                     <Card ref={this.cardRef} title={this.state.pointOfInterest.title} tabs={tabs} thisPoint={this.state.pointOfInterest} allPoints={this.props.points} onGoToChanged={(from, to) => {
                         if ( this.state.mapObject ) {
-                            // this.clearMarkers()
-                
-                            // if ( from && to ) {
-                            //     this.fromPointToPoint(from, to)
-                            // }
 
                             this.showOnMap(to.coordinates.lat, to.coordinates.lng, to.coordinates.zoom, null,
                                     `<span class="block">${to.title}</span>
-                                    <small class="mb-3 block"><span class="bg-theme-orange-600 p-1 rounded-xl inline-block">1.9km</span> from ${from.title}</small>
-                                    <button class="bg-theme-orange-500 uppercase text-white p-2 rounded-xl w-full block">Explore</button>`
+                                    <small class="mb-3 block"><span class="bg-theme-colors-purple text-white p-1 px-1.5 rounded-xl inline-block">1.9km</span> from ${from.title}</small>`
                                 )
                         }
                     }} closeAction={() => {
                         this.setState({ isPointOfInterestSelected: false, pointOfInterestMenu: false })
                         this.clearMarkers()
                     }} />
-                </div>
-                <div className={`fixed top-0 right-0 w-8/12 max-h-full p-2 md:bottom-auto md:max-w-md md:left-auto md:right-0 md:top-0 dropdown`}>
-                    <div className="bg-white rounded-xl overflow-hidden">
-                        <div className="flex flex-row bg-theme-grey-800 text-white shadow-lg rounded-xl transition uppercase tracking-widest items-end">
-                            <a href="#" className="block w-full p-2 text-center" onClick={() => { this.togglePointOfInterestMenu() }}>Waterfront Trail</a>
-                        </div>
-                        <div className={`grid grid-cols-1 gap-4 rounded-xl overflow-hidden bg-gray-100 transition-all ${(this.state.pointOfInterestMenu) ? 'p-4' : 'opacity-0 h-0 p-0'}`}>
-                            { pointsOfInterest }
-                        </div>
-                    </div>
                 </div>
 
             </>

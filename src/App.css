@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500&display=swap');
+* {
+  font-family: 'Asap', sans-serif;
+}
+
 .map {
   background-color: #92d6e3 !important;
   width: 100%;
@@ -34,6 +39,10 @@ header * {
   position: relative;
 }
 
+h2, h3 {
+  letter-spacing: normal !important;
+}
+
 .ribbon {
   background-color: #87B970;
 }
@@ -65,7 +74,6 @@ header * {
   .component {
     top: 0%;
   }
-
   .component-hidden {
     top: -10% !important;
   }
@@ -75,14 +83,12 @@ header * {
   position: absolute;
 }
 
-#map #content,
-.content,
-.content * {
+#map #content, .content, .content * {
   z-index: 10000;
 }
 
 .gallery-thumbnail {
-  min-height: 8em;
+  min-height: 6em;
 }
 
 .gallery-thumbnail::before {
@@ -130,9 +136,7 @@ header * {
   transform: translateY(-3px);
 }
 
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
+.svg-icon path, .svg-icon polygon, .svg-icon rect {
   fill: #000000;
 }
 
@@ -141,17 +145,45 @@ header * {
   stroke-width: 1;
 }
 
+/* SwiperJS */
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after,
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+  color: rgb(231, 117, 24);
+}
+
 /* hiding scrollbar */
+
 *::-webkit-scrollbar {
   display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
+
 * {
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
+}
+
+/* custon scrollbar */
+.scrollbar::-webkit-scrollbar { 
+  display: block;
+  width: 0.5rem;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 1rem;
+  background-color: transparent;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: rgb(231, 117, 24);
+}
+
+.max-h-screen-90 {
+  max-height: 90vh;
 }
 
 /* popup */
@@ -173,8 +205,7 @@ header * {
   text-shadow: -1.5px 0 1px #fff, 1.5px 0 1px #fff, 0 -1.5px 1px #fff, 0 1.5px 1px #fff;
 }
 
-.leaflet-touch .leaflet-control-layers,
-.leaflet-touch .leaflet-bar {
+.leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
   border: none !important;
   border-radius: 0.5rem !important;
   overflow: hidden;
@@ -183,8 +214,8 @@ header * {
 .leaflet-touch .leaflet-bar a {
   width: 3rem;
   height: 3rem;
-  line-height: 3rem;
-  font-size: 2rem;
+  font-size: 1.5rem !important;
+  line-height: 26px !important;
   font-weight: normal;
 }
 
@@ -212,7 +243,151 @@ header * {
   margin: 0;
 }
 
-.leaflet-container .popup-v2 .leaflet-popup-tip-container ,
-.leaflet-container .popup-theme .leaflet-popup-tip-container {
+.leaflet-container .popup-v2 .leaflet-popup-tip-container, .leaflet-container .popup-theme .leaflet-popup-tip-container {
   display: none;
+}
+
+.popup-theme .leaflet-popup-content-wrapper, .popup-theme .leaflet-popup-tip {
+  background-image: none !important;
+  color: #000 !important;
+  background-color: #fff;
+  /* border: 2px solid #EA8B3E; */
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#splash {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 10;
+  background: #fbfbfb;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 0;
+  top: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.page {
+  height: 100vh;
+  margin: auto;
+  max-width: 512px;
+  z-index: 11;
+  opacity: 0;
+}
+
+#page0 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+#page0 #teaching {
+  width: 40%;
+}
+
+#page0 .logo-2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page0 .logo {
+  width: 70%;
+  margin: 1rem;
+}
+
+#page1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#page1 .text {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+#page1 h1 {
+  font-size: 4rem;
+  margin: 0;
+  font-weight: 800;
+  color: #3360a9;
+}
+
+#page1 h2 {
+  font-size: 2rem;
+  color: black;
+  margin: 0;
+  line-height: 0;
+}
+#page1 .logo {
+opacity: 1;
+margin: 0;
+max-width: 70%;
+}
+#page1 h3 {
+  color: black;
+  margin: 0;
+  line-height: 0;
+  letter-spacing: 2px;
+  font-size: 1.6rem;
+}
+
+#page2 {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#page2 img {
+  width: 30%;
+}
+
+.logo {
+  width: 100%;
+}
+
+#teaching_logo {
+  width: 70%;
+}
+
+#oshawa_logo {
+  /* padding: 2rem;
+        margin-top: -10em; */
+  max-width: 35%;
+  float: left;
+}
+
+#durham_logo {
+  max-width: 35%;
+}
+
+#welcome_line1 {
+  font-size: 1.2rem;
+  color: #4b5563;
+  margin-bottom: -0.4rem;
+}
+
+#welcome_line2 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #162b57;
+}
+
+#welcome_line3 {
+  font-size: 1.2rem;
+  color: #4b5563;
+  margin-top: -0.4rem;
+}
+
+#preloader {
+  width: 10%;
+  margin-top: 2rem;
 }
