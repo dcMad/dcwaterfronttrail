@@ -75,7 +75,6 @@ export default class Map extends Component {
             .setLatLng([areaLabels.areas[i].lat, areaLabels.areas[i].lng])
             .addTo(this.mapObject);
         }
-
     }
     
     render() {

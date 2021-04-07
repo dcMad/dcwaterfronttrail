@@ -44,6 +44,7 @@ export default class Main extends Component {
     }
 
     componentDidMount() {
+        console.log(this.props.distance)
         marker = (type) => {
             try {
                 return L.icon({
@@ -258,6 +259,22 @@ export default class Main extends Component {
         }
     }
 
+    getDistance(from, to) {
+        let fromObj = false
+        let distance = 0
+        try {
+            if ( this.props.distance ) {
+                fromObj = this.props.distance.filter(point => point.from == from)[0].to
+            }
+    
+            distance = fromObj.filter(point => point.poi == to)[0].distance
+        } catch (ex) {
+            console.error(ex)
+        }
+
+        return distance
+    }
+
     render() {
 
         let pointsOfInterest = Object.keys(this.props.points).map((index) => {
@@ -271,7 +288,7 @@ export default class Main extends Component {
             }
 
             return (
-                <div key={`poi_${index}`} className={`${isActive ? 'bg-theme-colors-orange text-white' : 'bg-white'} px-4 py-2 shadow-md rounded-xl cursor-pointer text-sm overflow-hidden overflow-ellipsis whitespace-nowrap hover:bg-theme-colors-orange hover:text-white`} onClick={() => { this.clearMarkers(); this.focusOn(point) }} >{point.title}</div>
+                <div key={`poi_${index}`} className={`${isActive ? 'bg-theme-colors-orange text-white' : 'bg-white'} px-4 py-2 mb-4 block shadow-md rounded-xl cursor-pointer text-sm overflow-hidden overflow-ellipsis whitespace-nowrap hover:bg-theme-colors-orange hover:text-white`} onClick={() => { this.clearMarkers(); this.focusOn(point) }} >{point.title}</div>
             )
         })
 
@@ -336,7 +353,7 @@ export default class Main extends Component {
                             <a href="#" className="block w-full p-2 text-center" onClick={() => { this.togglePointOfInterestMenu() }}>Waterfront Trail</a>
                         </div>
                         <div className="bg-gray-100 pl-0 pr-2 rounded-xl">
-                            <div className={`grid grid-cols-1 gap-4 rounded-xl overflow-hidden transition-all ${(this.state.pointOfInterestMenu) ? `pl-4 pr-2 py-4 overflow-y-auto scrollbar ${(this.state.isPointOfInterestSelected) ? 'max-h-96' : 'max-h-screen-90' }` : 'max-h-0'}`}>
+                            <div className={`rounded-xl transition-all overflow-x-hidden overflow-y-scroll scrollbar ${(this.state.pointOfInterestMenu) ? `pl-4 pr-2 pt-4 ${(this.state.isPointOfInterestSelected) ? 'max-h-72' : 'max-h-screen-90' }` : 'max-h-0'}`}>
                                 { pointsOfInterest }
                             </div>
                         </div>
@@ -345,10 +362,9 @@ export default class Main extends Component {
                 <div className={`fixed bottom-0 left-0 w-full max-h-full p-5 pb-0 md:max-w-md md:left-auto md:right-0 md:top-auto component ${this.state.isPointOfInterestSelected ? '' : 'component-hidden'}`}>
                     <Card ref={this.cardRef} title={this.state.pointOfInterest.title} tabs={tabs} thisPoint={this.state.pointOfInterest} allPoints={this.props.points} onGoToChanged={(from, to) => {
                         if ( this.state.mapObject ) {
-
                             this.showOnMap(to.coordinates.lat, to.coordinates.lng, to.coordinates.zoom, null,
                                     `<span class="block">${to.title}</span>
-                                    <small class="mb-3 block"><span class="bg-theme-colors-purple text-white p-1 px-1.5 rounded-xl inline-block">1.9km</span> from ${from.title}</small>`
+                                    <small class="mb-3 block"><span class="bg-theme-colors-purple text-white p-1 px-1.5 rounded-xl inline-block">${Number(this.getDistance(from.title, to.title)).toFixed(1)}km</span> from ${from.title}</small>`
                                 )
                         }
                     }} closeAction={() => {
