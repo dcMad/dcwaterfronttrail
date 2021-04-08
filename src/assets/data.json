@@ -20,8 +20,9 @@
             "lng": 92.25,
             "zoom": 3
         },
+        "images": ["LFW-00.jpg", "LFW-01.jpg", "LFW-03.jpg", "LKW-02.jpg"],
         "amenities": [{
-                "type": "Seating Areas",
+                "type": "seating_area",
                 "title": "Lakeside Seating",
                 "coordinates": {
                     "lat": 202.5,
@@ -30,7 +31,7 @@
                 }
             },
             {
-                "type": "Sports Fields",
+                "type": "sports_fields",
                 "title": "Ball Diamonds West",
                 "coordinates": {
                     "lat": 214.64453125,
@@ -39,7 +40,7 @@
                 }
             },
             {
-                "type": "Sports Fields",
+                "type": "sports_fields",
                 "title": "Ball Diamonds East",
                 "coordinates": {
                     "lat": 211.51953125,
@@ -48,7 +49,7 @@
                 }
             },
             {
-                "type": "Lookout",
+                "type": "lookouts",
                 "title": "Gold Point Marsh Bridge",
                 "coordinates": {
                     "lat": 203.32666015625,
@@ -57,7 +58,7 @@
                 }
             },
             {
-                "type": "Lookout",
+                "type": "lookouts",
                 "title": "Lake Ontario Lookout Station",
                 "coordinates": {
                     "lat": 191.45166015625,
@@ -66,7 +67,7 @@
                 }
             },
             {
-                "type": "Seating Areas",
+                "type": "seating_area",
                 "title": "Carolinian Forest",
                 "coordinates": {
                     "lat": 197.70166015625,
@@ -85,8 +86,9 @@
             "lng": 206.75,
             "zoom": 3
         },
+        "images": ["RP-00.jpg", "RP-01.jpg"],
         "amenities": [{
-            "type": "Playground",
+            "type": "sports_fields",
             "title": "Playground",
             "coordinates": {
                 "lat": 231.125,
@@ -104,8 +106,9 @@
             "lng": 376.125,
             "zoom": 3
         },
+        "images": ["SSP-00.jpg", "SSP-01.jpg", "SSP-02.jpg", "SSP-03.jpg", "SSP-04.jpg"],
         "amenities": [{
-                "type": "Sports Fields",
+                "type": "sports_fields",
                 "title": "Basketball Court",
                 "coordinates": {
                     "lat": 286,
@@ -114,7 +117,7 @@
                 }
             },
             {
-                "type": "Playground",
+                "type": "sports_fields",
                 "title": "Playground",
                 "coordinates": {
                     "lat": 282.875,
@@ -123,7 +126,7 @@
                 }
             },
             {
-                "type": "Sports Fields",
+                "type": "sports_fields",
                 "title": "Outdoor Tennis Courts/Pickle Ball",
                 "coordinates": {
                     "lat": 284.375,
@@ -132,7 +135,7 @@
                 }
             },
             {
-                "type": "Sports Fields",
+                "type": "sports_fields",
                 "title": "Soccer/Football Field with Running Track",
                 "coordinates": {
                     "lat": 296.25,
@@ -141,7 +144,7 @@
                 }
             },
             {
-                "type": "Lookout",
+                "type": "lookouts",
                 "title": "Pumphouse Marsh Lookout",
                 "coordinates": {
                     "lat": 293.125,
@@ -173,7 +176,7 @@
             "zoom": 3
         },
         "amenities": [{
-            "type": "Lookout",
+            "type": "lookouts",
             "title": "Pumphouse Marsh Lookout",
             "coordinates": {
                 "lat": 293.125,
@@ -192,7 +195,7 @@
             "zoom": 3
         },
         "amenities": [{
-                "type": "Sports Fields",
+                "type": "sports_fields",
                 "title": "Basketball Court",
                 "coordinates": {
                     "lat": 300.375,
@@ -201,7 +204,7 @@
                 }
             },
             {
-                "type": "Playground",
+                "type": "playground",
                 "title": "Playground",
                 "coordinates": {
                     "lat": 296.5,
@@ -210,7 +213,7 @@
                 }
             },
             {
-                "type": "Sports Fields",
+                "type": "sports_fields",
                 "title": "Skateboard Park",
                 "coordinates": {
                     "lat": 297.25,
@@ -219,7 +222,7 @@
                 }
             },
             {
-                "type": "Seating Areas",
+                "type": "seating_area",
                 "title": "Lakeside Seating",
                 "coordinates": {
                     "lat": 292.25,
@@ -228,7 +231,7 @@
                 }
             },
             {
-                "type": "Lookout",
+                "type": "lookouts",
                 "title": "Lookout Parking",
                 "coordinates": {
                     "lat": 287.125,
@@ -237,7 +240,7 @@
                 }
             },
             {
-                "type": "Lookout",
+                "type": "lookouts",
                 "title": "Lakewoods Park Lookout",
                 "coordinates": {
                     "lat": 280.25,
@@ -258,7 +261,7 @@
         },
         "images": ["lakeview_1.jpg", "lakeview_2.jpg", "pier1.jpg", "pier2.jpg", "pier3.jpg"],
         "amenities": [{
-                "type": "Playground",
+                "type": "sports_fields",
                 "title": "Lakeview Park Playground and Splash Pad",
                 "coordinates": {
                     "lat": 348.25,
@@ -267,7 +270,7 @@
                 }
             },
             {
-                "type": "Seating Areas",
+                "type": "seating_area",
                 "title": "Lakeview Park Picnic Shelter",
                 "coordinates": {
                     "lat": 340.875,
@@ -276,7 +279,7 @@
                 }
             },
             {
-                "type": "Sports Fields",
+                "type": "sports_fields",
                 "title": "Jim Lutton Legion Ball Diamond #1",
                 "coordinates": {
                     "lat": 357.5,
@@ -285,7 +288,7 @@
                 }
             },
             {
-                "type": "Sports Fields",
+                "type": "sports_fields",
                 "title": "Ted McComb Ball Diamond #3",
                 "coordinates": {
                     "lat": 350.75,
@@ -294,7 +297,7 @@
                 }
             },
             {
-                "type": "Sports Fields",
+                "type": "sports_fields",
                 "title": "Kluane Ave. Soccer Fields",
                 "coordinates": {
                     "lat": 322.875,
@@ -303,7 +306,7 @@
                 }
             },
             {
-                "type": "Sports Fields",
+                "type": "sports_fields",
                 "title": "Lakeview Park Ave. Soccer Fields",
                 "coordinates": {
                     "lat": 368,
@@ -312,7 +315,7 @@
                 }
             },
             {
-                "type": "Rental",
+                "type": "pavillion",
                 "title": "Jubilee Pavillion Banquet and Conference Centre",
                 "coordinates": {
                     "lat": 349.125,
@@ -321,7 +324,7 @@
                 }
             },
             {
-                "type": "Food Location",
+                "type": "food_location",
                 "title": "The Jube Pub and Patio",
                 "coordinates": {
                     "lat": 347.375,
@@ -330,7 +333,7 @@
                 }
             },
             {
-                "type": "Museum",
+                "type": "museum",
                 "title": "Oshawa Community Museum and Archives",
                 "coordinates": {
                     "lat": 359.69140625,
@@ -339,7 +342,7 @@
                 }
             },
             {
-                "type": "Sports Fields",
+                "type": "sports_fields",
                 "title": "Beach Volleyball Courts",
                 "coordinates": {
                     "lat": 370.3681640625,
@@ -348,7 +351,7 @@
                 }
             },
             {
-                "type": "Lookout",
+                "type": "lookouts",
                 "title": "Lakeview Park Pier",
                 "coordinates": {
                     "lat": 363.9931640625,
@@ -357,7 +360,7 @@
                 }
             },
             {
-                "type": "Lookout",
+                "type": "lookouts",
                 "title": "Nelson Mandela Point Gazebo",
                 "coordinates": {
                     "lat": 315.31005859375,
@@ -366,7 +369,7 @@
                 }
             },
             {
-                "type": "Lookout",
+                "type": "lookouts",
                 "title": "East Gazebo",
                 "coordinates": {
                     "lat": 348.31640625,
@@ -375,7 +378,7 @@
                 }
             },
             {
-                "type": "Seating Areas",
+                "type": "seating_area",
                 "title": "Picnic Area Parking",
                 "coordinates": {
                     "lat": 344.44140625,
@@ -384,7 +387,7 @@
                 }
             },
             {
-                "type": "Washrooms",
+                "type": "washroom",
                 "title": "Main Washroom Building",
                 "coordinates": {
                     "lat": 346.5,
@@ -393,7 +396,7 @@
                 }
             },
             {
-                "type": "Washrooms",
+                "type": "washroom",
                 "title": "Beach Washroom Building",
                 "coordinates": {
                     "lat": 370.5,
@@ -423,11 +426,12 @@
             "lng": 593.5,
             "zoom": 3
         },
+        "images": ["HOPA_00.jpg"],
         "amenities": false
     }, {
         "id": 9,
         "title": "Ed Broadbent Park / Larry Ladd Trail",
-        "description": "History &lt;br/&lt; Indigenous peoples have inhabited the shores of Lake Ontario and the rivers and creeks that flow into it for over 15,000 years. This includes Oshawa Creek and Montgomery Creek, which both flow into the Oshawa Harbour. Oshawa Creek a part of the Scugog Carrying Place Route, which was a portage used for hunting and trading that linked Lake Ontario to Lake Scugog and Georgian Bay. The Scugog Carrying Place Route is considered one four principal routes that connected the interior of the Province of Ontario to Lake Ontario. In addition to the use of the Carrying Place route, Indigenous groups would congregate at the mouth of the creeks in spring and fall to fish. The Site is located on traditional territory of the Mississaugas and the Huron-Wendat, and spans a portion of the territories covered by the Williams Treaties of 1923 and the Johnson Butler Purchase.",
+        "description": "Throughout the 19th and 20th centuries, numerous industrial activities occured in the Oshawa Harbour area. Uses have included coal storage, oil storage, and waste material storage. Remedial works have occurred on the site to allow the area to be open for public use which includes the Larry Ladd Harbourfront Trail and bridge was constructed in 2018, and runs diagonally across the site. The trail links Lakeview Park to Harbour Road. The park was officially named Ed Broadbent Waterfront Park in September, 2019, to recognize the contributions Mr. Broadbent has made to public service and the City of Oshawa and its residents, workers, and businesses.",
         "hours": "",
         "coordinates": {
             "lat": 423.74,

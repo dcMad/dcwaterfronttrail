@@ -1,13 +1,11 @@
+import L, { LatLng, LatLngBounds } from 'leaflet';
+import iconRetinaUrl from 'leaflet/dist/images/marker-icon-2x.png';
+import shadowUrl from 'leaflet/dist/images/marker-shadow.png';
+import 'leaflet/dist/leaflet.css';
 import { Component } from "react";
-import 'leaflet/dist/leaflet.css'
-import L, { LatLng, LatLngBounds } from 'leaflet'
-import mapSVG from './../assets/map.v3.svg'
-import mapPNG from './../assets/map.png'
-import iconUrl from 'leaflet/dist/images/marker-icon.png'
-import iconRetinaUrl from 'leaflet/dist/images/marker-icon-2x.png'
-import shadowUrl from 'leaflet/dist/images/marker-shadow.png'
+import mapPNG from './../assets/map.png';
+import standardMarker from './../assets/markers/standard.svg';
 
-import standardMarker from './../assets/icons/standard_marker.svg'
 
 let areaLabels = require('../assets/area-labels.json')
 

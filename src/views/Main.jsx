@@ -10,11 +10,9 @@ import playgroundAm from './../assets/images/playgroundAm.svg';
 import AmenitiesCard from "../components/AmenitiesCard";
 import Gallery from "../components/Gallery";
 
-// markers
-import standardMarker from './../assets/icons/standard.svg'
-
 let marker = null
 let temporaryLines = []
+let icon = null
 
 const imageFolder = require.context('./../assets/images/gallery', true)
 
@@ -44,22 +42,29 @@ export default class Main extends Component {
     }
 
     componentDidMount() {
-        console.log(this.props.distance)
         marker = (type) => {
             try {
                 return L.icon({
-                    iconUrl: require(`./../assets/icons/${type}.svg`).default,
-                    iconRetinaUrl: require(`./../assets/icons/${type}.svg`).default,
+                    iconUrl: require(`./../assets/markers/${type}.svg`).default,
+                    iconRetinaUrl: require(`./../assets/markers/${type}.svg`).default,
                     iconSize: [45.5, 57.6],
                     iconAnchor: [22.75, 57.6]
                 })
             } catch (ex) {
                 return L.icon({
-                    iconUrl: require(`./../assets/icons/standard.svg`).default,
-                    iconRetinaUrl: require(`./../assets/icons/standard.svg`).default,
+                    iconUrl: require(`./../assets/markers/standard.svg`).default,
+                    iconRetinaUrl: require(`./../assets/markers/standard.svg`).default,
                     iconSize: [45.5, 57.6],
                     iconAnchor: [22.75, 57.6]
                 })
+            }
+        }
+
+        icon = (type) => {
+            try {
+                return require(`./../assets/icons/${type}.svg`).default
+            } catch ( ex ) {
+                return require(`./../assets/icons/beach.svg`).default
             }
         }
 
@@ -161,7 +166,7 @@ export default class Main extends Component {
         )
     }
 
-    showOnMap(lat, lng, zoom, type, text = '') {
+    showOnMap(lat, lng, zoom, type, text = '', small = false) {
 
         let myMarker = L.marker({
             lat: lat,
@@ -176,7 +181,7 @@ export default class Main extends Component {
             closeButton: false,
             autoClose: false,
             closeOnClick: false
-        }).setContent(`<p class="uppercase font-bold my-2 tracking-wider text-center">${text}</p>`), {offset: [0, -57.6]}).addTo(this.state.mapObject)
+        }).setContent(`<p class="uppercase font-bold my-2 tracking-wider text-center ${(small) ? 'w-36' : ''}">${text}</p>`), {offset: [0, -57.6]}).addTo(this.state.mapObject)
         myMarker.openPopup()
 
         this.state.mapObject.flyTo({
@@ -296,7 +301,7 @@ export default class Main extends Component {
 
         if (this.state.pointOfInterest.amenities) {
             amenities = this.state.pointOfInterest.amenities.map((amenity, index) => {
-                return ( <AmenitiesCard key={`amenity_${index}`} title={amenity.title} subtitle={`${Math.round(0).toFixed(2)}km`} thumbnail={playgroundAm} clicked={(arg) => {
+                return ( <AmenitiesCard key={`amenity_${index}`} title={amenity.title} subtitle={`${Math.round(0).toFixed(2)}km`} thumbnail={icon(amenity.type)} clicked={(arg) => {
                     this.showOnMap(amenity.coordinates.lat, amenity.coordinates.lng, amenity.coordinates.zoom, amenity.type, amenity.title)
                 }} />)
             })
@@ -353,7 +358,7 @@ export default class Main extends Component {
                             <a href="#" className="block w-full p-2 text-center" onClick={() => { this.togglePointOfInterestMenu() }}>Waterfront Trail</a>
                         </div>
                         <div className="bg-gray-100 pl-0 pr-2 rounded-xl">
-                            <div className={`rounded-xl transition-all overflow-x-hidden overflow-y-scroll scrollbar ${(this.state.pointOfInterestMenu) ? `pl-4 pr-2 pt-4 ${(this.state.isPointOfInterestSelected) ? 'max-h-72' : 'max-h-screen-90' }` : 'max-h-0'}`}>
+                            <div className={`rounded-xl transition-all overflow-x-hidden overflow-y-scroll scrollbar ${(this.state.pointOfInterestMenu) ? `pl-4 pr-2 pt-4 ${(this.state.isPointOfInterestSelected) ? 'max-h-72' : 'max-h-96' }` : 'max-h-0'}`}>
                                 { pointsOfInterest }
                             </div>
                         </div>
@@ -362,9 +367,11 @@ export default class Main extends Component {
                 <div className={`fixed bottom-0 left-0 w-full max-h-full p-5 pb-0 md:max-w-md md:left-auto md:right-0 md:top-auto component ${this.state.isPointOfInterestSelected ? '' : 'component-hidden'}`}>
                     <Card ref={this.cardRef} title={this.state.pointOfInterest.title} tabs={tabs} thisPoint={this.state.pointOfInterest} allPoints={this.props.points} onGoToChanged={(from, to) => {
                         if ( this.state.mapObject ) {
+                            console.log(to)
                             this.showOnMap(to.coordinates.lat, to.coordinates.lng, to.coordinates.zoom, null,
                                     `<span class="block">${to.title}</span>
-                                    <small class="mb-3 block"><span class="bg-theme-colors-purple text-white p-1 px-1.5 rounded-xl inline-block">${Number(this.getDistance(from.title, to.title)).toFixed(1)}km</span> from ${from.title}</small>`
+                                    <small class="mb-3 block"><span class="bg-theme-colors-purple text-white p-1 px-1.5 rounded-xl inline-block">${Number(this.getDistance(from.title, to.title)).toFixed(1)}km</span> from ${from.title}</small>`,
+                                    (to.id == 0) ? true : false
                                 )
                         }
                     }} closeAction={() => {

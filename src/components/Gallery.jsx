@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import SwiperCore, { Navigation } from 'swiper'
 import { Swiper, SwiperSlide } from "swiper/react"
 import 'swiper/swiper-bundle.css'
@@ -8,6 +8,14 @@ const Gallery = (props) => {
 
     const [swiperOpen, setSwiperOpen] = useState(false)
     const [swiperObj, setSwiperObj] = useState(null)
+
+    useEffect(() => {
+        if ( swiperObj ) {
+            swiperObj.updateSize()
+            swiperObj.update()
+            swiperObj.updateSlides()
+        }
+    })
 
     let imageGrid = props.images.map((image, index) => {
         return (
@@ -49,11 +57,11 @@ const Gallery = (props) => {
 
     return (
         <>
-            <div className={`fixed left-0 right-0 bottom 0 w-full h-full flex items-center justify-center transition-all ${ (swiperOpen) ? 'top-0 visible opacity-100' : 'top-0 invisible opacity-0' }`}>
+            <div className={`fixed left-0 right-0 bottom 0 w-full h-full items-center justify-center transition-all ${ (swiperOpen) ? 'top-0 visible opacity-100' : 'top-0 invisible opacity-0' }`}>
                 <div className="bg-black bg-opacity-70 absolute left-0 top-0 w-full h-full flex justify-end items-start" onClick={() => { setSwiperOpen(false) }}>
                     <a className="z-50 relative bg-red-500 text-white p-3 inline-block m-3 font-medium shadow-lg hover:bg-red-700 cursor-pointer transition">CLOSE</a>
                 </div>
-                <div className="swiper">
+                <div className="swiper flex h-full items-center">
                     <Swiper
                         slidesPerView={1}
                         navigation
