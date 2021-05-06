@@ -194,7 +194,7 @@ h2, h3 {
 }
 
 .leaflet-marker-pane {
-  z-index: 651;
+  z-index: 651 !important;
 }
 
 .leaflet-tooltip.labels {

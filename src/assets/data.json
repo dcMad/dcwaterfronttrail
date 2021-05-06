@@ -464,15 +464,16 @@
         "history": "Prior to the arrival of European and American settlers, the area was part of the traditional hunting grounds of the Mississauga’s and is part of the Williams Treaties. With the arrival of American settlers in the late 1790s, the land became divided and owned by names such as Annis, Smith, Lockwood and Perry. In 1840, the first efforts were made to develop the Oshawa Harbour with the construction of the pier and breakwaters by the Sydenham Harbour Company. The opening of the Harbour brought with it further settlement along the lakeshore, including the construction of the homes that comprise the Oshawa Museum."
     }, {
         "id": 9,
-        "title": "Ed Broadbent Park / Larry Ladd Trail",
-        "description": "Throughout the 19th and 20th centuries, numerous industrial activities occured in the Oshawa Harbour area. Uses have included coal storage, oil storage, and waste material storage. Remedial works have occurred on the site to allow the area to be open for public use which includes the Larry Ladd Harbourfront Trail and bridge was constructed in 2018, and runs diagonally across the site. The trail links Lakeview Park to Harbour Road. The park was officially named Ed Broadbent Waterfront Park in September, 2019, to recognize the contributions Mr. Broadbent has made to public service and the City of Oshawa and its residents, workers, and businesses.",
+        "title": "Ed Broadbent Waterfront Park",
+        "description": "The Ed Broadbent Waterfront Park is the City of Oshawa’s newest addition to the waterfront parks system. The park was officially named Ed Broadbent Waterfront Park in 2019, to recognize the contributions Mr. Broadbent has made to public service and the City of Oshawa and its residents, workers, and businesses. Further planning and development of the park are underway.",
         "hours": "",
         "coordinates": {
             "lat": 423.74,
             "lng": 503.87,
             "zoom": 3
         },
-        "amenities": false
+        "amenities": false,
+        "history": "Ed Broadbent was born in Oshawa in 1936 and raised in our city. Mr. Broadbent was elected to Parliament as the NDP Member for Oshawa in 1968 and served as the MP until 1989. From 1975 to 1989, he was also Leader of the New Democratic Party. Between 1979 and 1990, he was a Vice-President of the Socialist International. From 1990 to 1996, he was the founding President of the International Centre for Human Rights and Democratic Development in Montreal. Mr. Broadbent was made a member of the Privy Council in 1982, an Officer of the Order of Canada in 1993 and a Companion of the Order of Canada in 2002."
     }, {
         "id": 10,
         "title": "Oshawa Second Marsh",
@@ -496,5 +497,36 @@
             "zoom": 3.5
         },
         "amenities": false
+    }, {
+        "id": 13,
+        "title": "Larry Ladd Harbour Trail",
+        "description": "The Port handles an average of $23 million worth of cargo annually from salt and steel products to sugar, asphalt and grain. Over the past decade, the Port of Oshawa has handled more than 500 vessels carrying over 3 million metric tonnes of cargo. ",
+        "hours": "",
+        "coordinates": {
+            "lat": 411.5,
+            "lng": 530.875,
+            "zoom": 3
+        },
+        "history": "Throughout the 19th and 20th centuries, numerous industrial activities occured in the Oshawa Harbour area. Remedial works have occurred on the site to allow the area to be open for public.",
+        "scenic": [
+            {
+                "type": "lookouts",
+                "title": "Lookout: Second Marsh",
+                "coordinates": {
+                    "lat": 493.875,
+                    "lng": 640.125,
+                    "zoom": 3
+                }
+            },
+            {
+                "type": "lookouts",
+                "title": "Lookout: Scattergood's Pond",
+                "coordinates": {
+                    "lat": 529,
+                    "lng": 610.25,
+                    "zoom": 3
+                }
+            }
+        ]
     }]
 }
