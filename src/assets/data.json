@@ -7,7 +7,7 @@
         "coordinates": {
             "lat": 229.625,
             "lng": 18.375,
-            "zoom": 3
+            "zoom": 4
         },
         "amenities": false,
         "history": "The Oshawa-Whitby border is the site of Camp X, a secret spy training school that opened in 1941 and trained hundreds of allied secret agents for working behind enemy lines."
@@ -19,7 +19,7 @@
         "coordinates": {
             "lat": 191.5,
             "lng": 92.25,
-            "zoom": 3
+            "zoom": 3.5
         },
         "images": ["LFW-00.jpg", "LFW-01.jpg", "LFW-03.jpg", "LKW-02.jpg"],
         "amenities": [{
@@ -207,7 +207,7 @@
         "coordinates": {
             "lat": 292,
             "lng": 500.25,
-            "zoom": 3
+            "zoom": 3.5
         },
         "amenities": [{
                 "type": "sports_fields",
@@ -488,7 +488,7 @@
         "coordinates": {
             "lat": 541.411669921875,
             "lng": 798.63125,
-            "zoom": 3
+            "zoom": 3.5
         },
         "amenities": false
     }]

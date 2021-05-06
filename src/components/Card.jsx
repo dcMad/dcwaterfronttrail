@@ -75,7 +75,7 @@ export default class Card extends Component {
         return (
             <div className='mt-0'>
 
-                <a className={`my-2 inline-block p-2 tracking-widest uppercase rounded-lg text-sm transition-all shadow-lg bg-gray-50 text-theme-colors-purple font-medium`} onClick={() => { this.toggleSearch() }}>Go To</a>
+                <a className={`my-2 inline-block p-2 tracking-widest uppercase rounded-lg text-sm transition-all shadow-lg bg-gray-50 text-theme-colors-purple font-medium cursor-pointer`} onClick={() => { this.toggleSearch() }}>Go To</a>
 
                 {/* GO TO PANEL */}
                 <section className={`rounded-2xl mb-3 bg-white overflow-hidden shadow-lg transition-all ${this.state.searchHidden ? 'max-h-0' : 'max-h-32'}`}>
@@ -98,7 +98,7 @@ export default class Card extends Component {
                         {/* <img className="w-12" src={cardIcon} alt="Card Icon"/> */}
                         <h2 className="text-lg w-10/12 overflow-hidden overflow-ellipsis whitespace-nowrap">{this.props.title}</h2>
                         
-                        <a className={`w-1/12 inline-block p-1.5 tracking-widest uppercase rounded-xl text-sm transition-all`} onClick={() => { this.toggleCard() }}>
+                        <a className={`w-1/12 inline-block p-1.5 tracking-widest uppercase rounded-xl text-sm transition-all cursor-pointer`} onClick={() => { this.toggleCard() }}>
                             {
                                 (this.state.cardHidden) ? 
                                 <img className="w-6 transform rotate-45" src={closeIcon} alt="Close Icon"/> : 
@@ -107,7 +107,7 @@ export default class Card extends Component {
                         </a>
 
                         { this.props.closeAction ? (
-                            <span className=" w-1/12 inline-block p-1.5 tracking-widest uppercase text-sm transition-all" onClick={() => {
+                            <span className=" w-1/12 inline-block p-1.5 tracking-widest uppercase text-sm transition-all cursor-pointer" onClick={() => {
                                 this.props.closeAction()
                                 this.setState({
                                     cardContent: null,

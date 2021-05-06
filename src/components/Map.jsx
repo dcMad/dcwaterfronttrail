@@ -38,7 +38,7 @@ export default class Map extends Component {
                 lng: 5
             }),
             minZoom: 1,
-            maxZoom: 3,
+            maxZoom: 4,
             zoomDelta: 0.5,
             zoomSnap: 0.5,
             wheelPxPerZoomLevel: 200,

@@ -27,4 +27,8 @@
     .description a {
         @apply font-bold text-theme-colors-orange;
     }
+
+    label {
+        @apply cursor-pointer;
+    }
 }
