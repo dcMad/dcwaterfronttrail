@@ -441,7 +441,7 @@
     }, {
         "id": 8,
         "title": "Lakeview Park Beach",
-        "description": "Lakeview Park Beach is a sandy beach located on the shore of Lake Ontario within Lakeview Park and is a popular destination offering museums, picnic areas, playgrounds, sports fields, and a waterfront pier.",
+        "description": "Lakeview Park Beach is a sandy beach located on the shore of Lake Ontario within Lakeview Park and is a popular destination offering museums, picnic areas, playgrounds, sports fields, and a waterfront pier. There are 4 beach volleyball courts available for rent. Washrooms are open when lifeguards on are on-duty.<br/><a class='btn' target='_blank' href='https://www.oshawa.ca/things-to-do/lakeview-park-beach.asp'>View Website</a>",
         "hours": "-",
         "coordinates": {
             "lat": 374.5,
@@ -451,7 +451,7 @@
         "amenities": false
     }, {
         "id": 11,
-        "title": "Hamilton Oshawa Port Authority",
+        "title": "Oshawa Pier",
         "description": "The Hamilton Oshawa Port Authority operates the harbour. The Oshawa Harbour played an important role in the settling of our area, and has continued that function as a vital element of the City's growth and economic development today.",
         "hours": "",
         "coordinates": {
@@ -460,7 +460,8 @@
             "zoom": 3
         },
         "images": ["HOPA_00.jpg"],
-        "amenities": false
+        "amenities": false,
+        "history": "Prior to the arrival of European and American settlers, the area was part of the traditional hunting grounds of the Mississauga’s and is part of the Williams Treaties. With the arrival of American settlers in the late 1790s, the land became divided and owned by names such as Annis, Smith, Lockwood and Perry. In 1840, the first efforts were made to develop the Oshawa Harbour with the construction of the pier and breakwaters by the Sydenham Harbour Company. The opening of the Harbour brought with it further settlement along the lakeshore, including the construction of the homes that comprise the Oshawa Museum."
     }, {
         "id": 9,
         "title": "Ed Broadbent Park / Larry Ladd Trail",

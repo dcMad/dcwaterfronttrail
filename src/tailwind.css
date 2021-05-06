@@ -28,6 +28,10 @@
         @apply font-bold text-theme-colors-orange;
     }
 
+    .description a.btn {
+        @apply font-semibold uppercase tracking-widest text-sm mb-3 mt-3 inline-block bg-theme-colors-orange text-white p-2 px-4 rounded-xl hover:bg-theme-orange-700 cursor-pointer shadow-md;
+    }
+
     label {
         @apply cursor-pointer;
     }
