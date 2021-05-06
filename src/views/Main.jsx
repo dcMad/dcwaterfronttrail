@@ -98,12 +98,21 @@ export default class Main extends Component {
             this.showOnMap(point.coordinates.lat, point.coordinates.lng, point.coordinates.zoom, null, "You Are Here!")
         }
 
+        let description = point.description
+
+        console.log(`History: ${typeof point.history}`)
+
+        if ( typeof point.history == "string" ) {
+            description += `<div class='block'><h3 class='font-semibold tracking-widest uppercase mt-3'>History</h3><p>${point.history}</p></div>`
+        }
+
+        console.log(description)
 
         this.setState({
             isPointOfInterestSelected: true,
             pointOfInterest: {
                 title: point.title,
-                description: point.description,
+                description: description,
                 hours: point.hours,
                 coordinates: {
                     lat: point.coordinates.lat,
@@ -122,7 +131,7 @@ export default class Main extends Component {
         if (this.cardRef.current) {
             this.cardRef.current.setState({
                 currentTab: 0,
-                cardContent: this.generateInfoTab(point.description, point.images, point.hours)
+                cardContent: this.generateInfoTab(description, point.images, point.hours)
             })
         }
     }
@@ -156,7 +165,7 @@ export default class Main extends Component {
 
         return (
             <div className="p-4">
-                <h3 className="font-medium uppercase tracking-widest mb-2">About</h3>
+                <h3 className="font-semibold uppercase tracking-widest">About</h3>
                 <div className="flex">
                     <Gallery images={images} variant="flex" />
                 </div>
@@ -347,7 +356,11 @@ export default class Main extends Component {
         let history = false
 
         if (this.state.pointOfInterest.history) {
-            history = this.state.pointOfInterest.history
+            history = (
+                <div>
+                    {this.state.pointOfInterest.history}
+                </div>
+            )
         }
 
         let tabs = []
@@ -385,17 +398,6 @@ export default class Main extends Component {
                 content: (
                     <div className="flex-wrap bg-white p-5 card-wrapper">
                         { scenic }
-                    </div>
-                )
-            })
-        }
-
-        if (history) {
-            tabs.push({
-                title: "History",
-                content: (
-                    <div className="flex-wrap bg-white p-5 card-wrapper">
-                        { history }
                     </div>
                 )
             })

@@ -40,7 +40,7 @@ header * {
 }
 
 h2, h3 {
-  letter-spacing: normal !important;
+  letter-spacing: normal;
 }
 
 .ribbon {
