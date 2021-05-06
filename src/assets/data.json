@@ -280,13 +280,14 @@
     }, {
         "id": 7,
         "title": "Lakeview Park",
-        "description": "Nestled along the shore of Lake Ontario, Lakeview Park with its mature landscape setting has views of the lake and is a beautiful, community park. Connected to the recreational trails, Joseph Kolodzie Oshawa Creek Bike Path and the Waterfront Trail, visitors can connect to the historic Oshawa Community Museum among other attractions. The Park is also home to the Jubilee Pavilion which provides a banquet hall and public meeting place. Come stretch your legs or sit and relax by the lake.",
+        "description": "Nestled along the shore of Lake Ontario, Lakeview Park with its mature landscape setting has views of the lake and is a beautiful, community park. Connected to the recreational trails, Joseph Kolodzie Oshawa Creek Bike Path and the Waterfront Trail, visitors can connect to Oshawa's vibrant downtown, Oshawa Second Marsh, McLaughlin Bay Wildlife Reserve, the historic Oshawa Community Museum among other attractions. Lakeview Park is also host to many family fun events. The Park is also home to the Jubilee Pavilion a banquet hall, patio and snack bar.",
         "hours": "April 1 to October 31 - 6:00 a.m. to 10:00 p.m. | November 1 to March 31 - 6:00 a.m. to 6:00 p.m",
         "coordinates": {
-            "lat": 337.625,
-            "lng": 545.125,
+            "lat": 318.875,
+            "lng": 518,
             "zoom": 3
         },
+        "history": "As early as 1890, the area by the lake, referred to more generally as “Oshawa-on-the-Lake”, was used for summer recreation. In 1920, George and R.S. McLaughlin purchased the land in the name of General Motors of Canada Limited.  They then deeded the land to the Town of Oshawa for just one dollar with only one restriction, that the land be used as a public park for the citizens of Oshawa and that it remain so.",
         "images": ["lakeview_1.jpg", "lakeview_2.jpg", "pier1.jpg", "pier2.jpg", "pier3.jpg"],
         "amenities": [{
                 "type": "sports_fields",
@@ -406,7 +407,7 @@
                 }
             },
             {
-                "type": "seating_area",
+                "type": "parking",
                 "title": "Picnic Area Parking",
                 "coordinates": {
                     "lat": 344.44140625,
