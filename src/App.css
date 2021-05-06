@@ -193,6 +193,10 @@ h2, h3 {
   margin: 0 !important;
 }
 
+.leaflet-marker-pane {
+  z-index: 651;
+}
+
 .leaflet-tooltip.labels {
   box-shadow: none;
   background-color: transparent;

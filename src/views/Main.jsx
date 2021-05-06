@@ -191,7 +191,7 @@ export default class Main extends Component {
         myMarker.openPopup()
 
         this.state.mapObject.flyTo({
-            lat: lat,
+            lat: lat - 5,
             lng: lng
         }, zoom)
     }
@@ -396,10 +396,11 @@ export default class Main extends Component {
                 <div className="map-wrapper fixed top-0 left-0 w-full h-full m-0 p-0 z-0">
                     <Map getMapObject={(obj) => { this.getMapObject(obj) }} showOnMap={this.showOnMap} />
                 </div>
-                <div className={`fixed top-0 right-0 w-8/12 max-h-full p-2 md:bottom-auto md:max-w-md md:left-auto md:right-0 md:top-0 dropdown`}>
+
+                <div className={`fixed top-0 right-0 w-8/12 max-h-full p-2 md:bottom-auto md:max-w-md md:left-auto md:right-0 md:top-0 dropdown ${(this.state.pointOfInterestMenu) ? 'z-50' : ''}`}>
                     <div className="bg-white rounded-xl overflow-hidden p-0">
                         <div className="flex flex-row bg-theme-colors-orange text-white shadow-lg rounded-xl transition uppercase tracking-widest items-end">
-                            <a href="#" className="block w-full p-2 text-center" onClick={() => { this.togglePointOfInterestMenu() }}>Waterfront Trail</a>
+                            <a href="#" className="block w-full p-2 text-center text-sm" onClick={() => { this.togglePointOfInterestMenu() }}>Waterfront Trail</a>
                         </div>
                         <div className="bg-gray-100 pl-0 pr-2 rounded-xl">
                             <div className={`rounded-xl transition-all overflow-x-hidden overflow-y-scroll scrollbar ${(this.state.pointOfInterestMenu) ? `pl-4 pr-2 pt-4 ${(this.state.isPointOfInterestSelected) ? 'max-h-72' : 'max-h-96' }` : 'max-h-0'}`}>
@@ -408,6 +409,7 @@ export default class Main extends Component {
                         </div>
                     </div>
                 </div>
+
                 <div className={`fixed bottom-0 left-0 w-full max-h-full p-5 pb-0 md:max-w-md md:left-auto md:right-0 md:top-auto component ${this.state.isPointOfInterestSelected ? '' : 'component-hidden'}`}>
                     <Card ref={this.cardRef} title={this.state.pointOfInterest.title} tabs={tabs} thisPoint={this.state.pointOfInterest} allPoints={this.props.points} onGoToChanged={(from, to) => {
                         if ( this.state.mapObject ) {
@@ -423,7 +425,6 @@ export default class Main extends Component {
                         this.clearMarkers()
                     }} />
                 </div>
-
             </>
         )
     }

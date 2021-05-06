@@ -2,7 +2,6 @@ import { Component } from "react"
 
 import closeIcon from './../assets/highlight_off-white.svg'
 import minIcon from './../assets/highlight_off-white-min.svg'
-import cardIcon from './../assets/tag_faces-white-36dp.svg'
 
 export default class Card extends Component {
 
@@ -96,30 +95,32 @@ export default class Card extends Component {
                 <section className={`rounded-xl mb-3 bg-white overflow-hidden shadow-lg transition-all`}>
                     <div className="card-header text-white bg-theme-colors-orange px-4 py-2 flex justify-between items-center">
                         {/* <img className="w-12" src={cardIcon} alt="Card Icon"/> */}
-                        <h2 className="text-lg w-10/12 overflow-hidden overflow-ellipsis whitespace-nowrap">{this.props.title}</h2>
+                        <h2 className="text-base overflow-hidden overflow-ellipsis whitespace-nowrap">{this.props.title}</h2>
                         
-                        <a className={`w-1/12 inline-block p-1.5 tracking-widest uppercase rounded-xl text-sm transition-all cursor-pointer`} onClick={() => { this.toggleCard() }}>
-                            {
-                                (this.state.cardHidden) ? 
-                                <img className="w-6 transform rotate-45" src={closeIcon} alt="Close Icon"/> : 
-                                <img className="w-6" src={minIcon} alt="minimize Icon"/>
-                            }
-                        </a>
+                        <div className={'flex items-center'}>
+                            <a className={`w-8 inline-block p-1.5 tracking-widest uppercase rounded-xl text-sm transition-all cursor-pointer`} onClick={() => { this.toggleCard() }}>
+                                {
+                                    (this.state.cardHidden) ? 
+                                    <img className="w-6 transform rotate-45" src={closeIcon} alt="Close Icon"/> : 
+                                    <img className="w-6" src={minIcon} alt="minimize Icon"/>
+                                }
+                            </a>
 
-                        { this.props.closeAction ? (
-                            <span className=" w-1/12 inline-block p-1.5 tracking-widest uppercase text-sm transition-all cursor-pointer" onClick={() => {
-                                this.props.closeAction()
-                                this.setState({
-                                    cardContent: null,
-                                    currentTab: null
-                                })
-                            }}>
-                                <img className="w-6" src={closeIcon} alt="Close Icon"/>
-                                {/* X */}
-                            </span>
-                        ) : (
-                            ''
-                        ) }
+                            { this.props.closeAction ? (
+                                <span className="w-8 inline-block p-1.5 tracking-widest uppercase text-sm transition-all cursor-pointer" onClick={() => {
+                                    this.props.closeAction()
+                                    this.setState({
+                                        cardContent: null,
+                                        currentTab: null
+                                    })
+                                }}>
+                                    <img className="w-6" src={closeIcon} alt="Close Icon"/>
+                                    {/* X */}
+                                </span>
+                            ) : (
+                                ''
+                            ) }
+                        </div>
                     </div>
                     <div className={`transition-all ${(this.state.cardHidden) ? 'max-h-0' : 'max-h-60'}`}>
                         <div className="card-body bg-theme-grey-50 border-t-2 border-b-2 max-h-48 overflow-y-auto">

@@ -43,7 +43,8 @@ export default class Map extends Component {
             zoomSnap: 0.5,
             wheelPxPerZoomLevel: 200,
             maxBoundsViscosity: 0.95,
-            crs: L.CRS.Simple
+            crs: L.CRS.Simple,
+            attributionControl: false
         });
 
         // helper event to locate coordinates and other metadata
