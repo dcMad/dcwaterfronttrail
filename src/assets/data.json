@@ -289,6 +289,28 @@
         },
         "history": "As early as 1890, the area by the lake, referred to more generally as “Oshawa-on-the-Lake”, was used for summer recreation. In 1920, George and R.S. McLaughlin purchased the land in the name of General Motors of Canada Limited.  They then deeded the land to the Town of Oshawa for just one dollar with only one restriction, that the land be used as a public park for the citizens of Oshawa and that it remain so.",
         "images": ["lakeview_1.jpg", "lakeview_2.jpg", "pier1.jpg", "pier2.jpg", "pier3.jpg"],
+        "historical": [
+            {
+                "type": "pavillion",
+                "title": "Jubilee Pavillion",
+                "coordinates": {
+                    "lat": 349.125,
+                    "lng": 544.625,
+                    "zoom": 3
+                },
+                "info": "In 1927, the Jubilee Pavilion opened to commemorate the 60th Anniversary of Confederation. The Jube became a central part of the Park, well known for its nightly dances and hosting all sorts of musical acts."
+            },
+            {
+                "type": "museum",
+                "title": "Oshawa Community Museum and Archives",
+                "coordinates": {
+                    "lat": 359.69140625,
+                    "lng": 551.4833984375,
+                    "zoom": 3
+                },
+                "info": "The Park is also home to Oshawa’s unofficial heritage district known as the Oshawa Museum. Opening in 1960 with only Henry House, the Museum is now comprised of three historic homes all sitting on their original foundations. The homes all date to between 1840 and 1855, are each an example of very different architectural styles, and work to tell the early settler history of the area as well as the growth and development of the Oshawa community."
+            }
+        ],
         "amenities": [{
                 "type": "sports_fields",
                 "title": "Lakeview Park Playground and Splash Pad",
@@ -344,29 +366,11 @@
                 }
             },
             {
-                "type": "pavillion",
-                "title": "Jubilee Pavillion Banquet and Conference Centre",
-                "coordinates": {
-                    "lat": 349.125,
-                    "lng": 544.625,
-                    "zoom": 3
-                }
-            },
-            {
                 "type": "food_location",
                 "title": "The Jube Pub and Patio",
                 "coordinates": {
                     "lat": 347.375,
                     "lng": 547.875,
-                    "zoom": 3
-                }
-            },
-            {
-                "type": "museum",
-                "title": "Oshawa Community Museum and Archives",
-                "coordinates": {
-                    "lat": 359.69140625,
-                    "lng": 551.4833984375,
                     "zoom": 3
                 }
             },

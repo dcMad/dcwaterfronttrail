@@ -113,7 +113,8 @@ export default class Main extends Component {
                 amenities: point.amenities,
                 scenic: point.scenic,
                 explore: point.explore,
-                history: point.history
+                history: point.history,
+                historical: point.historical
             },
             pointOfInterestMenu: false
         })
@@ -333,6 +334,16 @@ export default class Main extends Component {
             })
         }
 
+        let historical = false
+
+        if (this.state.pointOfInterest.historical) {
+            historical = this.state.pointOfInterest.historical.map((amenity, index) => {
+                return ( <AmenitiesCard key={`amenity_${index}`} title={amenity.title} subtitle={`${Math.round(0).toFixed(2)}km`} thumbnail={icon(amenity.type)} info={amenity.info} clicked={(arg) => {
+                    this.showOnMap(amenity.coordinates.lat, amenity.coordinates.lng, amenity.coordinates.zoom, amenity.type, amenity.title)
+                }} />)
+            })
+        }
+
         let history = false
 
         if (this.state.pointOfInterest.history) {
@@ -385,6 +396,17 @@ export default class Main extends Component {
                 content: (
                     <div className="flex-wrap bg-white p-5 card-wrapper">
                         { history }
+                    </div>
+                )
+            })
+        }
+
+        if (historical) {
+            tabs.push({
+                title: "Historical",
+                content: (
+                    <div className="flex-wrap bg-white p-5 card-wrapper">
+                        { historical }
                     </div>
                 )
             })
