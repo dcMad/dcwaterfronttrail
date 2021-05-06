@@ -25,7 +25,7 @@
     }
 
     .description a {
-        @apply font-bold text-theme-colors-orange;
+        @apply font-semibold text-theme-colors-orange;
     }
 
     .description a.btn {

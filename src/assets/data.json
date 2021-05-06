@@ -477,7 +477,7 @@
     }, {
         "id": 10,
         "title": "Oshawa Second Marsh",
-        "description": "Oshawa Second Marsh is a provincially significant wetland located in the southeast end of Oshawa. The 123-hectare wetland ecosystem drains an area of just over 100 square kilometres, including the Harmony Creek and its tributaries. It is accessible to the public, with bridges, lookout towers, and boardwalks throughout. Friends of Second Marsh is a non-profit environmental organization developed to protect, rehabilitate and showcase the  native bio-diversity of Second Marsh and its watershed.",
+        "description": "Oshawa’s Second Marsh is one of the last, largest (at 137-hectare) and most biodiverse coastal wetlands on the Great Lakes. It is considered to be a Provincially Significant Wetland and a Provincially Significant Area of Natural and Scientific Interest. It plays an important role as essential habitat for local species and a stopover area for migratory birds.",
         "hours": "-",
         "coordinates": {
             "lat": 586.125,
@@ -485,11 +485,12 @@
             "zoom": 3
         },
         "images": ["secondMarsh.jpg"],
-        "amenities": false
+        "amenities": false,
+        "history": "The Marsh has had an important historic role in the development of the City of Oshawa, marking the ancient terminus of the Indigenous Scugog Carrying Place Trail, a significant ancient portage route connecting lake trade with the resource-rich northern interior.  Later becoming a site of booming industry in the 19th century, and finally a restored natural heritage site, an area for citizens of Oshawa to learn about the importance of wetlands and nature appreciation."
     }, {
         "id": 12,
         "title": "Clarington Oshawa Border",
-        "description": "Welcome to Oshawa",
+        "description": "Welcome to the City of Oshawa. <a target='_blank' href='https://waterfronttrail.org/'>The Great Lakes Waterfront Trail</a> stretches 3600 km connecting 155 communities and First Nations along the Canadian shores of the Great Lakes region. Oshawa’s portion of the Waterfront Trail is 11 km connecting you to a number of parks, recreation facilities, scenic views of Lake Ontario and nature along the way. Use these QR codes to find key destinations and learn more about the <a target='_blank' href='https://www.oshawa.ca/things-to-do/things-to-see-and-do.asp?_mid_=686'>City of Oshawa</a>.<strong class='block mt-3 tracking-widest font-semibold'>TRAIL USER CODE:</strong><ul class='list-disc ml-5'><li>Stay on the designated recreational trail</li><li>Obey signs</li><li>Keep right except to pass</li><li>Cyclists must use a bell or verbal indication when passing and travel at a moderate speed</li><li>Keep dogs on a leash (not exceeding 2m)</li><li>Don’t litter</li></ul>",
         "hours": "",
         "coordinates": {
             "lat": 541.411669921875,
@@ -528,5 +529,16 @@
                 }
             }
         ]
+    }, {
+        "id": 14,
+        "title": "McLaughlin Bay Wildlife Reserve",
+        "description": "Named after the General Motors Canada founder, Col. Sam McLaughlin, the Reserve has become a popular attraction for lovers of nature and peaceful surroundings. The Reserve occupies in excess of 41 ha (108 acres) and is home to almost 400 different varieties of plants, trees, shrubs and wildflowers, as well as a great number of native birds, mammals and fish.  The McLaughlin Bay Wildlife Reserve features a number of walking trails, viewing platforms for photographers and birdwatchers.",
+        "hours": "",
+        "coordinates": {
+            "lat": 506.175,
+            "lng": 827,
+            "zoom": 3.5
+        },
+        "amenities": false
     }]
 }

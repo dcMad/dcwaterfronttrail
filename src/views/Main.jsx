@@ -100,13 +100,9 @@ export default class Main extends Component {
 
         let description = point.description
 
-        console.log(`History: ${typeof point.history}`)
-
         if ( typeof point.history == "string" ) {
             description += `<div class='block'><h3 class='font-semibold tracking-widest uppercase mt-3'>History</h3><p>${point.history}</p></div>`
         }
-
-        console.log(description)
 
         this.setState({
             isPointOfInterestSelected: true,
@@ -437,7 +433,6 @@ export default class Main extends Component {
                 <div className={`fixed bottom-0 left-0 w-full max-h-full p-5 pb-0 md:max-w-md md:left-auto md:right-0 md:top-auto component ${this.state.isPointOfInterestSelected ? '' : 'component-hidden'}`}>
                     <Card ref={this.cardRef} title={this.state.pointOfInterest.title} tabs={tabs} thisPoint={this.state.pointOfInterest} allPoints={this.props.points} onGoToChanged={(from, to) => {
                         if ( this.state.mapObject ) {
-                            console.log(to)
                             this.showOnMap(to.coordinates.lat, to.coordinates.lng, to.coordinates.zoom, null,
                                     `<span class="block">${to.title}</span>
                                     <small class="mb-3 block"><span class="bg-theme-colors-purple text-white p-1 px-1.5 rounded-xl inline-block">${Number(this.getDistance(from.title, to.title)).toFixed(1)}km</span> from ${from.title}</small>`,

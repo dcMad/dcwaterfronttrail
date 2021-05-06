@@ -29,7 +29,7 @@ export default class Map extends Component {
                 308,
                 500
             ),
-            zoom: 1.5,
+            zoom: 3,
             maxBounds: new LatLngBounds({
                 lat: 611,
                 lng: 995
