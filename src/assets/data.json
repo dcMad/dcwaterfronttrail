@@ -92,7 +92,7 @@
     }, {
         "id": 2,
         "title": "Renaissance Park",
-        "description": "This park provides a number of active and passive recreational opportunities where families of all ages can come and enjoy an afternoon of fun, playing on the playground and sports fields or relaxing under the Gazebo or one of the many shade trees planted in the park.",
+        "description": "Surrounded by passive recreational space this park includes a playground and naturalized areas that are home to a variety of pollinators.",
         "hours": "April 1 to October 31 - 6:00 a.m. to 10:00 p.m. | November 1 to March 31 - 6:00 a.m. to 6:00 p.m.",
         "coordinates": {
             "lat": 216.5,
@@ -107,13 +107,12 @@
                 "lat": 231.125,
                 "lng": 202.875,
                 "zoom": 3
-            },
-            "info": "Surrounded by passive recreational space this park includes a playground and naturalized areas that are home to a variety of pollinators."
+            }
         }]
     }, {
         "id": 3,
         "title": "Stone Street Park",
-        "description": "This park provides a number of active and passive recreational opportunities where families of all ages can come and enjoy an afternoon of fun, playing on the playground and sports fields or relaxing under the Gazebo or one of the many shade trees planted in the park. There are 4 outdoor tennis courts at this park location. Courts 1 & 2 are lined for both tennis and pickleball play. Courts 3 & 4 are newly resurfaced and lined for tennis play only. All courts have an asphalt surface and lights for evening play.",
+        "description": "This park provides a number of active and passive recreational opportunities.  In addition, it is adjacent to the South Oshawa Community Centre and has access to the shoreline of Lake Ontario. A great area for a small picnic.",
         "hours": "April 1 to October 31 - 6:00 a.m. to 10:00 p.m. | November 1 to March 31 - 6:00 a.m. to 6:00 p.m.",
         "coordinates": {
             "lat": 257.25,
@@ -156,7 +155,9 @@
                     "lng": 398.875,
                     "zoom": 3
                 }
-            },
+            }
+        ],
+        "scenic": [
             {
                 "type": "lookouts",
                 "title": "Pumphouse Marsh Lookout",
@@ -182,14 +183,14 @@
     }, {
         "id": 5,
         "title": "Pumphouse Marsh",
-        "description": "The Pumphouse Marsh is a provincially significant wetland and barrier beach that students from the neighbouring schools use for field research.",
+        "description": "The Pumphouse Marsh is a provincially significant wetland. One of the smallest, 2.1 ha, coastal wetlands in Durham Region and has an established barrier beach which separates the marsh from Lake Ontario and surrounding woodlands that provide habitat. <br/><br/>Studies have found a total of 196 different species of birds with 43 being nesting and breeding birds which can be easily disturbed. In order to maintain the health of the wetland and the surrounding habitat it is important that visitors stick to the trails and maintained areas to avoid trampling vegetation and disturbing our feathered friends.<br/><br/>Additionally the release of gold fish in the marsh has also had a negative impact on the health of the marsh – although harmless in your fish bowl goldfish prey upon eggs, larvae and adults of native fish, increase turbidity and feed on aquatic vegetation.<br/><br/>Help us protect these valuable resources by staying on the trail and picking up and disposing of litter and dog waste in a garbage can.",
         "hours": "-",
         "coordinates": {
             "lat": 299.125,
             "lng": 410.125,
             "zoom": 3
         },
-        "amenities": [{
+        "scenic": [{
             "type": "lookouts",
             "title": "Pumphouse Marsh Lookout",
             "coordinates": {
@@ -201,7 +202,7 @@
     }, {
         "id": 6,
         "title": "Lakewoods Park",
-        "description": "This park provides a number of active and passive recreational opportunities where families of all ages can come and enjoy an afternoon of fun, playing on the playground and sports fields or relaxing under the Gazebo or one of the many shade trees planted in the park.",
+        "description": "This park provides a number of active and passive recreational opportunities with shade trees and benches to enjoy the view across Lake Ontario.",
         "hours": "April 1 to October 31 - 6:00 a.m. to 10:00 p.m. | November 1 to March 31 - 6:00 a.m. to 6:00 p.m.",
         "coordinates": {
             "lat": 292,
@@ -245,8 +246,8 @@
                 }
             },
             {
-                "type": "lookouts",
-                "title": "Lookout Parking",
+                "type": "parking",
+                "title": "Bonnie Brae Point Parking",
                 "coordinates": {
                     "lat": 287.125,
                     "lng": 509.75,
@@ -255,12 +256,25 @@
             },
             {
                 "type": "lookouts",
-                "title": "Lakewoods Park Lookout",
+                "title": "Bonnie Brae Point",
                 "coordinates": {
                     "lat": 280.25,
                     "lng": 512.75,
                     "zoom": 3
-                }
+                },
+                "info": "Located along the western edge of Lakeview Park, Bonnie Brae Point sits on a bluff above the shoreline with amazing views out across Lake Ontario."
+            }
+        ],
+        "explore": [
+            {
+                "type": "standard",
+                "title": "Port Oshawa Pioneer Cemetery",
+                "coordinates": {
+                    "lat": 300.875,
+                    "lng": 506.375,
+                    "zoom": 3
+                },
+                "info": "Located at the northeast corner of the intersection of Birchcliffe and Kluane Avenues the cemetery is Oshawa’s oldest, with the first interment in the late eighteenth century. The original cemetery was moved in 1975 from nearby Gifford Hill interments included those of the earliest settlers and their children including members of the Robinson, Guy, Henry families as well as Captain Benjamin Wilson Oshawa’s first recorded settler."
             }
         ]
     }, {
