@@ -1,12 +1,32 @@
+import infoIcon from './../assets/info-circle-solid.svg'
+
 const AmenitiesCard = (props) => {
 
+    if ( props.info ) {
+        console.log(props.info)
+    }
+
     return (
-        <div className="w-full px-2" onClick={props.clicked.bind('msg')}>
+        <div className="w-full px-2">
             <div className="flex items-center h-16 w-full shadow-lg overflow-hidden rounded-lg py-3 px-6 mb-4 bg-gray-100">
                 <div className="card-thumbnail w-12 mr-3 bg-no-repeat" style={{backgroundImage: `url(${props.thumbnail})`}}></div>
-                <div className="card-info w-11/12">
+                <div className="card-info w-11/12" onClick={props.clicked.bind('msg')}>
                     <h3 className="tracking-wide font-medium text-theme-grey-700">{props.title}</h3>
                 </div>
+                { props.info && (
+                    <div>
+                        <label htmlFor={`modal_${encodeURI(props.title)}`} className={'text-theme-colors-orange tracking-widest text-sm uppercase'}>info</label>
+                        <input type="checkbox" className={'modal-toggle'} id={`modal_${encodeURI(props.title)}`}/>
+                        <div className={'fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 p-4 flex justify-items-center items-center transition-all modal'}>
+                            <div className={'bg-white p-4 shadow-md flex flex-col rounded-xl'}>
+                                <h2 className={'block text-center mb-3'}>{props.title}</h2>
+                                <div className={'text-center'}>{props.info}</div>
+                                <label htmlFor={`modal_${encodeURI(props.title)}`} className={'text-theme-colors-orange uppercase mt-6 text-center tracking-widest text-sm'}>close</label>
+                            </div>
+                        </div>
+                    </div>
+                ) }
+                <div></div>
             </div>
         </div>
     )

@@ -31,7 +31,9 @@ export default class Main extends Component {
                     lng: 0
                 },
                 images: [],
-                amenities: []
+                amenities: [],
+                scenic: [],
+                history: false
             },
             pointOfInterestMenu: false, // true = open, false = close
             mapObject: false,
@@ -109,7 +111,9 @@ export default class Main extends Component {
                 },
                 images: point.images,
                 amenities: point.amenities,
-                explore: point.explore
+                scenic: point.scenic,
+                explore: point.explore,
+                history: point.history
             },
             pointOfInterestMenu: false
         })
@@ -155,7 +159,9 @@ export default class Main extends Component {
                 <div className="flex">
                     <Gallery images={images} variant="flex" />
                 </div>
-                {description}
+                <div className={'description'} dangerouslySetInnerHTML={{
+                    __html: description
+                }}></div>
                 { ( hours ) ? (
                     <>
                     <h3 className="font-medium uppercase tracking-widest my-2">Hours</h3>
@@ -301,7 +307,7 @@ export default class Main extends Component {
 
         if (this.state.pointOfInterest.amenities) {
             amenities = this.state.pointOfInterest.amenities.map((amenity, index) => {
-                return ( <AmenitiesCard key={`amenity_${index}`} title={amenity.title} subtitle={`${Math.round(0).toFixed(2)}km`} thumbnail={icon(amenity.type)} clicked={(arg) => {
+                return ( <AmenitiesCard key={`amenity_${index}`} title={amenity.title} subtitle={`${Math.round(0).toFixed(2)}km`} thumbnail={icon(amenity.type)} info={amenity.info} clicked={(arg) => {
                     this.showOnMap(amenity.coordinates.lat, amenity.coordinates.lng, amenity.coordinates.zoom, amenity.type, amenity.title)
                 }} />)
             })
@@ -311,10 +317,26 @@ export default class Main extends Component {
 
         if (this.state.pointOfInterest.explore) {
             explore = this.state.pointOfInterest.explore.map((amenity, index) => {
-                return ( <AmenitiesCard key={`amenity_${index}`} title={amenity.title} subtitle={`${Math.round(0).toFixed(2)}km`} thumbnail={playgroundAm} clicked={(arg) => {
+                return ( <AmenitiesCard key={`amenity_${index}`} title={amenity.title} subtitle={`${Math.round(0).toFixed(2)}km`} thumbnail={icon(amenity.type)} info={amenity.info} clicked={(arg) => {
                     this.showOnMap(amenity.coordinates.lat, amenity.coordinates.lng, amenity.coordinates.zoom, amenity.type, amenity.title)
                 }} />)
             })
+        }
+
+        let scenic = false
+
+        if (this.state.pointOfInterest.scenic) {
+            scenic = this.state.pointOfInterest.scenic.map((amenity, index) => {
+                return ( <AmenitiesCard key={`amenity_${index}`} title={amenity.title} subtitle={`${Math.round(0).toFixed(2)}km`} thumbnail={icon(amenity.type)} info={amenity.info} clicked={(arg) => {
+                    this.showOnMap(amenity.coordinates.lat, amenity.coordinates.lng, amenity.coordinates.zoom, amenity.type, amenity.title)
+                }} />)
+            })
+        }
+
+        let history = false
+
+        if (this.state.pointOfInterest.history) {
+            history = this.state.pointOfInterest.history
         }
 
         let tabs = []
@@ -341,6 +363,28 @@ export default class Main extends Component {
                 content: (
                     <div className="flex-wrap bg-white p-5 card-wrapper">
                         { explore }
+                    </div>
+                )
+            })
+        }
+
+        if (scenic) {
+            tabs.push({
+                title: "Scenic",
+                content: (
+                    <div className="flex-wrap bg-white p-5 card-wrapper">
+                        { scenic }
+                    </div>
+                )
+            })
+        }
+
+        if (history) {
+            tabs.push({
+                title: "History",
+                content: (
+                    <div className="flex-wrap bg-white p-5 card-wrapper">
+                        { history }
                     </div>
                 )
             })

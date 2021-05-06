@@ -23,4 +23,8 @@
     .popup-theme .leaflet-popup-tip {
         @apply bg-gradient-to-tr from-theme-grey-500 to-theme-grey-800 text-white;
     }
+
+    .description a {
+        @apply font-bold text-theme-colors-orange;
+    }
 }
