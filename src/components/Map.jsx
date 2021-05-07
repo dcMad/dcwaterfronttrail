@@ -3,7 +3,7 @@ import iconRetinaUrl from 'leaflet/dist/images/marker-icon-2x.png';
 import shadowUrl from 'leaflet/dist/images/marker-shadow.png';
 import 'leaflet/dist/leaflet.css';
 import { Component } from "react";
-import mapPNG from './../assets/map.png';
+import mapPNG from './../assets/map.v4.png';
 import standardMarker from './../assets/markers/standard.svg';
 
 
@@ -29,7 +29,7 @@ export default class Map extends Component {
                 308,
                 500
             ),
-            zoom: 1.5,
+            zoom: 3,
             maxBounds: new LatLngBounds({
                 lat: 611,
                 lng: 995
@@ -38,18 +38,20 @@ export default class Map extends Component {
                 lng: 5
             }),
             minZoom: 1,
-            maxZoom: 3,
+            maxZoom: 4,
             zoomDelta: 0.5,
             zoomSnap: 0.5,
             wheelPxPerZoomLevel: 200,
             maxBoundsViscosity: 0.95,
-            crs: L.CRS.Simple
+            crs: L.CRS.Simple,
+            attributionControl: false
         });
 
         // helper event to locate coordinates and other metadata
-        // this.mapObject.on("click", (e) => {
-        //     console.log(`"lat": ${e.latlng.lat},\n"lng": ${e.latlng.lng}`)
-        // })
+        this.mapObject.on("click", (e) => {
+            console.log(`"lat": ${e.latlng.lat},\n"lng": ${e.latlng.lng}`)
+            console.log(e)
+        })
 
         L.imageOverlay(mapPNG, [
             [ 0, 0 ], 

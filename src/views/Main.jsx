@@ -31,7 +31,9 @@ export default class Main extends Component {
                     lng: 0
                 },
                 images: [],
-                amenities: []
+                amenities: [],
+                scenic: [],
+                history: false
             },
             pointOfInterestMenu: false, // true = open, false = close
             mapObject: false,
@@ -96,12 +98,17 @@ export default class Main extends Component {
             this.showOnMap(point.coordinates.lat, point.coordinates.lng, point.coordinates.zoom, null, "You Are Here!")
         }
 
+        let description = point.description
+
+        if ( typeof point.history == "string" ) {
+            description += `<div class='block'><h3 class='font-semibold tracking-widest uppercase mt-3'>History</h3><p>${point.history}</p></div>`
+        }
 
         this.setState({
             isPointOfInterestSelected: true,
             pointOfInterest: {
                 title: point.title,
-                description: point.description,
+                description: description,
                 hours: point.hours,
                 coordinates: {
                     lat: point.coordinates.lat,
@@ -109,7 +116,10 @@ export default class Main extends Component {
                 },
                 images: point.images,
                 amenities: point.amenities,
-                explore: point.explore
+                scenic: point.scenic,
+                explore: point.explore,
+                history: point.history,
+                historical: point.historical
             },
             pointOfInterestMenu: false
         })
@@ -117,7 +127,7 @@ export default class Main extends Component {
         if (this.cardRef.current) {
             this.cardRef.current.setState({
                 currentTab: 0,
-                cardContent: this.generateInfoTab(point.description, point.images, point.hours)
+                cardContent: this.generateInfoTab(description, point.images, point.hours)
             })
         }
     }
@@ -151,11 +161,13 @@ export default class Main extends Component {
 
         return (
             <div className="p-4">
-                <h3 className="font-medium uppercase tracking-widest mb-2">About</h3>
+                <h3 className="font-semibold uppercase tracking-widest">About</h3>
                 <div className="flex">
                     <Gallery images={images} variant="flex" />
                 </div>
-                {description}
+                <div className={'description'} dangerouslySetInnerHTML={{
+                    __html: description
+                }}></div>
                 { ( hours ) ? (
                     <>
                     <h3 className="font-medium uppercase tracking-widest my-2">Hours</h3>
@@ -185,7 +197,7 @@ export default class Main extends Component {
         myMarker.openPopup()
 
         this.state.mapObject.flyTo({
-            lat: lat,
+            lat: lat - 5,
             lng: lng
         }, zoom)
     }
@@ -301,7 +313,7 @@ export default class Main extends Component {
 
         if (this.state.pointOfInterest.amenities) {
             amenities = this.state.pointOfInterest.amenities.map((amenity, index) => {
-                return ( <AmenitiesCard key={`amenity_${index}`} title={amenity.title} subtitle={`${Math.round(0).toFixed(2)}km`} thumbnail={icon(amenity.type)} clicked={(arg) => {
+                return ( <AmenitiesCard key={`amenity_${index}`} title={amenity.title} subtitle={`${Math.round(0).toFixed(2)}km`} thumbnail={icon(amenity.type)} info={amenity.info} clicked={(arg) => {
                     this.showOnMap(amenity.coordinates.lat, amenity.coordinates.lng, amenity.coordinates.zoom, amenity.type, amenity.title)
                 }} />)
             })
@@ -311,10 +323,40 @@ export default class Main extends Component {
 
         if (this.state.pointOfInterest.explore) {
             explore = this.state.pointOfInterest.explore.map((amenity, index) => {
-                return ( <AmenitiesCard key={`amenity_${index}`} title={amenity.title} subtitle={`${Math.round(0).toFixed(2)}km`} thumbnail={playgroundAm} clicked={(arg) => {
+                return ( <AmenitiesCard key={`amenity_${index}`} title={amenity.title} subtitle={`${Math.round(0).toFixed(2)}km`} thumbnail={icon(amenity.type)} info={amenity.info} clicked={(arg) => {
                     this.showOnMap(amenity.coordinates.lat, amenity.coordinates.lng, amenity.coordinates.zoom, amenity.type, amenity.title)
                 }} />)
             })
+        }
+
+        let scenic = false
+
+        if (this.state.pointOfInterest.scenic) {
+            scenic = this.state.pointOfInterest.scenic.map((amenity, index) => {
+                return ( <AmenitiesCard key={`amenity_${index}`} title={amenity.title} subtitle={`${Math.round(0).toFixed(2)}km`} thumbnail={icon(amenity.type)} info={amenity.info} clicked={(arg) => {
+                    this.showOnMap(amenity.coordinates.lat, amenity.coordinates.lng, amenity.coordinates.zoom, amenity.type, amenity.title)
+                }} />)
+            })
+        }
+
+        let historical = false
+
+        if (this.state.pointOfInterest.historical) {
+            historical = this.state.pointOfInterest.historical.map((amenity, index) => {
+                return ( <AmenitiesCard key={`amenity_${index}`} title={amenity.title} subtitle={`${Math.round(0).toFixed(2)}km`} thumbnail={icon(amenity.type)} info={amenity.info} clicked={(arg) => {
+                    this.showOnMap(amenity.coordinates.lat, amenity.coordinates.lng, amenity.coordinates.zoom, amenity.type, amenity.title)
+                }} />)
+            })
+        }
+
+        let history = false
+
+        if (this.state.pointOfInterest.history) {
+            history = (
+                <div>
+                    {this.state.pointOfInterest.history}
+                </div>
+            )
         }
 
         let tabs = []
@@ -346,16 +388,39 @@ export default class Main extends Component {
             })
         }
 
+        if (scenic) {
+            tabs.push({
+                title: "Scenic",
+                content: (
+                    <div className="flex-wrap bg-white p-5 card-wrapper">
+                        { scenic }
+                    </div>
+                )
+            })
+        }
+
+        if (historical) {
+            tabs.push({
+                title: "Historical",
+                content: (
+                    <div className="flex-wrap bg-white p-5 card-wrapper">
+                        { historical }
+                    </div>
+                )
+            })
+        }
+
 
         return (
             <>
                 <div className="map-wrapper fixed top-0 left-0 w-full h-full m-0 p-0 z-0">
                     <Map getMapObject={(obj) => { this.getMapObject(obj) }} showOnMap={this.showOnMap} />
                 </div>
-                <div className={`fixed top-0 right-0 w-8/12 max-h-full p-2 md:bottom-auto md:max-w-md md:left-auto md:right-0 md:top-0 dropdown`}>
+
+                <div className={`fixed top-0 right-0 w-8/12 max-h-full p-2 md:bottom-auto md:max-w-md md:left-auto md:right-0 md:top-0 dropdown ${(this.state.pointOfInterestMenu) ? 'z-50' : ''}`}>
                     <div className="bg-white rounded-xl overflow-hidden p-0">
                         <div className="flex flex-row bg-theme-colors-orange text-white shadow-lg rounded-xl transition uppercase tracking-widest items-end">
-                            <a href="#" className="block w-full p-2 text-center" onClick={() => { this.togglePointOfInterestMenu() }}>Waterfront Trail</a>
+                            <a href="#" className="block w-full p-2 text-center text-sm" onClick={() => { this.togglePointOfInterestMenu() }}>Waterfront Trail</a>
                         </div>
                         <div className="bg-gray-100 pl-0 pr-2 rounded-xl">
                             <div className={`rounded-xl transition-all overflow-x-hidden overflow-y-scroll scrollbar ${(this.state.pointOfInterestMenu) ? `pl-4 pr-2 pt-4 ${(this.state.isPointOfInterestSelected) ? 'max-h-72' : 'max-h-96' }` : 'max-h-0'}`}>
@@ -364,10 +429,10 @@ export default class Main extends Component {
                         </div>
                     </div>
                 </div>
+
                 <div className={`fixed bottom-0 left-0 w-full max-h-full p-5 pb-0 md:max-w-md md:left-auto md:right-0 md:top-auto component ${this.state.isPointOfInterestSelected ? '' : 'component-hidden'}`}>
                     <Card ref={this.cardRef} title={this.state.pointOfInterest.title} tabs={tabs} thisPoint={this.state.pointOfInterest} allPoints={this.props.points} onGoToChanged={(from, to) => {
                         if ( this.state.mapObject ) {
-                            console.log(to)
                             this.showOnMap(to.coordinates.lat, to.coordinates.lng, to.coordinates.zoom, null,
                                     `<span class="block">${to.title}</span>
                                     <small class="mb-3 block"><span class="bg-theme-colors-purple text-white p-1 px-1.5 rounded-xl inline-block">${Number(this.getDistance(from.title, to.title)).toFixed(1)}km</span> from ${from.title}</small>`,
@@ -379,7 +444,6 @@ export default class Main extends Component {
                         this.clearMarkers()
                     }} />
                 </div>
-
             </>
         )
     }

@@ -40,7 +40,7 @@ header * {
 }
 
 h2, h3 {
-  letter-spacing: normal !important;
+  letter-spacing: normal;
 }
 
 .ribbon {
@@ -191,6 +191,10 @@ h2, h3 {
 .popup-theme {
   animation: popup infinite;
   margin: 0 !important;
+}
+
+.leaflet-marker-pane {
+  z-index: 651 !important;
 }
 
 .leaflet-tooltip.labels {
@@ -390,4 +394,21 @@ max-width: 70%;
 #preloader {
   width: 10%;
   margin-top: 2rem;
+}
+
+/* modal */
+.modal-toggle {
+  display: none;
+}
+
+.modal-toggle + .modal {
+  transform: scale(0.9);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-toggle:checked + .modal {
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
 }
