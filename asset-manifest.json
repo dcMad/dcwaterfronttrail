@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/dcwaterfronttrail/static/css/main.20422d38.chunk.css",
-    "main.js": "/dcwaterfronttrail/static/js/main.a895f91f.chunk.js",
-    "main.js.map": "/dcwaterfronttrail/static/js/main.a895f91f.chunk.js.map",
+    "main.css": "/dcwaterfronttrail/static/css/main.dd70cbc3.chunk.css",
+    "main.js": "/dcwaterfronttrail/static/js/main.e01ece41.chunk.js",
+    "main.js.map": "/dcwaterfronttrail/static/js/main.e01ece41.chunk.js.map",
     "runtime-main.js": "/dcwaterfronttrail/static/js/runtime-main.92a9b8b2.js",
     "runtime-main.js.map": "/dcwaterfronttrail/static/js/runtime-main.92a9b8b2.js.map",
     "static/css/2.d1084f8d.chunk.css": "/dcwaterfronttrail/static/css/2.d1084f8d.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.c8bac4e7.chunk.js.map": "/dcwaterfronttrail/static/js/3.c8bac4e7.chunk.js.map",
     "index.html": "/dcwaterfronttrail/index.html",
     "static/css/2.d1084f8d.chunk.css.map": "/dcwaterfronttrail/static/css/2.d1084f8d.chunk.css.map",
-    "static/css/main.20422d38.chunk.css.map": "/dcwaterfronttrail/static/css/main.20422d38.chunk.css.map",
+    "static/css/main.dd70cbc3.chunk.css.map": "/dcwaterfronttrail/static/css/main.dd70cbc3.chunk.css.map",
     "static/js/2.d90da34f.chunk.js.LICENSE.txt": "/dcwaterfronttrail/static/js/2.d90da34f.chunk.js.LICENSE.txt",
     "static/media/HOPA_00.jpg": "/dcwaterfronttrail/static/media/HOPA_00.f0003d80.jpg",
     "static/media/LFW-00.jpg": "/dcwaterfronttrail/static/media/LFW-00.d6856b49.jpg",
@@ -61,7 +61,7 @@
     "static/js/runtime-main.92a9b8b2.js",
     "static/css/2.d1084f8d.chunk.css",
     "static/js/2.d90da34f.chunk.js",
-    "static/css/main.20422d38.chunk.css",
-    "static/js/main.a895f91f.chunk.js"
+    "static/css/main.dd70cbc3.chunk.css",
+    "static/js/main.e01ece41.chunk.js"
   ]
 }
