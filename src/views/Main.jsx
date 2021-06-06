@@ -4,9 +4,8 @@ import L, { LatLng, LatLngBounds } from 'leaflet'
 import Card from "../components/Card"
 import Map from "../components/Map"
 
-
-import washroomAm from './../assets/images/washroomAm.svg';
-import playgroundAm from './../assets/images/playgroundAm.svg';
+import DCLogo from './../assets/brand/dc.png'
+import TeachingCityLogo from './../assets/brand/teaching_city.png'
 import AmenitiesCard from "../components/AmenitiesCard";
 import Gallery from "../components/Gallery";
 
@@ -25,7 +24,7 @@ export default class Main extends Component {
             pointOfInterest: {
                 title: '',
                 description: '',
-                hours: '',
+                hours: false,
                 coordinates: {
                     lat: 0,
                     lng: 0
@@ -127,7 +126,7 @@ export default class Main extends Component {
         if (this.cardRef.current) {
             this.cardRef.current.setState({
                 currentTab: 0,
-                cardContent: this.generateInfoTab(description, point.images, point.hours)
+                cardContent: this.generateInfoTab(description, point.images)
             })
         }
     }
@@ -144,7 +143,7 @@ export default class Main extends Component {
         })
     }
 
-    generateInfoTab(description, imageList, hours) {
+    generateInfoTab(description, imageList, hours = false) {
         let images = []
 
         if (imageList) {
@@ -413,11 +412,20 @@ export default class Main extends Component {
 
         return (
             <>
-                <div className="map-wrapper fixed top-0 left-0 w-full h-full m-0 p-0 z-0">
+                <div className={`bottom-0 fixed lg:left-0 z-20 mx-auto w-full flex justify-center lg:justify-start p-4 ${this.state.isPointOfInterestSelected ? 'hidden lg:block' : ''}`}>
+                    <div className="bg-white bg-opacity-75 py-2 px-4 rounded-xl shadow-md max-w-xs">
+                        <div className="grid grid-cols-2 items-center">
+                            <img src={TeachingCityLogo} className={'w-20 mt-2'} />
+                            <img src={DCLogo} className={'w-28'} />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="map-wrapper fixed top-0 left-0 w-full h-full m-0 p-0 z-10">
                     <Map getMapObject={(obj) => { this.getMapObject(obj) }} showOnMap={this.showOnMap} />
                 </div>
 
-                <div className={`fixed top-0 right-0 w-8/12 max-h-full p-2 md:bottom-auto md:max-w-md md:left-auto md:right-0 md:top-0 dropdown ${(this.state.pointOfInterestMenu) ? 'z-50' : ''}`}>
+                <div className={`fixed top-0 right-0 w-8/12 max-h-full p-2 z-30 md:bottom-auto md:max-w-md md:left-auto md:right-0 md:top-0 dropdown ${(this.state.pointOfInterestMenu) ? 'z-50' : ''}`}>
                     <div className="bg-white rounded-xl overflow-hidden p-0">
                         <div className="flex flex-row bg-theme-colors-orange text-white shadow-lg rounded-xl transition uppercase tracking-widest items-end">
                             <a href="#" className="block w-full p-2 text-center text-sm" onClick={() => { this.togglePointOfInterestMenu() }}>Waterfront Trail</a>
@@ -430,7 +438,7 @@ export default class Main extends Component {
                     </div>
                 </div>
 
-                <div className={`fixed bottom-0 left-0 w-full max-h-full p-5 pb-0 md:max-w-md md:left-auto md:right-0 md:top-auto component ${this.state.isPointOfInterestSelected ? '' : 'component-hidden'}`}>
+                <div className={`fixed bottom-0 left-0 w-full max-h-full p-5 pb-0 z-30 md:max-w-md md:left-auto md:right-0 md:top-auto component ${this.state.isPointOfInterestSelected ? '' : 'component-hidden'}`}>
                     <Card ref={this.cardRef} title={this.state.pointOfInterest.title} tabs={tabs} thisPoint={this.state.pointOfInterest} allPoints={this.props.points} onGoToChanged={(from, to) => {
                         if ( this.state.mapObject ) {
                             this.showOnMap(to.coordinates.lat, to.coordinates.lng, to.coordinates.zoom, null,

@@ -1,9 +1,9 @@
 {
     "points": [{
         "id": 0,
-        "title": "Oshawa Trail Entrance",
+        "title": "Oshawa Whitby Border",
         "description": "Welcome to the City of Oshawa. <a target='_blank' href='https://waterfronttrail.org/'>The Great Lakes Waterfront Trail</a> stretches 3600 km connecting 155 communities and First Nations along the Canadian shores of the Great Lakes region. Oshawa’s portion of the Waterfront Trail is 11 km connecting you to a number of parks, recreation facilities, scenic views of Lake Ontario and nature along the way. Use these QR codes to find key destinations and learn more about the <a target='_blank' href='https://www.oshawa.ca/things-to-do/things-to-see-and-do.asp?_mid_=686'>City of Oshawa</a>.<strong class='block mt-3 tracking-widest font-semibold'>TRAIL USER CODE:</strong><ul class='list-disc ml-5'><li>Stay on the designated recreational trail</li><li>Obey signs</li><li>Keep right except to pass</li><li>Cyclists must use a bell or verbal indication when passing and travel at a moderate speed</li><li>Keep dogs on a leash (not exceeding 2m)</li><li>Don’t litter</li></ul>",
-        "hours": "",
+        "hours_old": "",
         "coordinates": {
             "lat": 229.625,
             "lng": 18.375,
@@ -15,7 +15,7 @@
         "id": 1,
         "title": "Lakefront West Park",
         "description": "Home to a ball diamond complex containing 8 ball diamonds the area is also adjacent to Gold Point Wetland and a naturalized area.  The area has been identified as a significant migratory stopover area for butterflies.  Butterfly stop over areas are extremely rare habitats and are biologically important for butterflies to migrate south for the winter. The area contains habitat and food sources that are important to the health of pollinators including milkweed.<br/><br/>Butterfly species include Painted Lady, Red Admiral and of course the Monarch. Monarchs are listed as a species of concern and their habitat is protected. ",
-        "hours": "April 1 to October 31: 6:00 a.m. to 10:00 p.m. | November 1 to March 31: 6:00 a.m. to 6:00 p.m.",
+        "hours_old": "April 1 to October 31: 6:00 a.m. to 10:00 p.m. | November 1 to March 31: 6:00 a.m. to 6:00 p.m.",
         "coordinates": {
             "lat": 191.5,
             "lng": 92.25,
@@ -93,7 +93,7 @@
         "id": 2,
         "title": "Renaissance Park",
         "description": "Surrounded by passive recreational space this park includes a playground and naturalized areas that are home to a variety of pollinators.",
-        "hours": "April 1 to October 31 - 6:00 a.m. to 10:00 p.m. | November 1 to March 31 - 6:00 a.m. to 6:00 p.m.",
+        "hours_old": "April 1 to October 31 - 6:00 a.m. to 10:00 p.m. | November 1 to March 31 - 6:00 a.m. to 6:00 p.m.",
         "coordinates": {
             "lat": 216.5,
             "lng": 206.75,
@@ -113,7 +113,7 @@
         "id": 3,
         "title": "Stone Street Park",
         "description": "This park provides a number of active and passive recreational opportunities.  In addition, it is adjacent to the South Oshawa Community Centre and has access to the shoreline of Lake Ontario. A great area for a small picnic.",
-        "hours": "April 1 to October 31 - 6:00 a.m. to 10:00 p.m. | November 1 to March 31 - 6:00 a.m. to 6:00 p.m.",
+        "hours_old": "April 1 to October 31 - 6:00 a.m. to 10:00 p.m. | November 1 to March 31 - 6:00 a.m. to 6:00 p.m.",
         "coordinates": {
             "lat": 257.25,
             "lng": 376.125,
@@ -166,25 +166,23 @@
                     "lng": 410.75,
                     "zoom": 3
                 }
+            },
+            {
+                "type": "standard",
+                "title": "South Oshawa Community Centre",
+                "info": "South Oshawa Community Centre features a leisure pool with waterslide, fitness centre, youth room and meeting rooms complete with a teaching kitchen. Situated on the Lake Ontario waterfront and attached to GL Roberts Collegiate and Vocational Institute, facility users have easy access to Stone Street Park, the Waterfront Trail and a playground. A variety of recreation programs are offered at this facility. ",
+                "coordinates": {
+                    "lat": 292.25,
+                    "lng": 370.875,
+                    "zoom": 3
+                }
             }
         ]
     }, {
         "id": 4,
-        "title": "South Oshawa Community Centre",
-        "description": "South Oshawa Community Centre features a leisure pool with waterslide, fitness centre, youth room and meeting rooms complete with a teaching kitchen. Situated on the Lake Ontario waterfront and attached to GL Roberts Collegiate and Vocational Institute, facility users have easy access to Stone Street Park, the Waterfront Trail and a playground. A variety of recreation programs are offered at this facility. ",
-        "hours": "South Oshawa Community Centre will be closed until further notice.",
-        "coordinates": {
-            "lat": 292.25,
-            "lng": 370.875,
-            "zoom": 3
-        },
-        "images": ["southOshawaCommunityCenter.jpg", "southOshawaCommunityCenter2.jpg", "southOshawaCommunityCenter3.jpg"],
-        "amenities": false
-    }, {
-        "id": 5,
         "title": "Pumphouse Marsh",
         "description": "The Pumphouse Marsh is a provincially significant wetland. One of the smallest, 2.1 ha, coastal wetlands in Durham Region and has an established barrier beach which separates the marsh from Lake Ontario and surrounding woodlands that provide habitat. <br/><br/>Studies have found a total of 196 different species of birds with 43 being nesting and breeding birds which can be easily disturbed. In order to maintain the health of the wetland and the surrounding habitat it is important that visitors stick to the trails and maintained areas to avoid trampling vegetation and disturbing our feathered friends.<br/><br/>Additionally the release of gold fish in the marsh has also had a negative impact on the health of the marsh – although harmless in your fish bowl goldfish prey upon eggs, larvae and adults of native fish, increase turbidity and feed on aquatic vegetation.<br/><br/>Help us protect these valuable resources by staying on the trail and picking up and disposing of litter and dog waste in a garbage can.",
-        "hours": "-",
+        "hours_old": "-",
         "coordinates": {
             "lat": 299.125,
             "lng": 410.125,
@@ -200,13 +198,91 @@
             }
         }]
     }, {
-        "id": 6,
-        "title": "Lakewoods Park",
+        "id": 5,
+        "title": "Lakewoods Park W",
         "description": "This park provides a number of active and passive recreational opportunities with shade trees and benches to enjoy the view across Lake Ontario.",
-        "hours": "April 1 to October 31 - 6:00 a.m. to 10:00 p.m. | November 1 to March 31 - 6:00 a.m. to 6:00 p.m.",
+        "hours_old": "April 1 to October 31 - 6:00 a.m. to 10:00 p.m. | November 1 to March 31 - 6:00 a.m. to 6:00 p.m.",
         "coordinates": {
-            "lat": 292,
-            "lng": 500.25,
+            "lat": 298.0455082701298,
+            "lng": 482.15843642157716,
+            "zoom": 3.5
+        },
+        "amenities": [{
+                "type": "sports_fields",
+                "title": "Basketball Court",
+                "coordinates": {
+                    "lat": 300.375,
+                    "lng": 489.75,
+                    "zoom": 3
+                }
+            },
+            {
+                "type": "playground",
+                "title": "Playground",
+                "coordinates": {
+                    "lat": 296.5,
+                    "lng": 493,
+                    "zoom": 3
+                }
+            },
+            {
+                "type": "sports_fields",
+                "title": "Skateboard Park",
+                "coordinates": {
+                    "lat": 297.25,
+                    "lng": 497,
+                    "zoom": 3
+                }
+            },
+            {
+                "type": "seating_area",
+                "title": "Lakeside Seating",
+                "coordinates": {
+                    "lat": 292.25,
+                    "lng": 500,
+                    "zoom": 3
+                }
+            },
+            {
+                "type": "parking",
+                "title": "Bonnie Brae Point Parking",
+                "coordinates": {
+                    "lat": 287.125,
+                    "lng": 509.75,
+                    "zoom": 3
+                }
+            },
+            {
+                "type": "lookouts",
+                "title": "Bonnie Brae Point",
+                "coordinates": {
+                    "lat": 280.25,
+                    "lng": 512.75,
+                    "zoom": 3
+                },
+                "info": "Located along the western edge of Lakeview Park, Bonnie Brae Point sits on a bluff above the shoreline with amazing views out across Lake Ontario."
+            }
+        ],
+        "explore": [
+            {
+                "type": "standard",
+                "title": "Port Oshawa Pioneer Cemetery",
+                "coordinates": {
+                    "lat": 300.875,
+                    "lng": 506.375,
+                    "zoom": 3
+                },
+                "info": "Located at the northeast corner of the intersection of Birchcliffe and Kluane Avenues the cemetery is Oshawa’s oldest, with the first interment in the late eighteenth century. The original cemetery was moved in 1975 from nearby Gifford Hill interments included those of the earliest settlers and their children including members of the Robinson, Guy, Henry families as well as Captain Benjamin Wilson Oshawa’s first recorded settler."
+            }
+        ]
+    }, {
+        "id": 6,
+        "title": "Lakewoods Park E",
+        "description": "This park provides a number of active and passive recreational opportunities with shade trees and benches to enjoy the view across Lake Ontario.",
+        "hours_old": "April 1 to October 31 - 6:00 a.m. to 10:00 p.m. | November 1 to March 31 - 6:00 a.m. to 6:00 p.m.",
+        "coordinates": {
+            "lat": 293.095760801824,
+            "lng": 508.6749407160727,
             "zoom": 3.5
         },
         "amenities": [{
@@ -279,38 +355,16 @@
         ]
     }, {
         "id": 7,
-        "title": "Lakeview Park",
+        "title": "Lakeview Park W",
         "description": "Nestled along the shore of Lake Ontario, Lakeview Park with its mature landscape setting has views of the lake and is a beautiful, community park. Connected to the recreational trails, Joseph Kolodzie Oshawa Creek Bike Path and the Waterfront Trail, visitors can connect to Oshawa's vibrant downtown, Oshawa Second Marsh, McLaughlin Bay Wildlife Reserve, the historic Oshawa Community Museum among other attractions. Lakeview Park is also host to many family fun events. The Park is also home to the Jubilee Pavilion a banquet hall, patio and snack bar.",
-        "hours": "April 1 to October 31 - 6:00 a.m. to 10:00 p.m. | November 1 to March 31 - 6:00 a.m. to 6:00 p.m",
+        "hours_old": "April 1 to October 31 - 6:00 a.m. to 10:00 p.m. | November 1 to March 31 - 6:00 a.m. to 6:00 p.m",
         "coordinates": {
-            "lat": 318.875,
-            "lng": 518,
+            "lat": 315.25,
+            "lng": 516,
             "zoom": 3
         },
         "history": "As early as 1890, the area by the lake, referred to more generally as “Oshawa-on-the-Lake”, was used for summer recreation. In 1920, George and R.S. McLaughlin purchased the land in the name of General Motors of Canada Limited.  They then deeded the land to the Town of Oshawa for just one dollar with only one restriction, that the land be used as a public park for the citizens of Oshawa and that it remain so.",
         "images": ["lakeview_1.jpg", "lakeview_2.jpg", "pier1.jpg", "pier2.jpg", "pier3.jpg"],
-        "historical": [
-            {
-                "type": "pavillion",
-                "title": "Jubilee Pavillion",
-                "coordinates": {
-                    "lat": 349.125,
-                    "lng": 544.625,
-                    "zoom": 3
-                },
-                "info": "In 1927, the Jubilee Pavilion opened to commemorate the 60th Anniversary of Confederation. The Jube became a central part of the Park, well known for its nightly dances and hosting all sorts of musical acts."
-            },
-            {
-                "type": "museum",
-                "title": "Oshawa Community Museum and Archives",
-                "coordinates": {
-                    "lat": 359.69140625,
-                    "lng": 551.4833984375,
-                    "zoom": 3
-                },
-                "info": "The Park is also home to Oshawa’s unofficial heritage district known as the Oshawa Museum. Opening in 1960 with only Henry House, the Museum is now comprised of three historic homes all sitting on their original foundations. The homes all date to between 1840 and 1855, are each an example of very different architectural styles, and work to tell the early settler history of the area as well as the growth and development of the Oshawa community."
-            }
-        ],
         "amenities": [{
                 "type": "sports_fields",
                 "title": "Lakeview Park Playground and Splash Pad",
@@ -437,108 +491,354 @@
                     "zoom": 3
                 }
             }
+        ], "explore": [
+            {
+                "type": "pavillion",
+                "title": "Jubilee Pavillion",
+                "coordinates": {
+                    "lat": 349.125,
+                    "lng": 544.625,
+                    "zoom": 3
+                },
+                "info": "In 1927, the Jubilee Pavilion opened to commemorate the 60th Anniversary of Confederation. The Jube became a central part of the Park, well known for its nightly dances and hosting all sorts of musical acts."
+            },
+            {
+                "type": "museum",
+                "title": "Oshawa Community Museum and Archives",
+                "coordinates": {
+                    "lat": 359.69140625,
+                    "lng": 551.4833984375,
+                    "zoom": 3
+                },
+                "info": "The Park is also home to Oshawa’s unofficial heritage district known as the Oshawa Museum. Opening in 1960 with only Henry House, the Museum is now comprised of three historic homes all sitting on their original foundations. The homes all date to between 1840 and 1855, are each an example of very different architectural styles, and work to tell the early settler history of the area as well as the growth and development of the Oshawa community."
+            },
+            {
+                "type": "beach",
+                "title": "Lakeview Park Beach",
+                "coordinates": {
+                    "lat": 366,
+                    "lng": 571,
+                    "zoom": 3
+                },
+                "info": "Lakeview Park Beach is a sandy beach located on the shore of Lake Ontario within Lakeview Park and is a popular destination offering museums, picnic areas, playgrounds, sports fields, and a waterfront pier. There are 4 beach volleyball courts available for rent. Washrooms are open when lifeguards on are on-duty."
+            },
+            {
+                "type": "beach",
+                "title": "Oshawa Pier",
+                "coordinates": {
+                    "lat": 379.625,
+                    "lng": 593.5,
+                    "zoom": 3
+                },
+                "info": "Prior to the arrival of European and American settlers, the area was part of the traditional hunting grounds of the Mississauga’s and is part of the Williams Treaties. With the arrival of American settlers in the late 1790s, the land became divided and owned by names such as Annis, Smith, Lockwood and Perry. In 1840, the first efforts were made to develop the Oshawa Harbour with the construction of the pier and breakwaters by the Sydenham Harbour Company. The opening of the Harbour brought with it further settlement along the lakeshore, including the construction of the homes that comprise the Oshawa Museum."
+            }
         ]
     }, {
         "id": 8,
-        "title": "Lakeview Park Beach",
-        "description": "Lakeview Park Beach is a sandy beach located on the shore of Lake Ontario within Lakeview Park and is a popular destination offering museums, picnic areas, playgrounds, sports fields, and a waterfront pier. There are 4 beach volleyball courts available for rent. Washrooms are open when lifeguards on are on-duty.<br/><a class='btn' target='_blank' href='https://www.oshawa.ca/things-to-do/lakeview-park-beach.asp'>View Website</a>",
-        "hours": "-",
+        "title": "Lakeview Park E",
+        "description": "Nestled along the shore of Lake Ontario, Lakeview Park with its mature landscape setting has views of the lake and is a beautiful, community park. Connected to the recreational trails, Joseph Kolodzie Oshawa Creek Bike Path and the Waterfront Trail, visitors can connect to Oshawa's vibrant downtown, Oshawa Second Marsh, McLaughlin Bay Wildlife Reserve, the historic Oshawa Community Museum among other attractions. Lakeview Park is also host to many family fun events. The Park is also home to the Jubilee Pavilion a banquet hall, patio and snack bar.",
+        "hours_old": "April 1 to October 31 - 6:00 a.m. to 10:00 p.m. | November 1 to March 31 - 6:00 a.m. to 6:00 p.m",
         "coordinates": {
-            "lat": 374.5,
-            "lng": 584.375,
+            "lat": 384.375,
+            "lng": 535.625,
             "zoom": 3
         },
-        "amenities": false
-    }, {
-        "id": 11,
-        "title": "Oshawa Pier",
-        "description": "The Hamilton Oshawa Port Authority operates the harbour. The Oshawa Harbour played an important role in the settling of our area, and has continued that function as a vital element of the City's growth and economic development today.",
-        "hours": "",
-        "coordinates": {
-            "lat": 379.625,
-            "lng": 593.5,
-            "zoom": 3
-        },
-        "images": ["HOPA_00.jpg"],
-        "amenities": false,
-        "history": "Prior to the arrival of European and American settlers, the area was part of the traditional hunting grounds of the Mississauga’s and is part of the Williams Treaties. With the arrival of American settlers in the late 1790s, the land became divided and owned by names such as Annis, Smith, Lockwood and Perry. In 1840, the first efforts were made to develop the Oshawa Harbour with the construction of the pier and breakwaters by the Sydenham Harbour Company. The opening of the Harbour brought with it further settlement along the lakeshore, including the construction of the homes that comprise the Oshawa Museum."
-    }, {
-        "id": 9,
-        "title": "Ed Broadbent Waterfront Park",
-        "description": "The Ed Broadbent Waterfront Park is the City of Oshawa’s newest addition to the waterfront parks system. The park was officially named Ed Broadbent Waterfront Park in 2019, to recognize the contributions Mr. Broadbent has made to public service and the City of Oshawa and its residents, workers, and businesses. Further planning and development of the park are underway.",
-        "hours": "",
-        "coordinates": {
-            "lat": 423.74,
-            "lng": 503.87,
-            "zoom": 3
-        },
-        "amenities": false,
-        "history": "Ed Broadbent was born in Oshawa in 1936 and raised in our city. Mr. Broadbent was elected to Parliament as the NDP Member for Oshawa in 1968 and served as the MP until 1989. From 1975 to 1989, he was also Leader of the New Democratic Party. Between 1979 and 1990, he was a Vice-President of the Socialist International. From 1990 to 1996, he was the founding President of the International Centre for Human Rights and Democratic Development in Montreal. Mr. Broadbent was made a member of the Privy Council in 1982, an Officer of the Order of Canada in 1993 and a Companion of the Order of Canada in 2002."
-    }, {
-        "id": 10,
-        "title": "Oshawa Second Marsh",
-        "description": "Oshawa’s Second Marsh is one of the last, largest (at 137-hectare) and most biodiverse coastal wetlands on the Great Lakes. It is considered to be a Provincially Significant Wetland and a Provincially Significant Area of Natural and Scientific Interest. It plays an important role as essential habitat for local species and a stopover area for migratory birds.",
-        "hours": "-",
-        "coordinates": {
-            "lat": 586.125,
-            "lng": 604.5,
-            "zoom": 3
-        },
-        "images": ["secondMarsh.jpg"],
-        "amenities": false,
-        "history": "The Marsh has had an important historic role in the development of the City of Oshawa, marking the ancient terminus of the Indigenous Scugog Carrying Place Trail, a significant ancient portage route connecting lake trade with the resource-rich northern interior.  Later becoming a site of booming industry in the 19th century, and finally a restored natural heritage site, an area for citizens of Oshawa to learn about the importance of wetlands and nature appreciation."
-    }, {
-        "id": 12,
-        "title": "Clarington Oshawa Border",
-        "description": "Welcome to the City of Oshawa. <a target='_blank' href='https://waterfronttrail.org/'>The Great Lakes Waterfront Trail</a> stretches 3600 km connecting 155 communities and First Nations along the Canadian shores of the Great Lakes region. Oshawa’s portion of the Waterfront Trail is 11 km connecting you to a number of parks, recreation facilities, scenic views of Lake Ontario and nature along the way. Use these QR codes to find key destinations and learn more about the <a target='_blank' href='https://www.oshawa.ca/things-to-do/things-to-see-and-do.asp?_mid_=686'>City of Oshawa</a>.<strong class='block mt-3 tracking-widest font-semibold'>TRAIL USER CODE:</strong><ul class='list-disc ml-5'><li>Stay on the designated recreational trail</li><li>Obey signs</li><li>Keep right except to pass</li><li>Cyclists must use a bell or verbal indication when passing and travel at a moderate speed</li><li>Keep dogs on a leash (not exceeding 2m)</li><li>Don’t litter</li></ul>",
-        "hours": "",
-        "coordinates": {
-            "lat": 541.411669921875,
-            "lng": 798.63125,
-            "zoom": 3.5
-        },
-        "amenities": false
-    }, {
-        "id": 13,
-        "title": "Larry Ladd Harbour Trail",
-        "description": "The Port handles an average of $23 million worth of cargo annually from salt and steel products to sugar, asphalt and grain. Over the past decade, the Port of Oshawa has handled more than 500 vessels carrying over 3 million metric tonnes of cargo. ",
-        "hours": "",
-        "coordinates": {
-            "lat": 411.5,
-            "lng": 530.875,
-            "zoom": 3
-        },
-        "history": "Throughout the 19th and 20th centuries, numerous industrial activities occured in the Oshawa Harbour area. Remedial works have occurred on the site to allow the area to be open for public.",
-        "scenic": [
-            {
-                "type": "lookouts",
-                "title": "Lookout: Second Marsh",
+        "history": "As early as 1890, the area by the lake, referred to more generally as “Oshawa-on-the-Lake”, was used for summer recreation. In 1920, George and R.S. McLaughlin purchased the land in the name of General Motors of Canada Limited.  They then deeded the land to the Town of Oshawa for just one dollar with only one restriction, that the land be used as a public park for the citizens of Oshawa and that it remain so.",
+        "images": ["lakeview_1.jpg", "lakeview_2.jpg", "pier1.jpg", "pier2.jpg", "pier3.jpg"],
+        "amenities": [{
+                "type": "sports_fields",
+                "title": "Lakeview Park Playground and Splash Pad",
                 "coordinates": {
-                    "lat": 493.875,
-                    "lng": 640.125,
+                    "lat": 348.25,
+                    "lng": 553.625,
+                    "zoom": 3
+                }
+            },
+            {
+                "type": "seating_area",
+                "title": "Lakeview Park Picnic Shelter",
+                "coordinates": {
+                    "lat": 340.875,
+                    "lng": 539.25,
+                    "zoom": 3
+                }
+            },
+            {
+                "type": "sports_fields",
+                "title": "Jim Lutton Legion Ball Diamond #1",
+                "coordinates": {
+                    "lat": 357.5,
+                    "lng": 533.125,
+                    "zoom": 3
+                }
+            },
+            {
+                "type": "sports_fields",
+                "title": "Ted McComb Ball Diamond #3",
+                "coordinates": {
+                    "lat": 350.75,
+                    "lng": 491.625,
+                    "zoom": 3
+                }
+            },
+            {
+                "type": "sports_fields",
+                "title": "Kluane Ave. Soccer Fields",
+                "coordinates": {
+                    "lat": 322.875,
+                    "lng": 501.5,
+                    "zoom": 3
+                }
+            },
+            {
+                "type": "sports_fields",
+                "title": "Lakeview Park Ave. Soccer Fields",
+                "coordinates": {
+                    "lat": 368,
+                    "lng": 518.5,
+                    "zoom": 3
+                }
+            },
+            {
+                "type": "food_location",
+                "title": "The Jube Pub and Patio",
+                "coordinates": {
+                    "lat": 347.375,
+                    "lng": 547.875,
+                    "zoom": 3
+                }
+            },
+            {
+                "type": "sports_fields",
+                "title": "Beach Volleyball Courts",
+                "coordinates": {
+                    "lat": 370.3681640625,
+                    "lng": 580.5244140625,
                     "zoom": 3
                 }
             },
             {
                 "type": "lookouts",
-                "title": "Lookout: Scattergood's Pond",
+                "title": "Lakeview Park Pier",
                 "coordinates": {
-                    "lat": 529,
-                    "lng": 610.25,
+                    "lat": 363.9931640625,
+                    "lng": 605.1494140625,
+                    "zoom": 3
+                }
+            },
+            {
+                "type": "lookouts",
+                "title": "Nelson Mandela Point Gazebo",
+                "coordinates": {
+                    "lat": 315.31005859375,
+                    "lng": 522.30615234375,
+                    "zoom": 3
+                }
+            },
+            {
+                "type": "lookouts",
+                "title": "East Gazebo",
+                "coordinates": {
+                    "lat": 348.31640625,
+                    "lng": 557.3583984375,
+                    "zoom": 3
+                }
+            },
+            {
+                "type": "parking",
+                "title": "Picnic Area Parking",
+                "coordinates": {
+                    "lat": 344.44140625,
+                    "lng": 528.9833984375,
+                    "zoom": 3
+                }
+            },
+            {
+                "type": "washroom",
+                "title": "Main Washroom Building",
+                "coordinates": {
+                    "lat": 346.5,
+                    "lng": 542.25,
+                    "zoom": 3
+                }
+            },
+            {
+                "type": "washroom",
+                "title": "Beach Washroom Building",
+                "coordinates": {
+                    "lat": 370.5,
+                    "lng": 576.875,
+                    "zoom": 3
+                }
+            }
+        ], "explore": [
+            {
+                "type": "pavillion",
+                "title": "Jubilee Pavillion",
+                "coordinates": {
+                    "lat": 349.125,
+                    "lng": 544.625,
+                    "zoom": 3
+                },
+                "info": "In 1927, the Jubilee Pavilion opened to commemorate the 60th Anniversary of Confederation. The Jube became a central part of the Park, well known for its nightly dances and hosting all sorts of musical acts."
+            },
+            {
+                "type": "museum",
+                "title": "Oshawa Community Museum and Archives",
+                "coordinates": {
+                    "lat": 359.69140625,
+                    "lng": 551.4833984375,
+                    "zoom": 3
+                },
+                "info": "The Park is also home to Oshawa’s unofficial heritage district known as the Oshawa Museum. Opening in 1960 with only Henry House, the Museum is now comprised of three historic homes all sitting on their original foundations. The homes all date to between 1840 and 1855, are each an example of very different architectural styles, and work to tell the early settler history of the area as well as the growth and development of the Oshawa community."
+            },
+            {
+                "type": "beach",
+                "title": "Lakeview Park Beach",
+                "coordinates": {
+                    "lat": 366,
+                    "lng": 571,
+                    "zoom": 3
+                },
+                "info": "Lakeview Park Beach is a sandy beach located on the shore of Lake Ontario within Lakeview Park and is a popular destination offering museums, picnic areas, playgrounds, sports fields, and a waterfront pier. There are 4 beach volleyball courts available for rent. Washrooms are open when lifeguards on are on-duty."
+            },
+            {
+                "type": "beach",
+                "title": "Oshawa Pier",
+                "coordinates": {
+                    "lat": 379.625,
+                    "lng": 593.5,
+                    "zoom": 3
+                },
+                "info": "Prior to the arrival of European and American settlers, the area was part of the traditional hunting grounds of the Mississauga’s and is part of the Williams Treaties. With the arrival of American settlers in the late 1790s, the land became divided and owned by names such as Annis, Smith, Lockwood and Perry. In 1840, the first efforts were made to develop the Oshawa Harbour with the construction of the pier and breakwaters by the Sydenham Harbour Company. The opening of the Harbour brought with it further settlement along the lakeshore, including the construction of the homes that comprise the Oshawa Museum."
+            }
+        ]
+    }, {
+        "id": 9,
+        "title": "Ed Broadbent Waterfront Park W",
+        "description": "The Ed Broadbent Waterfront Park is the City of Oshawa’s newest addition to the waterfront parks system. The park was officially named Ed Broadbent Waterfront Park in 2019, to recognize the contributions Mr. Broadbent has made to public service and the City of Oshawa and its residents, workers, and businesses. Further planning and development of the park are underway.",
+        "hours_old": "",
+        "coordinates": {
+            "lat": 404.875,
+            "lng": 539.375,
+            "zoom": 3
+        },
+        "amenities": false,
+        "history": "Ed Broadbent was born in Oshawa in 1936 and raised in our city. Mr. Broadbent was elected to Parliament as the NDP Member for Oshawa in 1968 and served as the MP until 1989. From 1975 to 1989, he was also Leader of the New Democratic Party. Between 1979 and 1990, he was a Vice-President of the Socialist International. From 1990 to 1996, he was the founding President of the International Centre for Human Rights and Democratic Development in Montreal. Mr. Broadbent was made a member of the Privy Council in 1982, an Officer of the Order of Canada in 1993 and a Companion of the Order of Canada in 2002.",
+        "explore": [
+            {
+                "type": "standard",
+                "title": "Larry Ladd Harbour Trail",
+                "info": "The Port handles an average of $23 million worth of cargo annually from salt and steel products to sugar, asphalt and grain. Over the past decade, the Port of Oshawa has handled more than 500 vessels carrying over 3 million metric tonnes of cargo. \n\nThroughout the 19th and 20th centuries, numerous industrial activities occured in the Oshawa Harbour area. Remedial works have occurred on the site to allow the area to be open for public."
+            }
+        ]
+    }, {
+        "id": 10,
+        "title": "Ed Broadbent Waterfront Park E",
+        "description": "The Ed Broadbent Waterfront Park is the City of Oshawa’s newest addition to the waterfront parks system. The park was officially named Ed Broadbent Waterfront Park in 2019, to recognize the contributions Mr. Broadbent has made to public service and the City of Oshawa and its residents, workers, and businesses. Further planning and development of the park are underway.",
+        "hours_old": "",
+        "coordinates": {
+            "lat": 449,
+            "lng": 522.75,
+            "zoom": 3
+        },
+        "amenities": false,
+        "history": "Ed Broadbent was born in Oshawa in 1936 and raised in our city. Mr. Broadbent was elected to Parliament as the NDP Member for Oshawa in 1968 and served as the MP until 1989. From 1975 to 1989, he was also Leader of the New Democratic Party. Between 1979 and 1990, he was a Vice-President of the Socialist International. From 1990 to 1996, he was the founding President of the International Centre for Human Rights and Democratic Development in Montreal. Mr. Broadbent was made a member of the Privy Council in 1982, an Officer of the Order of Canada in 1993 and a Companion of the Order of Canada in 2002.",
+        "explore": [
+            {
+                "type": "standard",
+                "title": "Larry Ladd Harbour Trail",
+                "info": "The Port handles an average of $23 million worth of cargo annually from salt and steel products to sugar, asphalt and grain. Over the past decade, the Port of Oshawa has handled more than 500 vessels carrying over 3 million metric tonnes of cargo. \n\nThroughout the 19th and 20th centuries, numerous industrial activities occured in the Oshawa Harbour area. Remedial works have occurred on the site to allow the area to be open for public."
+            }
+        ]
+    }, {
+        "id": 11,
+        "title": "Oshawa Second Marsh W",
+        "description": "Oshawa’s Second Marsh is one of the last, largest (at 137-hectare) and most biodiverse coastal wetlands on the Great Lakes. It is considered to be a Provincially Significant Wetland and a Provincially Significant Area of Natural and Scientific Interest. It plays an important role as essential habitat for local species and a stopover area for migratory birds.",
+        "hours_old": "-",
+        "coordinates": {
+            "lat": 471.5,
+            "lng": 579.625,
+            "zoom": 3
+        },
+        "images": ["secondMarsh.jpg"],
+        "amenities": false,
+        "history": "The Marsh has had an important historic role in the development of the City of Oshawa, marking the ancient terminus of the Indigenous Scugog Carrying Place Trail, a significant ancient portage route connecting lake trade with the resource-rich northern interior.  Later becoming a site of booming industry in the 19th century, and finally a restored natural heritage site, an area for citizens of Oshawa to learn about the importance of wetlands and nature appreciation.",
+        "explore": [
+            {
+                "type": "lookouts",
+                "title": "Scattergood's Pond",
+                "coordinates": {
+                    "lat": 534.25,
+                    "lng": 609,
+                    "zoom": 3
+                }
+            },
+            {
+                "type": "lookouts",
+                "title": "Second Marsh Lookout",
+                "coordinates": {
+                    "lat": 493.675,
+                    "lng": 641.0625,
                     "zoom": 3
                 }
             }
         ]
     }, {
-        "id": 14,
-        "title": "McLaughlin Bay Wildlife Reserve",
-        "description": "Named after the General Motors Canada founder, Col. Sam McLaughlin, the Reserve has become a popular attraction for lovers of nature and peaceful surroundings. The Reserve occupies in excess of 41 ha (108 acres) and is home to almost 400 different varieties of plants, trees, shrubs and wildflowers, as well as a great number of native birds, mammals and fish.  The McLaughlin Bay Wildlife Reserve features a number of walking trails, viewing platforms for photographers and birdwatchers.",
-        "hours": "",
+        "id": 12,
+        "title": "Oshawa Second Marsh E",
+        "description": "Oshawa’s Second Marsh is one of the last, largest (at 137-hectare) and most biodiverse coastal wetlands on the Great Lakes. It is considered to be a Provincially Significant Wetland and a Provincially Significant Area of Natural and Scientific Interest. It plays an important role as essential habitat for local species and a stopover area for migratory birds.",
+        "hours_old": "-",
         "coordinates": {
-            "lat": 506.175,
-            "lng": 827,
+            "lat": 581,
+            "lng": 604.75,
+            "zoom": 3
+        },
+        "images": ["secondMarsh.jpg"],
+        "amenities": false,
+        "history": "The Marsh has had an important historic role in the development of the City of Oshawa, marking the ancient terminus of the Indigenous Scugog Carrying Place Trail, a significant ancient portage route connecting lake trade with the resource-rich northern interior.  Later becoming a site of booming industry in the 19th century, and finally a restored natural heritage site, an area for citizens of Oshawa to learn about the importance of wetlands and nature appreciation.",
+        "explore": [
+            {
+                "type": "lookouts",
+                "title": "Scattergood's Pond",
+                "coordinates": {
+                    "lat": 534.25,
+                    "lng": 609,
+                    "zoom": 3
+                }
+            },
+            {
+                "type": "lookouts",
+                "title": "Second Marsh Lookout",
+                "coordinates": {
+                    "lat": 493.675,
+                    "lng": 641.0625,
+                    "zoom": 3
+                }
+            }
+        ]
+    }, {
+        "id": 13,
+        "title": "Clarington Oshawa Border",
+        "description": "Welcome to the City of Oshawa. <a target='_blank' href='https://waterfronttrail.org/'>The Great Lakes Waterfront Trail</a> stretches 3600 km connecting 155 communities and First Nations along the Canadian shores of the Great Lakes region. Oshawa’s portion of the Waterfront Trail is 11 km connecting you to a number of parks, recreation facilities, scenic views of Lake Ontario and nature along the way. Use these QR codes to find key destinations and learn more about the <a target='_blank' href='https://www.oshawa.ca/things-to-do/things-to-see-and-do.asp?_mid_=686'>City of Oshawa</a>.<strong class='block mt-3 tracking-widest font-semibold'>TRAIL USER CODE:</strong><ul class='list-disc ml-5'><li>Stay on the designated recreational trail</li><li>Obey signs</li><li>Keep right except to pass</li><li>Cyclists must use a bell or verbal indication when passing and travel at a moderate speed</li><li>Keep dogs on a leash (not exceeding 2m)</li><li>Don’t litter</li></ul>",
+        "hours_old": "",
+        "coordinates": {
+            "lat": 541.411669921875,
+            "lng": 798.63125,
             "zoom": 3.5
         },
-        "amenities": false
+        "amenities": false,
+        "scenic": [
+            {
+                "type": "pavillion",
+                "title": "McLaughlin Bay Wildlife Reserve",
+                "info": "Named after the General Motors Canada founder, Col. Sam McLaughlin, the Reserve has become a popular attraction for lovers of nature and peaceful surroundings. The Reserve occupies in excess of 41 ha (108 acres) and is home to almost 400 different varieties of plants, trees, shrubs and wildflowers, as well as a great number of native birds, mammals and fish.  The McLaughlin Bay Wildlife Reserve features a number of walking trails, viewing platforms for photographers and birdwatchers.",
+                "coordinates": {
+                    "lat": 506.175,
+                    "lng": 827,
+                    "zoom": 3.5
+                }
+            }
+        ]
     }]
 }

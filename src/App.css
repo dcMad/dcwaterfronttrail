@@ -213,14 +213,18 @@ h2, h3 {
   border: none !important;
   border-radius: 0.5rem !important;
   overflow: hidden;
+  box-shadow: rgb(0 0 0 / 25%) 0 0 3px 0;
 }
 
 .leaflet-touch .leaflet-bar a {
-  width: 3rem;
-  height: 3rem;
-  font-size: 1.5rem !important;
-  line-height: 26px !important;
-  font-weight: normal;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.5rem!important;
+  line-height: 26px!important;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .leaflet-container .popup-theme .leaflet-popup-content {
