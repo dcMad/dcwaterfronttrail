@@ -13,13 +13,24 @@ export default class Card extends Component {
             currentTab: null,
             cardHidden: false,
             searchHidden: true,
+            popUpTab: false, // if true, the pop-up would be made visible
         }
     }
 
     selectTab(index) {
+        console.log(this.props.tabs[index])
         this.setState({
             cardContent: this.props.tabs[index].content,
             currentTab: index
+        })
+    }
+
+    selectTabPopUp(index) {
+        this.setState({
+            ...this.state,
+            popUpTab: {
+                content: this.props.tabs[index].content
+            }
         })
     }
 
@@ -65,14 +76,36 @@ export default class Card extends Component {
         let tabs = ''
         if ( this.props.tabs ) {
             tabs = Object.keys(this.props.tabs).map((index) => {
-                return (
-                    <span key={`tab_${index}${Date.now()}`} className={`tab ${( index == this.state.currentTab ) ? "active" : ""}`} onClick={() => { this.selectTab(index) }}>{ this.props.tabs[index].title }</span>
-                )
+                console.log(this.props.tabs[index])
+                if ( !this.props.tabs[index].isPopUp ) {
+                    return (
+                        <span key={`tab_${index}${Date.now()}`} className={`tab ${( index == this.state.currentTab ) ? "active" : ""}`} onClick={() => { this.selectTab(index) }}>{ this.props.tabs[index].title }</span>
+                    )
+                } else {
+                    return (
+                        <span key={`tab_${index}${Date.now()}`} className={`tab ${( index == this.state.currentTab ) ? "active" : ""}`} onClick={() => { this.selectTabPopUp(index) }}>{ this.props.tabs[index].title }</span>
+                    )
+                }
             })
         }
     
         return (
             <div className='mt-0'>
+
+                <div className={`fixed left-0 top-0 right-0 bottom-0 w-full h-full bg-black bg-opacity-50 justify-center items-center overflow-hidden transition-all flex ${this.state.popUpTab ? '' : 'hidden'}`}>
+                    <div className={`bg-white p-4 m-4 rounded-xl shadow-md w-full relative text-center pb-8`}>
+                        <div className={`absolute left-0 right-0 -bottom-4 flex justify-center`}>
+                            <a className={`bg-red-500 p-2 rounded-xl text-white uppercase tracking-widest text-xs shadow-md font-semibold`} onClick={() => {
+                                this.setState({
+                                    ...this.state,
+                                    popUpTab: false
+                                })
+                            }}>close</a>
+                        </div>
+                        <h2 className={`text-center mb-2`}>History</h2>
+                        { this.state.popUpTab.content }
+                    </div>
+                </div>
 
                 <a className={`my-2 inline-block p-2 tracking-widest uppercase rounded-lg text-sm transition-all shadow-lg bg-gray-50 text-theme-colors-purple font-medium cursor-pointer`} onClick={() => { this.toggleSearch() }}>Go To</a>
 
