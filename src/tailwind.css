@@ -12,7 +12,7 @@
     }
 
     .tab {
-        @apply bg-transparent py-2 px-3 text-white rounded-md uppercase tracking-wider font-medium hover:bg-white hover:text-theme-grey-900 transition-all cursor-pointer text-sm w-full mx-3 text-center;
+        @apply bg-transparent py-2 px-3 text-white rounded-md uppercase tracking-wider font-medium transition-all cursor-pointer text-sm w-full mx-3 text-center max-w-full overflow-hidden overflow-ellipsis;
     }
 
     .tab.active {
@@ -34,5 +34,9 @@
 
     label {
         @apply cursor-pointer;
+    }
+
+    a.link {
+        @apply text-theme-colors-orange uppercase tracking-widest text-sm;
     }
 }

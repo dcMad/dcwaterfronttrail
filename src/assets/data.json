@@ -19,7 +19,7 @@
         "coordinates": {
             "lat": 191.5,
             "lng": 92.25,
-            "zoom": 3.5
+            "zoom": 2.5
         },
         "images": ["LFW-00.jpg", "LFW-01.jpg", "LFW-03.jpg", "LKW-02.jpg"],
         "amenities": [{
@@ -146,15 +146,6 @@
                     "lng": 379.125,
                     "zoom": 3
                 }
-            },
-            {
-                "type": "sports_fields",
-                "title": "Soccer/Football Field with Running Track",
-                "coordinates": {
-                    "lat": 296.25,
-                    "lng": 398.875,
-                    "zoom": 3
-                }
             }
         ],
         "scenic": [
@@ -170,7 +161,7 @@
             {
                 "type": "standard",
                 "title": "South Oshawa Community Centre",
-                "info": "South Oshawa Community Centre features a leisure pool with waterslide, fitness centre, youth room and meeting rooms complete with a teaching kitchen. Situated on the Lake Ontario waterfront and attached to GL Roberts Collegiate and Vocational Institute, facility users have easy access to Stone Street Park, the Waterfront Trail and a playground. A variety of recreation programs are offered at this facility. ",
+                "info": "South Oshawa Community Centre features a leisure pool with waterslide, fitness centre, youth room and meeting rooms complete with a teaching kitchen. Situated on the Lake Ontario waterfront and attached to GL Roberts Collegiate and Vocational Institute, facility users have easy access to Stone Street Park, the Waterfront Trail and a playground. A variety of recreation programs are offered at this facility. <br/><br/><a class='link' href='https://www.oshawa.ca/things-to-do/facilities.asp' target='_blank'>South Oshawa Community Centre</a>",
                 "coordinates": {
                     "lat": 292.25,
                     "lng": 370.875,
@@ -181,7 +172,7 @@
     }, {
         "id": 4,
         "title": "Pumphouse Marsh",
-        "description": "The Pumphouse Marsh is a provincially significant wetland. One of the smallest, 2.1 ha, coastal wetlands in Durham Region and has an established barrier beach which separates the marsh from Lake Ontario and surrounding woodlands that provide habitat. <br/><br/>Studies have found a total of 196 different species of birds with 43 being nesting and breeding birds which can be easily disturbed. In order to maintain the health of the wetland and the surrounding habitat it is important that visitors stick to the trails and maintained areas to avoid trampling vegetation and disturbing our feathered friends.<br/><br/>Additionally the release of gold fish in the marsh has also had a negative impact on the health of the marsh – although harmless in your fish bowl goldfish prey upon eggs, larvae and adults of native fish, increase turbidity and feed on aquatic vegetation.<br/><br/>Help us protect these valuable resources by staying on the trail and picking up and disposing of litter and dog waste in a garbage can.",
+        "description": "The Pumphouse Marsh is a provincially significant wetland. One of the smallest, 2.1 ha, coastal wetlands in Durham Region and has an established barrier beach which separates the marsh from Lake Ontario and surrounding woodlands that provide habitat.",
         "hours_old": "-",
         "coordinates": {
             "lat": 299.125,
@@ -191,6 +182,7 @@
         "scenic": [{
             "type": "lookouts",
             "title": "Pumphouse Marsh Lookout",
+            "info": "Studies have found a total of 196 different species of birds with 43 being nesting and breeding birds which can be easily disturbed. In order to maintain the health of the wetland and the surrounding habitat it is important that visitors stick to the trails and maintained areas to avoid trampling vegetation and disturbing our feathered friends.<br/><br/>Additionally the release of gold fish in the marsh has also had a negative impact on the health of the marsh – although harmless in your fish bowl goldfish prey upon eggs, larvae and adults of native fish, increase turbidity and feed on aquatic vegetation.<br/><br/>Help us protect these valuable resources by staying on the trail and picking up and disposing of litter and dog waste in a garbage can.",
             "coordinates": {
                 "lat": 293.125,
                 "lng": 410.75,
@@ -205,7 +197,7 @@
         "coordinates": {
             "lat": 298.0455082701298,
             "lng": 482.15843642157716,
-            "zoom": 3.5
+            "zoom": 2.5
         },
         "amenities": [{
                 "type": "sports_fields",
@@ -283,7 +275,7 @@
         "coordinates": {
             "lat": 293.095760801824,
             "lng": 508.6749407160727,
-            "zoom": 3.5
+            "zoom": 2.5
         },
         "amenities": [{
                 "type": "sports_fields",
@@ -356,7 +348,7 @@
     }, {
         "id": 7,
         "title": "Lakeview Park W",
-        "description": "Nestled along the shore of Lake Ontario, Lakeview Park with its mature landscape setting has views of the lake and is a beautiful, community park. Connected to the recreational trails, Joseph Kolodzie Oshawa Creek Bike Path and the Waterfront Trail, visitors can connect to Oshawa's vibrant downtown, Oshawa Second Marsh, McLaughlin Bay Wildlife Reserve, the historic Oshawa Community Museum among other attractions. Lakeview Park is also host to many family fun events. The Park is also home to the Jubilee Pavilion a banquet hall, patio and snack bar.",
+        "description": "<a href='https://www.oshawa.ca/Modules/Facilities/Detail.aspx?CategoryIds=&FacilityTypeIds=1%2C3%2C12&Keywords=lakeview+park&ScrollMap=true&id=5f589d08-b17a-41d7-9045-1e3a1ebaaf6e' target='_blank' class='text-theme-colors-orange'>Nestled along the shore of Lake Ontario, Lakeview Park</a> with its mature landscape setting has views of the lake and is a beautiful, community park. Connected to the recreational trails, Joseph Kolodzie Oshawa Creek Bike Path and the Waterfront Trail, visitors can connect to Oshawa's vibrant downtown, Oshawa Second Marsh, McLaughlin Bay Wildlife Reserve, the historic Oshawa Community Museum among other attractions. Lakeview Park is also host to many family fun events. The Park is also home to the Jubilee Pavilion a banquet hall, patio and snack bar.",
         "hours_old": "April 1 to October 31 - 6:00 a.m. to 10:00 p.m. | November 1 to March 31 - 6:00 a.m. to 6:00 p.m",
         "coordinates": {
             "lat": 315.25,
@@ -377,6 +369,7 @@
             {
                 "type": "seating_area",
                 "title": "Lakeview Park Picnic Shelter",
+                "info": "For a list of all the group picnic spots at Lakeview Park: <br/><br/><a class='link' href='https://www.oshawa.ca/things-to-do/group-picnics.asp' target='_blank'>Lakeview Park Picnic Spots</a>",
                 "coordinates": {
                     "lat": 340.875,
                     "lng": 539.25,
@@ -476,6 +469,7 @@
             {
                 "type": "washroom",
                 "title": "Main Washroom Building",
+                "info": "Park washroom facilities will be available the beginning of May until the end of October. Washroom facilities include the main washroom building located near the Jubilee Pavilion and a number of accessible portable washroom units with hand sanitizers.<br/><br/>Washroom facilities are open during park operating hours:<br/> April 1 to October 31 - 6:00 a.m. to 10:00 p.m. November 1 to March 31 - 6:00 a.m. to 6:00 p.m.",
                 "coordinates": {
                     "lat": 346.5,
                     "lng": 542.25,
@@ -485,6 +479,7 @@
             {
                 "type": "washroom",
                 "title": "Beach Washroom Building",
+                "info": "Park washroom facilities will be available the beginning of May until the end of October. Washroom facilities include the main washroom building located near the Jubilee Pavilion and a number of accessible portable washroom units with hand sanitizers.<br/><br/>Washroom facilities are open during park operating hours:<br/> April 1 to October 31 - 6:00 a.m. to 10:00 p.m. November 1 to March 31 - 6:00 a.m. to 6:00 p.m.",
                 "coordinates": {
                     "lat": 370.5,
                     "lng": 576.875,
@@ -520,7 +515,7 @@
                     "lng": 571,
                     "zoom": 3
                 },
-                "info": "Lakeview Park Beach is a sandy beach located on the shore of Lake Ontario within Lakeview Park and is a popular destination offering museums, picnic areas, playgrounds, sports fields, and a waterfront pier. There are 4 beach volleyball courts available for rent. Washrooms are open when lifeguards on are on-duty."
+                "info": "<a class='text-theme-colors-orange' href='https://www.oshawa.ca/Modules/Facilities/Detail.aspx?CategoryIds=21&FacilityTypeIds=&Keywords=&Page=1&Scroll=true&id=e90fea54-3f4b-43e4-bd1b-62a7ea2e794c' target='_blank'>Lakeview Park Beach</a> is a sandy beach located on the shore of Lake Ontario within Lakeview Park and is a popular destination offering museums, picnic areas, playgrounds, sports fields, and a waterfront pier. There are 4 beach volleyball courts available for rent. Washrooms are open when lifeguards on are on-duty."
             },
             {
                 "type": "beach",
@@ -531,12 +526,22 @@
                     "zoom": 3
                 },
                 "info": "Prior to the arrival of European and American settlers, the area was part of the traditional hunting grounds of the Mississauga’s and is part of the Williams Treaties. With the arrival of American settlers in the late 1790s, the land became divided and owned by names such as Annis, Smith, Lockwood and Perry. In 1840, the first efforts were made to develop the Oshawa Harbour with the construction of the pier and breakwaters by the Sydenham Harbour Company. The opening of the Harbour brought with it further settlement along the lakeshore, including the construction of the homes that comprise the Oshawa Museum."
+            },
+            {
+                "type": "standard",
+                "title": "Joseph Kolodzie Bike Path",
+                "info": "Learn more about the Joseph Kolodize Oshawa Creek Bike Path:<br/><br/><a class='link' href='https://www.oshawa.ca/Modules/Facilities/Detail.aspx?CategoryIds=&FacilityTypeIds=1%2C3%2C12&Keywords=lakeview+park&ScrollMap=true&id=802910c2-1343-4b2d-8f93-62b11f3d11d9' target='_blank'>Joseph Kolodzie Bike Path</a>",
+                "coordinates": {
+                    "lat": 341.26741027015754,
+                    "lng": 503.1948631618769,
+                    "zoom": 3
+                }
             }
         ]
     }, {
         "id": 8,
         "title": "Lakeview Park E",
-        "description": "Nestled along the shore of Lake Ontario, Lakeview Park with its mature landscape setting has views of the lake and is a beautiful, community park. Connected to the recreational trails, Joseph Kolodzie Oshawa Creek Bike Path and the Waterfront Trail, visitors can connect to Oshawa's vibrant downtown, Oshawa Second Marsh, McLaughlin Bay Wildlife Reserve, the historic Oshawa Community Museum among other attractions. Lakeview Park is also host to many family fun events. The Park is also home to the Jubilee Pavilion a banquet hall, patio and snack bar.",
+        "description": "<a href='https://www.oshawa.ca/Modules/Facilities/Detail.aspx?CategoryIds=&FacilityTypeIds=1%2C3%2C12&Keywords=lakeview+park&ScrollMap=true&id=5f589d08-b17a-41d7-9045-1e3a1ebaaf6e' target='_blank' class='text-theme-colors-orange'>Nestled along the shore of Lake Ontario, Lakeview Park</a> with its mature landscape setting has views of the lake and is a beautiful, community park. Connected to the recreational trails, Joseph Kolodzie Oshawa Creek Bike Path and the Waterfront Trail, visitors can connect to Oshawa's vibrant downtown, Oshawa Second Marsh, McLaughlin Bay Wildlife Reserve, the historic Oshawa Community Museum among other attractions. Lakeview Park is also host to many family fun events. The Park is also home to the Jubilee Pavilion a banquet hall, patio and snack bar.",
         "hours_old": "April 1 to October 31 - 6:00 a.m. to 10:00 p.m. | November 1 to March 31 - 6:00 a.m. to 6:00 p.m",
         "coordinates": {
             "lat": 384.375,
@@ -557,6 +562,7 @@
             {
                 "type": "seating_area",
                 "title": "Lakeview Park Picnic Shelter",
+                "info": "For a list of all the group picnic spots at Lakeview Park: <br/><br/><a class='link' href='https://www.oshawa.ca/things-to-do/group-picnics.asp' target='_blank'>Lakeview Park Picnic Spots</a>",
                 "coordinates": {
                     "lat": 340.875,
                     "lng": 539.25,
@@ -656,6 +662,7 @@
             {
                 "type": "washroom",
                 "title": "Main Washroom Building",
+                "info": "Park washroom facilities will be available the beginning of May until the end of October. Washroom facilities include the main washroom building located near the Jubilee Pavilion and a number of accessible portable washroom units with hand sanitizers.<br/><br/>Washroom facilities are open during park operating hours:<br/> April 1 to October 31 - 6:00 a.m. to 10:00 p.m. November 1 to March 31 - 6:00 a.m. to 6:00 p.m.",
                 "coordinates": {
                     "lat": 346.5,
                     "lng": 542.25,
@@ -665,6 +672,7 @@
             {
                 "type": "washroom",
                 "title": "Beach Washroom Building",
+                "info": "Park washroom facilities will be available the beginning of May until the end of October. Washroom facilities include the main washroom building located near the Jubilee Pavilion and a number of accessible portable washroom units with hand sanitizers.<br/><br/>Washroom facilities are open during park operating hours:<br/> April 1 to October 31 - 6:00 a.m. to 10:00 p.m. November 1 to March 31 - 6:00 a.m. to 6:00 p.m.",
                 "coordinates": {
                     "lat": 370.5,
                     "lng": 576.875,
@@ -700,7 +708,7 @@
                     "lng": 571,
                     "zoom": 3
                 },
-                "info": "Lakeview Park Beach is a sandy beach located on the shore of Lake Ontario within Lakeview Park and is a popular destination offering museums, picnic areas, playgrounds, sports fields, and a waterfront pier. There are 4 beach volleyball courts available for rent. Washrooms are open when lifeguards on are on-duty."
+                "info": "<a class='text-theme-colors-orange' href='https://www.oshawa.ca/Modules/Facilities/Detail.aspx?CategoryIds=21&FacilityTypeIds=&Keywords=&Page=1&Scroll=true&id=e90fea54-3f4b-43e4-bd1b-62a7ea2e794c' target='_blank'>Lakeview Park Beach</a> is a sandy beach located on the shore of Lake Ontario within Lakeview Park and is a popular destination offering museums, picnic areas, playgrounds, sports fields, and a waterfront pier. There are 4 beach volleyball courts available for rent. Washrooms are open when lifeguards on are on-duty."
             },
             {
                 "type": "beach",
@@ -711,6 +719,16 @@
                     "zoom": 3
                 },
                 "info": "Prior to the arrival of European and American settlers, the area was part of the traditional hunting grounds of the Mississauga’s and is part of the Williams Treaties. With the arrival of American settlers in the late 1790s, the land became divided and owned by names such as Annis, Smith, Lockwood and Perry. In 1840, the first efforts were made to develop the Oshawa Harbour with the construction of the pier and breakwaters by the Sydenham Harbour Company. The opening of the Harbour brought with it further settlement along the lakeshore, including the construction of the homes that comprise the Oshawa Museum."
+            },
+            {
+                "type": "standard",
+                "title": "Joseph Kolodzie Bike Path",
+                "info": "Learn more about the Joseph Kolodize Oshawa Creek Bike Path:<br/><br/><a class='link' href='https://www.oshawa.ca/Modules/Facilities/Detail.aspx?CategoryIds=&FacilityTypeIds=1%2C3%2C12&Keywords=lakeview+park&ScrollMap=true&id=802910c2-1343-4b2d-8f93-62b11f3d11d9' target='_blank'>Joseph Kolodzie Bike Path</a>",
+                "coordinates": {
+                    "lat": 341.26741027015754,
+                    "lng": 503.1948631618769,
+                    "zoom": 3
+                }
             }
         ]
     }, {
@@ -729,7 +747,7 @@
             {
                 "type": "standard",
                 "title": "Larry Ladd Harbour Trail",
-                "info": "The Port handles an average of $23 million worth of cargo annually from salt and steel products to sugar, asphalt and grain. Over the past decade, the Port of Oshawa has handled more than 500 vessels carrying over 3 million metric tonnes of cargo. \n\nThroughout the 19th and 20th centuries, numerous industrial activities occured in the Oshawa Harbour area. Remedial works have occurred on the site to allow the area to be open for public."
+                "info": "From the bridge along the trail look east towards the Port of Oshawa now operated by the Hamilton Oshawa Port Authority. <br/>The Port handles an average of $23 million worth of cargo annually from salt and steel products to sugar, asphalt and grain. Over the past decade, the Port of Oshawa has handled more than 500 vessels carrying over 3 million metric tonnes of cargo. \n\nThroughout the 19th and 20th centuries, numerous industrial activities occured in the Oshawa Harbour area. Remedial works have occurred on the site to allow the area to be open for public."
             }
         ]
     }, {
@@ -748,13 +766,13 @@
             {
                 "type": "standard",
                 "title": "Larry Ladd Harbour Trail",
-                "info": "The Port handles an average of $23 million worth of cargo annually from salt and steel products to sugar, asphalt and grain. Over the past decade, the Port of Oshawa has handled more than 500 vessels carrying over 3 million metric tonnes of cargo. \n\nThroughout the 19th and 20th centuries, numerous industrial activities occured in the Oshawa Harbour area. Remedial works have occurred on the site to allow the area to be open for public."
+                "info": "From the bridge along the trail look east towards the Port of Oshawa now operated by the Hamilton Oshawa Port Authority. <br/>The Port handles an average of $23 million worth of cargo annually from salt and steel products to sugar, asphalt and grain. Over the past decade, the Port of Oshawa has handled more than 500 vessels carrying over 3 million metric tonnes of cargo. \n\nThroughout the 19th and 20th centuries, numerous industrial activities occured in the Oshawa Harbour area. Remedial works have occurred on the site to allow the area to be open for public."
             }
         ]
     }, {
         "id": 11,
         "title": "Oshawa Second Marsh W",
-        "description": "Oshawa’s Second Marsh is one of the last, largest (at 137-hectare) and most biodiverse coastal wetlands on the Great Lakes. It is considered to be a Provincially Significant Wetland and a Provincially Significant Area of Natural and Scientific Interest. It plays an important role as essential habitat for local species and a stopover area for migratory birds.",
+        "description": "<a class='' href='https://www.oshawa.ca/things-to-do/natural-areas.asp' target='_blank'>Oshawa’s Second Marsh</a> is one of the last, largest (at 137-hectare) and most biodiverse coastal wetlands on the Great Lakes. It is considered to be a Provincially Significant Wetland and a Provincially Significant Area of Natural and Scientific Interest. It plays an important role as essential habitat for local species and a stopover area for migratory birds.",
         "hours_old": "-",
         "coordinates": {
             "lat": 471.5,
@@ -787,7 +805,7 @@
     }, {
         "id": 12,
         "title": "Oshawa Second Marsh E",
-        "description": "Oshawa’s Second Marsh is one of the last, largest (at 137-hectare) and most biodiverse coastal wetlands on the Great Lakes. It is considered to be a Provincially Significant Wetland and a Provincially Significant Area of Natural and Scientific Interest. It plays an important role as essential habitat for local species and a stopover area for migratory birds.",
+        "description": "<a class='' href='https://www.oshawa.ca/things-to-do/natural-areas.asp' target='_blank'>Oshawa’s Second Marsh</a> is one of the last, largest (at 137-hectare) and most biodiverse coastal wetlands on the Great Lakes. It is considered to be a Provincially Significant Wetland and a Provincially Significant Area of Natural and Scientific Interest. It plays an important role as essential habitat for local species and a stopover area for migratory birds.",
         "hours_old": "-",
         "coordinates": {
             "lat": 581,
@@ -823,9 +841,9 @@
         "description": "Welcome to the City of Oshawa. <a target='_blank' href='https://waterfronttrail.org/'>The Great Lakes Waterfront Trail</a> stretches 3600 km connecting 155 communities and First Nations along the Canadian shores of the Great Lakes region. Oshawa’s portion of the Waterfront Trail is 11 km connecting you to a number of parks, recreation facilities, scenic views of Lake Ontario and nature along the way. Use these QR codes to find key destinations and learn more about the <a target='_blank' href='https://www.oshawa.ca/things-to-do/things-to-see-and-do.asp?_mid_=686'>City of Oshawa</a>.<strong class='block mt-3 tracking-widest font-semibold'>TRAIL USER CODE:</strong><ul class='list-disc ml-5'><li>Stay on the designated recreational trail</li><li>Obey signs</li><li>Keep right except to pass</li><li>Cyclists must use a bell or verbal indication when passing and travel at a moderate speed</li><li>Keep dogs on a leash (not exceeding 2m)</li><li>Don’t litter</li></ul>",
         "hours_old": "",
         "coordinates": {
-            "lat": 541.411669921875,
-            "lng": 798.63125,
-            "zoom": 3.5
+            "lat": 529.9102412385812,
+            "lng": 817.680604094594,
+            "zoom": 2.5
         },
         "amenities": false,
         "scenic": [
@@ -836,7 +854,7 @@
                 "coordinates": {
                     "lat": 506.175,
                     "lng": 827,
-                    "zoom": 3.5
+                    "zoom": 2.5
                 }
             }
         ]

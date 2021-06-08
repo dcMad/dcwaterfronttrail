@@ -99,10 +99,6 @@ export default class Main extends Component {
 
         let description = point.description
 
-        if ( typeof point.history == "string" ) {
-            description += `<div class='block'><h3 class='font-semibold tracking-widest uppercase mt-3'>History</h3><p>${point.history}</p></div>`
-        }
-
         this.setState({
             isPointOfInterestSelected: true,
             pointOfInterest: {
