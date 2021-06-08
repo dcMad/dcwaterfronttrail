@@ -395,6 +395,13 @@ export default class Main extends Component {
 
         return (
             <>
+                {/**
+                 * This is a workaround div
+                 * Since craco builds trailwindCSS based on the class names used in the jsx files, it wouldn't generate certain classes that this app requires; in order to work around this issue, this div is used to force generate those classes.
+                 * Any dynamically generated classes should be added to this className list.
+                 */}
+                <div className="hidden grid-cols-4 grid-cols-3 grid-cols-2 grid-cols-1 grid-cols-5 grid-cols-6"></div>
+
                 <div className={`bottom-0 fixed lg:left-0 z-20 mx-auto w-full flex justify-center lg:justify-start p-4 ${this.state.isPointOfInterestSelected ? 'hidden lg:block' : ''}`}>
                     <div className="bg-white bg-opacity-75 py-2 px-4 rounded-xl shadow-md max-w-xs">
                         <div className="grid grid-cols-2 items-center">
