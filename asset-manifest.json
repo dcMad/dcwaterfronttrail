@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/dcwaterfronttrail/static/css/main.2d9af24d.chunk.css",
-    "main.js": "/dcwaterfronttrail/static/js/main.76810db4.chunk.js",
-    "main.js.map": "/dcwaterfronttrail/static/js/main.76810db4.chunk.js.map",
-    "runtime-main.js": "/dcwaterfronttrail/static/js/runtime-main.92a9b8b2.js",
-    "runtime-main.js.map": "/dcwaterfronttrail/static/js/runtime-main.92a9b8b2.js.map",
-    "static/css/2.d1084f8d.chunk.css": "/dcwaterfronttrail/static/css/2.d1084f8d.chunk.css",
-    "static/js/2.d90da34f.chunk.js": "/dcwaterfronttrail/static/js/2.d90da34f.chunk.js",
-    "static/js/2.d90da34f.chunk.js.map": "/dcwaterfronttrail/static/js/2.d90da34f.chunk.js.map",
-    "static/js/3.c8bac4e7.chunk.js": "/dcwaterfronttrail/static/js/3.c8bac4e7.chunk.js",
-    "static/js/3.c8bac4e7.chunk.js.map": "/dcwaterfronttrail/static/js/3.c8bac4e7.chunk.js.map",
+    "main.css": "/dcwaterfronttrail/static/css/main.4be6d42f.chunk.css",
+    "main.js": "/dcwaterfronttrail/static/js/main.bfaaffff.chunk.js",
+    "main.js.map": "/dcwaterfronttrail/static/js/main.bfaaffff.chunk.js.map",
+    "runtime-main.js": "/dcwaterfronttrail/static/js/runtime-main.28993348.js",
+    "runtime-main.js.map": "/dcwaterfronttrail/static/js/runtime-main.28993348.js.map",
+    "static/css/2.fa88e59c.chunk.css": "/dcwaterfronttrail/static/css/2.fa88e59c.chunk.css",
+    "static/js/2.42a81061.chunk.js": "/dcwaterfronttrail/static/js/2.42a81061.chunk.js",
+    "static/js/2.42a81061.chunk.js.map": "/dcwaterfronttrail/static/js/2.42a81061.chunk.js.map",
+    "static/js/3.4db4ac10.chunk.js": "/dcwaterfronttrail/static/js/3.4db4ac10.chunk.js",
+    "static/js/3.4db4ac10.chunk.js.map": "/dcwaterfronttrail/static/js/3.4db4ac10.chunk.js.map",
     "index.html": "/dcwaterfronttrail/index.html",
-    "static/css/2.d1084f8d.chunk.css.map": "/dcwaterfronttrail/static/css/2.d1084f8d.chunk.css.map",
-    "static/css/main.2d9af24d.chunk.css.map": "/dcwaterfronttrail/static/css/main.2d9af24d.chunk.css.map",
-    "static/js/2.d90da34f.chunk.js.LICENSE.txt": "/dcwaterfronttrail/static/js/2.d90da34f.chunk.js.LICENSE.txt",
+    "static/css/2.fa88e59c.chunk.css.map": "/dcwaterfronttrail/static/css/2.fa88e59c.chunk.css.map",
+    "static/css/main.4be6d42f.chunk.css.map": "/dcwaterfronttrail/static/css/main.4be6d42f.chunk.css.map",
+    "static/js/2.42a81061.chunk.js.LICENSE.txt": "/dcwaterfronttrail/static/js/2.42a81061.chunk.js.LICENSE.txt",
     "static/media/HOPA_00.jpg": "/dcwaterfronttrail/static/media/HOPA_00.f0003d80.jpg",
     "static/media/LFW-00.jpg": "/dcwaterfronttrail/static/media/LFW-00.d6856b49.jpg",
     "static/media/LFW-01.jpg": "/dcwaterfronttrail/static/media/LFW-01.b5ec0333.jpg",
@@ -31,7 +31,6 @@
     "static/media/food_location.svg": "/dcwaterfronttrail/static/media/food_location.ec02f525.svg",
     "static/media/highlight_off-white-min.55b7a656.svg": "/dcwaterfronttrail/static/media/highlight_off-white-min.55b7a656.svg",
     "static/media/highlight_off-white.fe9447a0.svg": "/dcwaterfronttrail/static/media/highlight_off-white.fe9447a0.svg",
-    "static/media/info-circle-solid.083f1c30.svg": "/dcwaterfronttrail/static/media/info-circle-solid.083f1c30.svg",
     "static/media/lakeview_1.jpg": "/dcwaterfronttrail/static/media/lakeview_1.08d5ad38.jpg",
     "static/media/lakeview_2.jpg": "/dcwaterfronttrail/static/media/lakeview_2.a8312c49.jpg",
     "static/media/loading-animation.8cde6fe1.gif": "/dcwaterfronttrail/static/media/loading-animation.8cde6fe1.gif",
@@ -58,10 +57,10 @@
     "static/media/waterfront.1071dfc4.png": "/dcwaterfronttrail/static/media/waterfront.1071dfc4.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.92a9b8b2.js",
-    "static/css/2.d1084f8d.chunk.css",
-    "static/js/2.d90da34f.chunk.js",
-    "static/css/main.2d9af24d.chunk.css",
-    "static/js/main.76810db4.chunk.js"
+    "static/js/runtime-main.28993348.js",
+    "static/css/2.fa88e59c.chunk.css",
+    "static/js/2.42a81061.chunk.js",
+    "static/css/main.4be6d42f.chunk.css",
+    "static/js/main.bfaaffff.chunk.js"
   ]
 }
