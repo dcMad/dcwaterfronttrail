@@ -85,7 +85,7 @@ export default class Card extends Component {
                             <label htmlFor={`popup_${encodeURI(this.props.tabs[index].title)}`} key={`tab_${index}${Date.now()}`} className={`tab hover:bg-transparent hover:text-white`}>{ this.props.tabs[index].title }</label>
                             <input type="checkbox" className={`modal-toggle`} id={`popup_${encodeURI(this.props.tabs[index].title)}`} />
                             <div className={`fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 p-4 flex justify-items-center items-center transition-all modal cursor-auto`}>
-                                <div className={`bg-white p-4 m-4 rounded-xl shadow-md w-full relative text-center pb-8`}>
+                                <div className={`bg-white p-4 m-4 rounded-xl shadow-md w-full relative text-center pb-8 md:max-w-lg`}>
                                     <h2 className={`text-center mb-2`}>{ this.props.tabs[index].title }</h2>
                                     <div className={`max-h-96 overflow-auto`}>
                                         { this.props.tabs[index].content }
