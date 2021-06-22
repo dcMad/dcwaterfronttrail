@@ -191,7 +191,7 @@
         }]
     }, {
         "id": 5,
-        "title": "Lakewoods Park W",
+        "title": "Lakewoods Park",
         "description": "This park provides a number of active and passive recreational opportunities with shade trees and benches to enjoy the view across Lake Ontario.",
         "hours_old": "April 1 to October 31 - 6:00 a.m. to 10:00 p.m. | November 1 to March 31 - 6:00 a.m. to 6:00 p.m.",
         "coordinates": {
@@ -269,7 +269,7 @@
         ]
     }, {
         "id": 6,
-        "title": "Lakewoods Park E",
+        "title": "Lakewoods Park",
         "description": "This park provides a number of active and passive recreational opportunities with shade trees and benches to enjoy the view across Lake Ontario.",
         "hours_old": "April 1 to October 31 - 6:00 a.m. to 10:00 p.m. | November 1 to March 31 - 6:00 a.m. to 6:00 p.m.",
         "coordinates": {
@@ -347,7 +347,7 @@
         ]
     }, {
         "id": 7,
-        "title": "Lakeview Park W",
+        "title": "Lakeview Park",
         "description": "<a href='https://www.oshawa.ca/Modules/Facilities/Detail.aspx?CategoryIds=&FacilityTypeIds=1%2C3%2C12&Keywords=lakeview+park&ScrollMap=true&id=5f589d08-b17a-41d7-9045-1e3a1ebaaf6e' target='_blank' class='text-theme-colors-orange'>Nestled along the shore of Lake Ontario, Lakeview Park</a> with its mature landscape setting has views of the lake and is a beautiful, community park. Connected to the recreational trails, Joseph Kolodzie Oshawa Creek Bike Path and the Waterfront Trail, visitors can connect to Oshawa's vibrant downtown, Oshawa Second Marsh, McLaughlin Bay Wildlife Reserve, the historic Oshawa Community Museum among other attractions. Lakeview Park is also host to many family fun events. The Park is also home to the Jubilee Pavilion a banquet hall, patio and snack bar.",
         "hours_old": "April 1 to October 31 - 6:00 a.m. to 10:00 p.m. | November 1 to March 31 - 6:00 a.m. to 6:00 p.m",
         "coordinates": {
@@ -540,7 +540,7 @@
         ]
     }, {
         "id": 8,
-        "title": "Lakeview Park E",
+        "title": "Lakeview Park",
         "description": "<a href='https://www.oshawa.ca/Modules/Facilities/Detail.aspx?CategoryIds=&FacilityTypeIds=1%2C3%2C12&Keywords=lakeview+park&ScrollMap=true&id=5f589d08-b17a-41d7-9045-1e3a1ebaaf6e' target='_blank' class='text-theme-colors-orange'>Nestled along the shore of Lake Ontario, Lakeview Park</a> with its mature landscape setting has views of the lake and is a beautiful, community park. Connected to the recreational trails, Joseph Kolodzie Oshawa Creek Bike Path and the Waterfront Trail, visitors can connect to Oshawa's vibrant downtown, Oshawa Second Marsh, McLaughlin Bay Wildlife Reserve, the historic Oshawa Community Museum among other attractions. Lakeview Park is also host to many family fun events. The Park is also home to the Jubilee Pavilion a banquet hall, patio and snack bar.",
         "hours_old": "April 1 to October 31 - 6:00 a.m. to 10:00 p.m. | November 1 to March 31 - 6:00 a.m. to 6:00 p.m",
         "coordinates": {
@@ -733,7 +733,7 @@
         ]
     }, {
         "id": 9,
-        "title": "Ed Broadbent Waterfront Park W",
+        "title": "Ed Broadbent Waterfront Park",
         "description": "The Ed Broadbent Waterfront Park is the City of Oshawa’s newest addition to the waterfront parks system. The park was officially named Ed Broadbent Waterfront Park in 2019, to recognize the contributions Mr. Broadbent has made to public service and the City of Oshawa and its residents, workers, and businesses. Further planning and development of the park are underway.",
         "hours_old": "",
         "coordinates": {
@@ -752,7 +752,7 @@
         ]
     }, {
         "id": 10,
-        "title": "Ed Broadbent Waterfront Park E",
+        "title": "Ed Broadbent Waterfront Park",
         "description": "The Ed Broadbent Waterfront Park is the City of Oshawa’s newest addition to the waterfront parks system. The park was officially named Ed Broadbent Waterfront Park in 2019, to recognize the contributions Mr. Broadbent has made to public service and the City of Oshawa and its residents, workers, and businesses. Further planning and development of the park are underway.",
         "hours_old": "",
         "coordinates": {
@@ -771,7 +771,7 @@
         ]
     }, {
         "id": 11,
-        "title": "Oshawa Second Marsh W",
+        "title": "Oshawa Second Marsh",
         "description": "<a class='' href='https://www.oshawa.ca/things-to-do/natural-areas.asp' target='_blank'>Oshawa’s Second Marsh</a> is one of the last, largest (at 137-hectare) and most biodiverse coastal wetlands on the Great Lakes. It is considered to be a Provincially Significant Wetland and a Provincially Significant Area of Natural and Scientific Interest. It plays an important role as essential habitat for local species and a stopover area for migratory birds.",
         "hours_old": "-",
         "coordinates": {
@@ -804,7 +804,7 @@
         ]
     }, {
         "id": 12,
-        "title": "Oshawa Second Marsh E",
+        "title": "Oshawa Second Marsh",
         "description": "<a class='' href='https://www.oshawa.ca/things-to-do/natural-areas.asp' target='_blank'>Oshawa’s Second Marsh</a> is one of the last, largest (at 137-hectare) and most biodiverse coastal wetlands on the Great Lakes. It is considered to be a Provincially Significant Wetland and a Provincially Significant Area of Natural and Scientific Interest. It plays an important role as essential habitat for local species and a stopover area for migratory birds.",
         "hours_old": "-",
         "coordinates": {

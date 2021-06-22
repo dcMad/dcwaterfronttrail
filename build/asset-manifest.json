@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/dcwaterfronttrail/static/css/main.8e73bb56.chunk.css",
-    "main.js": "/dcwaterfronttrail/static/js/main.083bae70.chunk.js",
-    "main.js.map": "/dcwaterfronttrail/static/js/main.083bae70.chunk.js.map",
-    "runtime-main.js": "/dcwaterfronttrail/static/js/runtime-main.28993348.js",
-    "runtime-main.js.map": "/dcwaterfronttrail/static/js/runtime-main.28993348.js.map",
+    "main.css": "/dcwaterfronttrail/static/css/main.ae272e34.chunk.css",
+    "main.js": "/dcwaterfronttrail/static/js/main.5ce386b3.chunk.js",
+    "main.js.map": "/dcwaterfronttrail/static/js/main.5ce386b3.chunk.js.map",
+    "runtime-main.js": "/dcwaterfronttrail/static/js/runtime-main.c8b6102c.js",
+    "runtime-main.js.map": "/dcwaterfronttrail/static/js/runtime-main.c8b6102c.js.map",
     "static/css/2.fa88e59c.chunk.css": "/dcwaterfronttrail/static/css/2.fa88e59c.chunk.css",
-    "static/js/2.42a81061.chunk.js": "/dcwaterfronttrail/static/js/2.42a81061.chunk.js",
-    "static/js/2.42a81061.chunk.js.map": "/dcwaterfronttrail/static/js/2.42a81061.chunk.js.map",
-    "static/js/3.4db4ac10.chunk.js": "/dcwaterfronttrail/static/js/3.4db4ac10.chunk.js",
-    "static/js/3.4db4ac10.chunk.js.map": "/dcwaterfronttrail/static/js/3.4db4ac10.chunk.js.map",
+    "static/js/2.60c58ecb.chunk.js": "/dcwaterfronttrail/static/js/2.60c58ecb.chunk.js",
+    "static/js/2.60c58ecb.chunk.js.map": "/dcwaterfronttrail/static/js/2.60c58ecb.chunk.js.map",
+    "static/js/3.56cfebe7.chunk.js": "/dcwaterfronttrail/static/js/3.56cfebe7.chunk.js",
+    "static/js/3.56cfebe7.chunk.js.map": "/dcwaterfronttrail/static/js/3.56cfebe7.chunk.js.map",
     "index.html": "/dcwaterfronttrail/index.html",
     "static/css/2.fa88e59c.chunk.css.map": "/dcwaterfronttrail/static/css/2.fa88e59c.chunk.css.map",
-    "static/css/main.8e73bb56.chunk.css.map": "/dcwaterfronttrail/static/css/main.8e73bb56.chunk.css.map",
-    "static/js/2.42a81061.chunk.js.LICENSE.txt": "/dcwaterfronttrail/static/js/2.42a81061.chunk.js.LICENSE.txt",
+    "static/css/main.ae272e34.chunk.css.map": "/dcwaterfronttrail/static/css/main.ae272e34.chunk.css.map",
+    "static/js/2.60c58ecb.chunk.js.LICENSE.txt": "/dcwaterfronttrail/static/js/2.60c58ecb.chunk.js.LICENSE.txt",
     "static/media/HOPA_00.jpg": "/dcwaterfronttrail/static/media/HOPA_00.f0003d80.jpg",
     "static/media/LFW-00.jpg": "/dcwaterfronttrail/static/media/LFW-00.d6856b49.jpg",
     "static/media/LFW-01.jpg": "/dcwaterfronttrail/static/media/LFW-01.b5ec0333.jpg",
@@ -35,7 +35,7 @@
     "static/media/lakeview_2.jpg": "/dcwaterfronttrail/static/media/lakeview_2.a8312c49.jpg",
     "static/media/loading-animation.8cde6fe1.gif": "/dcwaterfronttrail/static/media/loading-animation.8cde6fe1.gif",
     "static/media/lookouts.svg": "/dcwaterfronttrail/static/media/lookouts.f810c5ef.svg",
-    "static/media/map.v4.f7eeb958.png": "/dcwaterfronttrail/static/media/map.v4.f7eeb958.png",
+    "static/media/map.v5.a687007d.png": "/dcwaterfronttrail/static/media/map.v5.a687007d.png",
     "static/media/museum.svg": "/dcwaterfronttrail/static/media/museum.d0e18954.svg",
     "static/media/oshawa.8925911d.png": "/dcwaterfronttrail/static/media/oshawa.8925911d.png",
     "static/media/parking.svg": "/dcwaterfronttrail/static/media/parking.d12deed5.svg",
@@ -57,10 +57,10 @@
     "static/media/waterfront.1071dfc4.png": "/dcwaterfronttrail/static/media/waterfront.1071dfc4.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.28993348.js",
+    "static/js/runtime-main.c8b6102c.js",
     "static/css/2.fa88e59c.chunk.css",
-    "static/js/2.42a81061.chunk.js",
-    "static/css/main.8e73bb56.chunk.css",
-    "static/js/main.083bae70.chunk.js"
+    "static/js/2.60c58ecb.chunk.js",
+    "static/css/main.ae272e34.chunk.css",
+    "static/js/main.5ce386b3.chunk.js"
   ]
 }

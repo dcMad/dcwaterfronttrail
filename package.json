@@ -9,6 +9,7 @@
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
+    "gh-pages": "^3.2.3",
     "gsap": "^3.6.1",
     "html-react-parser": "^1.2.6",
     "leaflet": "^1.7.1",

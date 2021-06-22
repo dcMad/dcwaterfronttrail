@@ -96,15 +96,9 @@ export default class Main extends Component {
                 duration: 2
             })
 
-            let markerContent = 
-                <div className={`flex flex-col`}>
-                    <span className={`font-semibold uppercase tracking-widest`}>
-                        {markerTitle}
-                    </span>
-                    <span className={`flex justify-center mt-3 text-theme-red-600 uppercase tracking-wider font-semibold close-marker`}>close</span>
-                </div>
-            
-            this.showOnMap(point.coordinates.lat, point.coordinates.lng, point.coordinates.zoom, null, reactDomServer.renderToString(markerContent))
+            let markerId = `marker-${Date.now()}`
+
+            this.showOnMap(point.coordinates.lat, point.coordinates.lng, point.coordinates.zoom, null, markerTitle, false, markerId)
         }
 
         if ( this.props.infoObj[point.info] ) {
@@ -190,7 +184,7 @@ export default class Main extends Component {
         )
     }
 
-    showOnMap(lat, lng, zoom, type, text = '', small = false) {
+    showOnMap(lat, lng, zoom, type, text = '', small = false, id = undefined) {
 
         let myMarker = L.marker({
             lat: lat,
@@ -200,13 +194,38 @@ export default class Main extends Component {
             riseOnHover: true
         })
 
+        /**
+         * Workaround Code:
+         * Adding a unique class to the marker
+         * This class is used to close the marker when prompted
+         */
+        myMarker.addEventListener('add', (ev) => {
+            myMarker.getElement().classList.add(id)
+        })
+
+        let markerContent = 
+            <p className={`uppercase font-bold my-2 tracking-wider text-center relative ${(small) ? 'w-36' : ''}`}>
+                <div className={`flex flex-col`}>
+                    <span className={`font-semibold uppercase tracking-widest`}>
+                        {text}
+                    </span>
+                    <span className={`flex justify-center mt-3 text-theme-red-600 uppercase tracking-wider font-semibold cursor-pointer close-marker`} data-target={id}>close</span>
+                </div>
+            </p>
+
         myMarker.bindPopup(L.popup({
-            className: 'popup-theme',
+            className: `popup-theme`,
             closeButton: false,
             autoClose: false,
             closeOnClick: false
-        }).setContent(`<p class="uppercase font-bold my-2 tracking-wider text-center ${(small) ? 'w-36' : ''}">${text}</p>`), {offset: [0, -57.6]}).addTo(this.state.mapObject)
+        }).setContent(reactDomServer.renderToString(markerContent)), {offset: [0, -57.6]}).addTo(this.state.mapObject)
         myMarker.openPopup()
+
+        /**
+         * Re-adding marker close listeners due to content being generated dynamically
+         */
+        this.addMarkerCloseListeners()
+
 
         this.state.mapObject.flyTo({
             lat: lat - 5,
@@ -221,13 +240,22 @@ export default class Main extends Component {
                     this.state.mapObject.removeLayer(layer)
                 }
             })
-
-            if ( temporaryLines.length > 0 ) {
-                temporaryLines.forEach(line => {
-                    line.removeFrom(this.state.mapObject)
-                })
-            }
         }
+    }
+
+    closeMarker(id) {
+        /**
+         * Workaround Script:
+         * Traverse through all of the layers on the map and find the corresponding marker id (class="marker-[timestamp]")
+         * Remove the marker from the map if found
+         */
+        this.state.mapObject.eachLayer(layer => {
+            if ( typeof layer._icon != "undefined" ) {
+                if ( layer._icon.classList.contains(id) ) {
+                    layer.remove()
+                }
+            }
+        })
     }
 
     getDistance(from, to) {
@@ -246,17 +274,28 @@ export default class Main extends Component {
         return distance
     }
 
+    addMarkerCloseListeners = () => {
+        document.querySelectorAll(".close-marker").forEach(elem => {
+            elem.addEventListener('click', (event) => {
+                try {
+                    let markerId = event.target.dataset.target
+                    this.closeMarker(markerId)
+                } catch (e) {
+                    console.error(e)
+                    console.error('An error occured while closing marker.')
+                }
+            })
+        })
+    } 
+
     render() {
 
         /**
          * Adding click listener to any element with class "close-marker"
          * Used as a workaround to clear the screen on prompt
+         * Element must have a data-target value corresponding to the marker id
          */
-        document.querySelectorAll(".close-marker").forEach(elem => {
-            elem.addEventListener('click', (event) => {
-                this.clearMarkers()
-            })
-        })
+        this.addMarkerCloseListeners()
 
         let pointsOfInterest = Object.keys(this.props.points).map((index) => {
             let point = this.props.points[index]
@@ -401,8 +440,12 @@ export default class Main extends Component {
                     <Card ref={this.cardRef} title={this.state.pointOfInterest.title} tabs={tabs} thisPoint={this.state.pointOfInterest} allPoints={this.props.points} onGoToChanged={(from, to) => {
                         if ( this.state.mapObject ) {
                             this.showOnMap(to.coordinates.lat, to.coordinates.lng, to.coordinates.zoom, null,
-                                    `<span class="block">${to.title}</span>
-                                    <small class="mb-3 block"><span class="bg-theme-colors-purple text-white p-1 px-1.5 rounded-xl inline-block">${Number(this.getDistance(from.title, to.title)).toFixed(1)}km</span> from ${from.title}</small>`,
+                                    (
+                                        <>
+                                            <span class="block">{to.title}</span>
+                                            <small class="mb-3 block"><span class="bg-theme-colors-purple text-white p-1 px-1.5 rounded-xl inline-block">{Number(this.getDistance(from.title, to.title)).toFixed(1)}km</span> from {from.title}</small>
+                                        </>
+                                    ),
                                     (to.id == 0) ? true : false
                                 )
                         }
