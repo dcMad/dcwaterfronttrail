@@ -3,7 +3,7 @@ import iconRetinaUrl from 'leaflet/dist/images/marker-icon-2x.png';
 import shadowUrl from 'leaflet/dist/images/marker-shadow.png';
 import 'leaflet/dist/leaflet.css';
 import { Component } from "react";
-import mapPNG from './../assets/map.v4.png';
+import mapPNG from './../assets/map.v5.png';
 import standardMarker from './../assets/markers/standard.svg';
 
 

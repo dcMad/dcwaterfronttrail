@@ -32,11 +32,13 @@ function App() {
 
   }, [])
 
-  let dataFile = require('./assets/data.json')
-  let distanceFile = require('./assets/parks-distance.json')
+  let infoFile = require('./assets/json/info.json')
+  let distanceFile = require('./assets/json/parks-distance.json')
+  let pointsFile = require('./assets/json/points.json')
 
-  let points = (dataFile.points) ? dataFile.points : ''
-  let distance = (distanceFile.distance) ? distanceFile.distance : ''
+  let infoObj = (infoFile.points) ? infoFile.points : ''
+  let distanceObj = (distanceFile.distance) ? distanceFile.distance : ''
+  let points = (pointsFile.points) ? pointsFile.points : false
 
   return (
     <>
@@ -44,9 +46,9 @@ function App() {
         <HashRouter>
           <Switch>
             <Route exact path="/">
-              <Main points={points} distance={distance} />
+              <Main points={points} distanceObj={distanceObj} infoObj={infoObj} />
             </Route>
-            <Route path="/:id" render={(props) => <Main {...props} points={points} distance={distance} preload={true} /> } />
+            <Route path="/:id" render={(props) => <Main {...props} points={points} distanceObj={distanceObj} infoObj={infoObj} preload={true} /> } />
             <Route path="*" component={NotFound} />
           </Switch>
 

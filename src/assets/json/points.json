@@ -1,0 +1,76 @@
+{
+    "points": [
+        {
+            "title": "Lakefront West Park",
+            "coordinates": {
+                "lat": 214.96046148071048,
+                "lng": 81.64873614013416,
+                "zoom": 3
+            },
+            "info": 1
+        },
+        {
+            "title": "Renaissance Park",
+            "coordinates": {
+                "lat": 233.43362613920903,
+                "lng": 205.76807332528534,
+                "zoom": 3
+            },
+            "info": 2
+        },
+        {
+            "title": "Stone Street Park",
+            "coordinates": {
+                "lat": 280.5625,
+                "lng": 389.75,
+                "zoom": 3
+            },
+            "info": 3
+        },
+        {
+            "title": "Pumphouse Marsh",
+            "coordinates": {
+                "lat": 292,
+                "lng": 428.625,
+                "zoom": 3
+            },
+            "info": 4
+        },
+        {
+            "title": "Lakewoods Park",
+            "coordinates": {
+                "lat": 297.125,
+                "lng": 494,
+                "zoom": 3
+            },
+            "info": 5
+        },
+        {
+            "title": "Lakeview Park",
+            "coordinates": {
+                "lat": 392.4442635585339,
+                "lng": 527.4132704175162,
+                "zoom": 3
+            },
+            "info": 7
+        },
+        {
+            "title": "Ed Broadbent Waterfront Park",
+            "coordinates": {
+                "lat": 418.3420494194912,
+                "lng": 513.7130765320268,
+                "zoom": 3
+            },
+            "info": 9
+        },
+        {
+            "title": "Oshawa Second Marsh",
+            "coordinates": {
+                "lat": 533.0701246670086,
+                "lng": 615.0061229369998,
+                "zoom": 3
+            },
+            "info": 11
+        }
+    ]
+}

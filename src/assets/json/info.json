@@ -841,8 +841,8 @@
         "description": "Welcome to the City of Oshawa. <a target='_blank' href='https://waterfronttrail.org/'>The Great Lakes Waterfront Trail</a> stretches 3600 km connecting 155 communities and First Nations along the Canadian shores of the Great Lakes region. Oshawa’s portion of the Waterfront Trail is 11 km connecting you to a number of parks, recreation facilities, scenic views of Lake Ontario and nature along the way. Use these QR codes to find key destinations and learn more about the <a target='_blank' href='https://www.oshawa.ca/things-to-do/things-to-see-and-do.asp?_mid_=686'>City of Oshawa</a>.<strong class='block mt-3 tracking-widest font-semibold'>TRAIL USER CODE:</strong><ul class='list-disc ml-5'><li>Stay on the designated recreational trail</li><li>Obey signs</li><li>Keep right except to pass</li><li>Cyclists must use a bell or verbal indication when passing and travel at a moderate speed</li><li>Keep dogs on a leash (not exceeding 2m)</li><li>Don’t litter</li></ul>",
         "hours_old": "",
         "coordinates": {
-            "lat": 529.9102412385812,
-            "lng": 817.680604094594,
+            "lat": 504.874241767195,
+            "lng": 826.6962155547225,
             "zoom": 2.5
         },
         "amenities": false,

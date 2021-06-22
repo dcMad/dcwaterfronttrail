@@ -1,4 +1,4 @@
-import { Component, createRef } from "react"
+import { Component, createRef, useRef } from "react"
 import L, { LatLng, LatLngBounds } from 'leaflet'
 
 import Card from "../components/Card"
@@ -8,6 +8,8 @@ import DCLogo from './../assets/brand/dc.png'
 import TeachingCityLogo from './../assets/brand/teaching_city.png'
 import AmenitiesCard from "../components/AmenitiesCard";
 import Gallery from "../components/Gallery";
+import reactDomServer from "react-dom/server"
+import { elementRoles } from "aria-query"
 
 let marker = null
 let temporaryLines = []
@@ -74,7 +76,7 @@ export default class Main extends Component {
                 let checkMapLoaded = setInterval(() => {
                     if ( this.state.mapObject ) {
                         clearInterval(checkMapLoaded)
-                        this.focusOn(this.props.points[this.props.match.params.id])
+                        this.focusOn(this.props.infoObj[this.props.match.params.id])
                     }
                 }, 100)
             } catch ( ex ) {
@@ -83,7 +85,7 @@ export default class Main extends Component {
         }
     }
 
-    focusOn(point) {
+    focusOn(point, markerTitle = "You Are Here!") {
 
         if ( this.state.mapObject ) {
             this.state.mapObject.flyTo({
@@ -94,27 +96,42 @@ export default class Main extends Component {
                 duration: 2
             })
 
-            this.showOnMap(point.coordinates.lat, point.coordinates.lng, point.coordinates.zoom, null, "You Are Here!")
+            let markerContent = 
+                <div className={`flex flex-col`}>
+                    <span className={`font-semibold uppercase tracking-widest`}>
+                        {markerTitle}
+                    </span>
+                    <span className={`flex justify-center mt-3 text-theme-red-600 uppercase tracking-wider font-semibold close-marker`}>close</span>
+                </div>
+            
+            this.showOnMap(point.coordinates.lat, point.coordinates.lng, point.coordinates.zoom, null, reactDomServer.renderToString(markerContent))
         }
 
-        let description = point.description
+        if ( this.props.infoObj[point.info] ) {
+            this.populateInfo(point, this.props.infoObj[point.info])
+        } else if ( this.props.infoObj.includes(point) ) {
+            this.populateInfo(point, point)
+        }
 
+    }
+
+    populateInfo(point, info) {
         this.setState({
             isPointOfInterestSelected: true,
             pointOfInterest: {
                 title: point.title,
-                description: description,
-                hours: point.hours,
+                description: info.description,
+                hours: info.hours,
                 coordinates: {
                     lat: point.coordinates.lat,
                     lng: point.coordinates.lng,
                 },
-                images: point.images,
-                amenities: point.amenities,
-                scenic: point.scenic,
-                explore: point.explore,
-                history: point.history,
-                historical: point.historical
+                images: info.images,
+                amenities: info.amenities,
+                scenic: info.scenic,
+                explore: info.explore,
+                history: info.history,
+                historical: info.historical
             },
             pointOfInterestMenu: false
         })
@@ -122,7 +139,7 @@ export default class Main extends Component {
         if (this.cardRef.current) {
             this.cardRef.current.setState({
                 currentTab: 0,
-                cardContent: this.generateInfoTab(description, point.images)
+                cardContent: this.generateInfoTab(info.description, info.images)
             })
         }
     }
@@ -197,64 +214,6 @@ export default class Main extends Component {
         }, zoom)
     }
 
-    fromPointToPoint(from, to) {
-
-        let firstMarker = L.marker({
-            lat: from.coordinates.lat,
-            lng: from.coordinates.lng
-        }, {
-            icon: marker(''),
-            riseOnHover: true
-        })
-
-        firstMarker.bindPopup(L.popup({
-            className: 'popup-theme',
-            closeButton: false,
-            autoClose: false,
-            closeOnClick: false
-        }).setContent(`<p class="uppercase font-bold my-2 tracking-wider">${from.title}</p>`), {offset: [0, -57.6]}).addTo(this.state.mapObject)
-        firstMarker.openPopup()
-
-        let secondMarker = L.marker({
-            lat: to.coordinates.lat,
-            lng: to.coordinates.lng
-        }, {
-            icon: marker(''),
-            riseOnHover: true
-        })
-
-        secondMarker.bindPopup(L.popup({
-            className: 'popup-theme',
-            closeButton: false,
-            autoClose: false,
-            closeOnClick: false
-        }).setContent(`<p class="uppercase font-bold my-2 tracking-wider">${to.title}</p>`), {offset: [0, -57.6]}).addTo(this.state.mapObject)
-        
-        secondMarker.openPopup()
-
-        if ( this.state.mapObject ) {
-            this.state.mapObject.flyTo({
-                lat: to.coordinates.lat,
-                lng: to.coordinates.lng
-            }, to.coordinates.zoom)
-
-            if ( temporaryLines.length > 0 ) {
-                temporaryLines.forEach(line => {
-                    line.removeFrom(this.state.mapObject)
-                })
-            }
-
-            let line = L.polyline([
-                [from.coordinates.lat, from.coordinates.lng],
-                [to.coordinates.lat, to.coordinates.lng]
-            ], {
-                className: "temporary-polyline"
-            }).addTo(this.state.mapObject)
-
-            temporaryLines.push(line)
-        }
-    }
-
     clearMarkers() {
         if ( this.state.mapObject ) {
             this.state.mapObject.eachLayer(layer => {
@@ -275,8 +234,8 @@ export default class Main extends Component {
         let fromObj = false
         let distance = 0
         try {
-            if ( this.props.distance ) {
-                fromObj = this.props.distance.filter(point => point.from == from)[0].to
+            if ( this.props.distanceObj ) {
+                fromObj = this.props.distanceObj.filter(point => point.from == from)[0].to
             }
     
             distance = fromObj.filter(point => point.poi == to)[0].distance
@@ -289,6 +248,16 @@ export default class Main extends Component {
 
     render() {
 
+        /**
+         * Adding click listener to any element with class "close-marker"
+         * Used as a workaround to clear the screen on prompt
+         */
+        document.querySelectorAll(".close-marker").forEach(elem => {
+            elem.addEventListener('click', (event) => {
+                this.clearMarkers()
+            })
+        })
+
         let pointsOfInterest = Object.keys(this.props.points).map((index) => {
             let point = this.props.points[index]
 
@@ -300,7 +269,7 @@ export default class Main extends Component {
             }
 
             return (
-                <div key={`poi_${index}`} className={`${isActive ? 'bg-theme-colors-orange text-white' : 'bg-white'} px-4 py-2 mb-4 block shadow-md rounded-xl cursor-pointer text-sm overflow-hidden overflow-ellipsis whitespace-nowrap hover:bg-theme-colors-orange hover:text-white`} onClick={() => { this.clearMarkers(); this.focusOn(point) }} >{point.title}</div>
+                <div key={`poi_${index}`} className={`${isActive ? 'bg-theme-colors-orange text-white' : 'bg-white'} px-4 py-2 mb-4 block shadow-md rounded-xl cursor-pointer text-sm overflow-hidden overflow-ellipsis whitespace-nowrap hover:bg-theme-colors-orange hover:text-white`} onClick={() => { this.clearMarkers(); this.focusOn(point, point.title) }} >{point.title}</div>
             )
         })
 

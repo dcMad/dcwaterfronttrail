@@ -1,0 +1,10 @@
+# points.json
+###Points file corresponds to the list on top-right
+### Allows users to view information about major points on the trail
+
+# parks-distance.json
+### Stores distance information about the major points (corresponding to points.json)
+
+# info.json
+### Stores information about the major points
+### This file is referred when information needs to be loaded for points.json
