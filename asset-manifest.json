@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dcwaterfronttrail/static/css/main.e7958284.chunk.css",
-    "main.js": "/dcwaterfronttrail/static/js/main.2bb2e145.chunk.js",
-    "main.js.map": "/dcwaterfronttrail/static/js/main.2bb2e145.chunk.js.map",
+    "main.js": "/dcwaterfronttrail/static/js/main.a5738c53.chunk.js",
+    "main.js.map": "/dcwaterfronttrail/static/js/main.a5738c53.chunk.js.map",
     "runtime-main.js": "/dcwaterfronttrail/static/js/runtime-main.0626ffb7.js",
     "runtime-main.js.map": "/dcwaterfronttrail/static/js/runtime-main.0626ffb7.js.map",
     "static/css/2.fa88e59c.chunk.css": "/dcwaterfronttrail/static/css/2.fa88e59c.chunk.css",
@@ -38,7 +38,7 @@
     "static/media/loading-animation.8cde6fe1.gif": "/dcwaterfronttrail/static/media/loading-animation.8cde6fe1.gif",
     "static/media/lookouts.svg": "/dcwaterfronttrail/static/media/lookouts.f810c5ef.svg",
     "static/media/lvp_playground.jpg": "/dcwaterfronttrail/static/media/lvp_playground.93870bf3.jpg",
-    "static/media/lvp_slide.jpg": "/dcwaterfronttrail/static/media/lvp_slide.f72231a9.jpg",
+    "static/media/lvp_slide_r.jpg": "/dcwaterfronttrail/static/media/lvp_slide_r.800c8c44.jpg",
     "static/media/lvp_splash_pad.jpg": "/dcwaterfronttrail/static/media/lvp_splash_pad.b803bb96.jpg",
     "static/media/map.v5.a687007d.png": "/dcwaterfronttrail/static/media/map.v5.a687007d.png",
     "static/media/museum.svg": "/dcwaterfronttrail/static/media/museum.d0e18954.svg",
@@ -70,6 +70,6 @@
     "static/css/2.fa88e59c.chunk.css",
     "static/js/2.00047433.chunk.js",
     "static/css/main.e7958284.chunk.css",
-    "static/js/main.2bb2e145.chunk.js"
+    "static/js/main.a5738c53.chunk.js"
   ]
 }
