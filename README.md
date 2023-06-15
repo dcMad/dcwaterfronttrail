@@ -68,3 +68,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Debugging Map Module
+
+Debug can be enabled to retrieve map coordinates on mouse click event. The click pointer location would be printed into the JS console.\
+To enable debug mode, use route:
+#### `/dcwaterfronttrail?debug=true#/`

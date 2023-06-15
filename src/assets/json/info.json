@@ -2,7 +2,7 @@
     "points": [{
         "id": 0,
         "title": "Oshawa Whitby Border",
-        "description": "Welcome to the City of Oshawa. <a target='_blank' href='https://waterfronttrail.org/'>The Great Lakes Waterfront Trail</a> stretches 3600 km connecting 155 communities and First Nations along the Canadian shores of the Great Lakes region. Oshawa’s portion of the Waterfront Trail is 11 km connecting you to a number of parks, recreation facilities, scenic views of Lake Ontario and nature along the way. Use these QR codes to find key destinations and learn more about the <a target='_blank' href='https://www.oshawa.ca/things-to-do/things-to-see-and-do.asp?_mid_=686'>City of Oshawa</a>.<strong class='block mt-3 tracking-widest font-semibold'>TRAIL USER CODE:</strong><ul class='list-disc ml-5'><li>Stay on the designated recreational trail</li><li>Obey signs</li><li>Keep right except to pass</li><li>Cyclists must use a bell or verbal indication when passing and travel at a moderate speed</li><li>Keep dogs on a leash (not exceeding 2m)</li><li>Don’t litter</li></ul>",
+        "description": "Welcome to the City of Oshawa. <a target='_blank' href='https://waterfronttrail.org/'>The Great Lakes Waterfront Trail</a> stretches 3600 km connecting 155 communities and First Nations along the Canadian shores of the Great Lakes region. Oshawa’s portion of the Waterfront Trail is 11 km connecting you to a number of parks, recreation facilities, scenic views of Lake Ontario and nature along the way. Use these QR codes to find key destinations and learn more about the <a target='_blank' href='https://www.oshawa.ca/'>City of Oshawa</a>.<strong class='block mt-3 tracking-widest font-semibold'>TRAIL USER CODE:</strong><ul class='list-disc ml-5'><li>Stay on the designated recreational trail</li><li>Obey signs</li><li>Keep right except to pass</li><li>Cyclists must use a bell or verbal indication when passing and travel at a moderate speed</li><li>Keep dogs on a leash (not exceeding 2m)</li><li>Don’t litter</li></ul>",
         "hours_old": "",
         "coordinates": {
             "lat": 229.625,
@@ -161,7 +161,7 @@
             {
                 "type": "standard",
                 "title": "South Oshawa Community Centre",
-                "info": "South Oshawa Community Centre features a leisure pool with waterslide, fitness centre, youth room and meeting rooms complete with a teaching kitchen. Situated on the Lake Ontario waterfront and attached to GL Roberts Collegiate and Vocational Institute, facility users have easy access to Stone Street Park, the Waterfront Trail and a playground. A variety of recreation programs are offered at this facility. <br/><br/><a class='link' href='https://www.oshawa.ca/things-to-do/facilities.asp' target='_blank'>South Oshawa Community Centre</a>",
+                "info": "South Oshawa Community Centre features a leisure pool with waterslide, fitness centre, youth room and meeting rooms complete with a teaching kitchen. Situated on the Lake Ontario waterfront and attached to GL Roberts Collegiate and Vocational Institute, facility users have easy access to Stone Street Park, the Waterfront Trail and a playground. A variety of recreation programs are offered at this facility. <br/><br/>Learn more at <a class='text-theme-colors-orange' href='https://www.oshawa.ca/' target='_blank'>Oshawa.ca</a>",
                 "coordinates": {
                     "lat": 292.25,
                     "lng": 370.875,
@@ -348,7 +348,7 @@
     }, {
         "id": 7,
         "title": "Lakeview Park",
-        "description": "<a href='https://www.oshawa.ca/Modules/Facilities/Detail.aspx?CategoryIds=&FacilityTypeIds=1%2C3%2C12&Keywords=lakeview+park&ScrollMap=true&id=5f589d08-b17a-41d7-9045-1e3a1ebaaf6e' target='_blank' class='text-theme-colors-orange'>Nestled along the shore of Lake Ontario, Lakeview Park</a> with its mature landscape setting has views of the lake and is a beautiful, community park. Connected to the recreational trails, Joseph Kolodzie Oshawa Creek Bike Path and the Waterfront Trail, visitors can connect to Oshawa's vibrant downtown, Oshawa Second Marsh, McLaughlin Bay Wildlife Reserve, the historic Oshawa Community Museum among other attractions. Lakeview Park is also host to many family fun events. The Park is also home to the Jubilee Pavilion a banquet hall, patio and snack bar.",
+        "description": "Nestled along the shore of Lake Ontario, Lakeview Park with its mature landscape setting has views of the lake and is a beautiful, community park. Connected to the recreational trails, Joseph Kolodzie Oshawa Creek Bike Path and the Waterfront Trail, visitors can connect to Oshawa's vibrant downtown, Oshawa Second Marsh, McLaughlin Bay Wildlife Reserve, the historic Oshawa Community Museum among other attractions. Lakeview Park is also host to many family fun events. The Park is also home to the Jubilee Pavilion a banquet hall, patio and snack bar.<br/><br/>Learn more at: <a class='text-theme-colors-orange' href='https://www.oshawa.ca/' target='_blank'>Oshawa.ca</a>",
         "hours_old": "April 1 to October 31 - 6:00 a.m. to 10:00 p.m. | November 1 to March 31 - 6:00 a.m. to 6:00 p.m",
         "coordinates": {
             "lat": 315.25,
@@ -369,7 +369,7 @@
             {
                 "type": "seating_area",
                 "title": "Lakeview Park Picnic Shelter",
-                "info": "For a list of all the group picnic spots at Lakeview Park: <br/><br/><a class='link' href='https://www.oshawa.ca/things-to-do/group-picnics.asp' target='_blank'>Lakeview Park Picnic Spots</a>",
+                "info": "For a list of all the group picnic spots at Lakeview Park, go to: <a class='text-theme-colors-orange' href='https://www.oshawa.ca/' target='_blank'>Oshawa.ca</a>",
                 "coordinates": {
                     "lat": 340.875,
                     "lng": 539.25,
@@ -515,7 +515,7 @@
                     "lng": 571,
                     "zoom": 3
                 },
-                "info": "<a class='text-theme-colors-orange' href='https://www.oshawa.ca/Modules/Facilities/Detail.aspx?CategoryIds=21&FacilityTypeIds=&Keywords=&Page=1&Scroll=true&id=e90fea54-3f4b-43e4-bd1b-62a7ea2e794c' target='_blank'>Lakeview Park Beach</a> is a sandy beach located on the shore of Lake Ontario within Lakeview Park and is a popular destination offering museums, picnic areas, playgrounds, sports fields, and a waterfront pier. There are 4 beach volleyball courts available for rent. Washrooms are open when lifeguards on are on-duty."
+                "info": "Lakeview Park Beach is a sandy beach located on the shore of Lake Ontario within Lakeview Park and is a popular destination offering museums, picnic areas, playgrounds, sports fields, and a waterfront pier. There are 4 beach volleyball courts available for rent. Washrooms are open when lifeguards on are on-duty.<br/><br/>Learn more at: <a class='text-theme-colors-orange' href='https://www.oshawa.ca/' target='_blank'>Oshawa.ca</a>"
             },
             {
                 "type": "beach",
@@ -530,7 +530,7 @@
             {
                 "type": "standard",
                 "title": "Joseph Kolodzie Bike Path",
-                "info": "Learn more about the Joseph Kolodize Oshawa Creek Bike Path:<br/><br/><a class='link' href='https://www.oshawa.ca/Modules/Facilities/Detail.aspx?CategoryIds=&FacilityTypeIds=1%2C3%2C12&Keywords=lakeview+park&ScrollMap=true&id=802910c2-1343-4b2d-8f93-62b11f3d11d9' target='_blank'>Joseph Kolodzie Bike Path</a>",
+                "info": "Learn more about the Joseph Kolodize Oshawa Creek Bike Path at <a class='text-theme-colors-orange' href='https://www.oshawa.ca/' target='_blank'>Oshawa.ca</a>",
                 "coordinates": {
                     "lat": 341.26741027015754,
                     "lng": 503.1948631618769,
@@ -541,7 +541,7 @@
     }, {
         "id": 8,
         "title": "Lakeview Park",
-        "description": "<a href='https://www.oshawa.ca/Modules/Facilities/Detail.aspx?CategoryIds=&FacilityTypeIds=1%2C3%2C12&Keywords=lakeview+park&ScrollMap=true&id=5f589d08-b17a-41d7-9045-1e3a1ebaaf6e' target='_blank' class='text-theme-colors-orange'>Nestled along the shore of Lake Ontario, Lakeview Park</a> with its mature landscape setting has views of the lake and is a beautiful, community park. Connected to the recreational trails, Joseph Kolodzie Oshawa Creek Bike Path and the Waterfront Trail, visitors can connect to Oshawa's vibrant downtown, Oshawa Second Marsh, McLaughlin Bay Wildlife Reserve, the historic Oshawa Community Museum among other attractions. Lakeview Park is also host to many family fun events. The Park is also home to the Jubilee Pavilion a banquet hall, patio and snack bar.",
+        "description": "Nestled along the shore of Lake Ontario, Lakeview Park with its mature landscape setting has views of the lake and is a beautiful, community park. Connected to the recreational trails, Joseph Kolodzie Oshawa Creek Bike Path and the Waterfront Trail, visitors can connect to Oshawa's vibrant downtown, Oshawa Second Marsh, McLaughlin Bay Wildlife Reserve, the historic Oshawa Community Museum among other attractions. Lakeview Park is also host to many family fun events. The Park is also home to the Jubilee Pavilion a banquet hall, patio and snack bar.<br/><br/>Learn more at: <a class='text-theme-colors-orange' href='https://www.oshawa.ca/' target='_blank'>Oshawa.ca</a>",
         "hours_old": "April 1 to October 31 - 6:00 a.m. to 10:00 p.m. | November 1 to March 31 - 6:00 a.m. to 6:00 p.m",
         "coordinates": {
             "lat": 384.375,
@@ -562,7 +562,7 @@
             {
                 "type": "seating_area",
                 "title": "Lakeview Park Picnic Shelter",
-                "info": "For a list of all the group picnic spots at Lakeview Park: <br/><br/><a class='link' href='https://www.oshawa.ca/things-to-do/group-picnics.asp' target='_blank'>Lakeview Park Picnic Spots</a>",
+                "info": "For a list of all the group picnic spots at Lakeview Park, go to: <a class='text-theme-colors-orange' href='https://www.oshawa.ca/' target='_blank'>Oshawa.ca</a>",
                 "coordinates": {
                     "lat": 340.875,
                     "lng": 539.25,
@@ -708,7 +708,7 @@
                     "lng": 571,
                     "zoom": 3
                 },
-                "info": "<a class='text-theme-colors-orange' href='https://www.oshawa.ca/Modules/Facilities/Detail.aspx?CategoryIds=21&FacilityTypeIds=&Keywords=&Page=1&Scroll=true&id=e90fea54-3f4b-43e4-bd1b-62a7ea2e794c' target='_blank'>Lakeview Park Beach</a> is a sandy beach located on the shore of Lake Ontario within Lakeview Park and is a popular destination offering museums, picnic areas, playgrounds, sports fields, and a waterfront pier. There are 4 beach volleyball courts available for rent. Washrooms are open when lifeguards on are on-duty."
+                "info": "Lakeview Park Beach is a sandy beach located on the shore of Lake Ontario within Lakeview Park and is a popular destination offering museums, picnic areas, playgrounds, sports fields, and a waterfront pier. There are 4 beach volleyball courts available for rent. Washrooms are open when lifeguards on are on-duty.<br/><br/>Learn more at: <a class='text-theme-colors-orange' href='https://www.oshawa.ca/' target='_blank'>Oshawa.ca</a>"
             },
             {
                 "type": "beach",
@@ -723,7 +723,7 @@
             {
                 "type": "standard",
                 "title": "Joseph Kolodzie Bike Path",
-                "info": "Learn more about the Joseph Kolodize Oshawa Creek Bike Path:<br/><br/><a class='link' href='https://www.oshawa.ca/Modules/Facilities/Detail.aspx?CategoryIds=&FacilityTypeIds=1%2C3%2C12&Keywords=lakeview+park&ScrollMap=true&id=802910c2-1343-4b2d-8f93-62b11f3d11d9' target='_blank'>Joseph Kolodzie Bike Path</a>",
+                "info": "Learn more about the Joseph Kolodize Oshawa Creek Bike Path at: <a class='text-theme-colors-orange' href='https://www.oshawa.ca/' target='_blank'>Oshawa.ca</a>",
                 "coordinates": {
                     "lat": 341.26741027015754,
                     "lng": 503.1948631618769,
@@ -734,26 +734,79 @@
     }, {
         "id": 9,
         "title": "Ed Broadbent Waterfront Park",
-        "description": "The Ed Broadbent Waterfront Park is the City of Oshawa’s newest addition to the waterfront parks system. The park was officially named Ed Broadbent Waterfront Park in 2019, to recognize the contributions Mr. Broadbent has made to public service and the City of Oshawa and its residents, workers, and businesses. Further planning and development of the park are underway.",
+        "description": "The Ed Broadbent Waterfront Park is the City of Oshawa’s newest addition to the waterfront parks system. The park was officially named Ed Broadbent Waterfront Park in 2019, to recognize the contributions Mr. Broadbent has made to public service and the City of Oshawa and its residents, workers, and businesses.",
         "hours_old": "",
         "coordinates": {
             "lat": 404.875,
             "lng": 539.375,
             "zoom": 3
         },
-        "amenities": false,
+        "images": ["EBB01.jpeg", "EBB02.jpeg", "EBB03.jpeg", "EBB04.jpeg"],
+        "amenities": [
+            {
+                "type": "sports_fields",
+                "title": "Outdoor Events Venue",
+                "coordinates": {
+                    "lat": 420.125,
+                    "lng": 503.125,
+                    "zoom": 3
+                }
+            },
+            {
+                "type": "lookouts",
+                "title": "Seating and Scenic View",
+                "coordinates": {
+                    "lat": 402.625,
+                    "lng": 543.375,
+                    "zoom": 3
+                }
+            },
+            {
+                "type": "seating_area",
+                "title": "Garden Seating",
+                "coordinates": {
+                    "lat": 418.375,
+                    "lng": 505.375,
+                    "zoom": 3
+                }
+            },
+            {
+                "type": "parking",
+                "title": "Parking Lot",
+                "coordinates": {
+                    "lat": 393.875,
+                    "lng": 535,
+                    "zoom": 3
+                }
+            }
+        ],
         "history": "Ed Broadbent was born in Oshawa in 1936 and raised in our city. Mr. Broadbent was elected to Parliament as the NDP Member for Oshawa in 1968 and served as the MP until 1989. From 1975 to 1989, he was also Leader of the New Democratic Party. Between 1979 and 1990, he was a Vice-President of the Socialist International. From 1990 to 1996, he was the founding President of the International Centre for Human Rights and Democratic Development in Montreal. Mr. Broadbent was made a member of the Privy Council in 1982, an Officer of the Order of Canada in 1993 and a Companion of the Order of Canada in 2002.",
         "explore": [
             {
                 "type": "standard",
                 "title": "Larry Ladd Harbour Trail",
-                "info": "From the bridge along the trail look east towards the Port of Oshawa now operated by the Hamilton Oshawa Port Authority. <br/>The Port handles an average of $23 million worth of cargo annually from salt and steel products to sugar, asphalt and grain. Over the past decade, the Port of Oshawa has handled more than 500 vessels carrying over 3 million metric tonnes of cargo. \n\nThroughout the 19th and 20th centuries, numerous industrial activities occured in the Oshawa Harbour area. Remedial works have occurred on the site to allow the area to be open for public."
+                "info": "From the bridge along the trail look east towards the Port of Oshawa now operated by the Hamilton Oshawa Port Authority. <br/>The Port handles an average of $23 million worth of cargo annually from salt and steel products to sugar, asphalt and grain. Over the past decade, the Port of Oshawa has handled more than 500 vessels carrying over 3 million metric tonnes of cargo. \n\nThroughout the 19th and 20th centuries, numerous industrial activities occured in the Oshawa Harbour area. Remedial works have occurred on the site to allow the area to be open for public.",
+                "coordinates": {
+                    "lat": 413.75,
+                    "lng": 526.875,
+                    "zoom": 3
+                }
+            },
+            {
+                "type": "standard",
+                "title": "Garden of Human Rights",
+                "info": "The Garden of Human Rights is a prominent feature within the Ed Broadbent Park. The garden features 13 garden beds representing the 13 prohibited grounds of discrimination within the Canadian Human Rights Act and is a unique place for quiet reflection and contemplation.  The garden is in honour of Ed Broadbent’s dedication and extensive work as a champion and advocate for human rights.  During his time in Ottawa, Mr. Broadbent’s focus was on Indigenous rights, women’s equality, child poverty, ethics in government, and tax equality. He has been invested as a Member of the Privy Council (1982), Officer of the Order of Canada (1993), and Companion of the Order of Canada (2002). The park also features walkways and seating as well as a stage and amphitheatre seating area providing a unique outdoor experience for live music and performances. <br/><br/>For more information about Events in the Park visit <a class='text-theme-colors-orange' href='https://www.oshawa.ca/' target='_blank'>Oshawa.ca</a>",
+                "coordinates": {
+                    "lat": 417.875,
+                    "lng": 503.875,
+                    "zoom": 3
+                }
             }
         ]
     }, {
         "id": 10,
-        "title": "Ed Broadbent Waterfront Park",
-        "description": "The Ed Broadbent Waterfront Park is the City of Oshawa’s newest addition to the waterfront parks system. The park was officially named Ed Broadbent Waterfront Park in 2019, to recognize the contributions Mr. Broadbent has made to public service and the City of Oshawa and its residents, workers, and businesses. Further planning and development of the park are underway.",
+        "title": "Ed Broadbent Waterfront Park - Na",
+        "description": "The Ed Broadbent Waterfront Park is the City of Oshawa’s newest addition to the waterfront parks system. The park was officially named Ed Broadbent Waterfront Park in 2019, to recognize the contributions Mr. Broadbent has made to public service and the City of Oshawa and its residents, workers, and businesses.",
         "hours_old": "",
         "coordinates": {
             "lat": 449,
@@ -772,7 +825,7 @@
     }, {
         "id": 11,
         "title": "Oshawa Second Marsh",
-        "description": "<a class='' href='https://www.oshawa.ca/things-to-do/natural-areas.asp' target='_blank'>Oshawa’s Second Marsh</a> is one of the last, largest (at 137-hectare) and most biodiverse coastal wetlands on the Great Lakes. It is considered to be a Provincially Significant Wetland and a Provincially Significant Area of Natural and Scientific Interest. It plays an important role as essential habitat for local species and a stopover area for migratory birds.",
+        "description": "Oshawa’s Second Marsh is one of the last, largest (at 137-hectare) and most biodiverse coastal wetlands on the Great Lakes. It is considered to be a Provincially Significant Wetland and a Provincially Significant Area of Natural and Scientific Interest. It plays an important role as essential habitat for local species and a stopover area for migratory birds.<br/><br/>Learn more at <a class='text-theme-colors-orange' href='https://www.oshawa.ca/' target='_blank'>Oshawa.ca</a>",
         "hours_old": "-",
         "coordinates": {
             "lat": 471.5,
@@ -805,7 +858,7 @@
     }, {
         "id": 12,
         "title": "Oshawa Second Marsh",
-        "description": "<a class='' href='https://www.oshawa.ca/things-to-do/natural-areas.asp' target='_blank'>Oshawa’s Second Marsh</a> is one of the last, largest (at 137-hectare) and most biodiverse coastal wetlands on the Great Lakes. It is considered to be a Provincially Significant Wetland and a Provincially Significant Area of Natural and Scientific Interest. It plays an important role as essential habitat for local species and a stopover area for migratory birds.",
+        "description": "Oshawa’s Second Marsh is one of the last, largest (at 137-hectare) and most biodiverse coastal wetlands on the Great Lakes. It is considered to be a Provincially Significant Wetland and a Provincially Significant Area of Natural and Scientific Interest. It plays an important role as essential habitat for local species and a stopover area for migratory birds.<br/><br/>Learn more at <a class='text-theme-colors-orange' href='https://www.oshawa.ca/' target='_blank'>Oshawa.ca</a>",
         "hours_old": "-",
         "coordinates": {
             "lat": 581,
@@ -838,7 +891,7 @@
     }, {
         "id": 13,
         "title": "Clarington Oshawa Border",
-        "description": "Welcome to the City of Oshawa. <a target='_blank' href='https://waterfronttrail.org/'>The Great Lakes Waterfront Trail</a> stretches 3600 km connecting 155 communities and First Nations along the Canadian shores of the Great Lakes region. Oshawa’s portion of the Waterfront Trail is 11 km connecting you to a number of parks, recreation facilities, scenic views of Lake Ontario and nature along the way. Use these QR codes to find key destinations and learn more about the <a target='_blank' href='https://www.oshawa.ca/things-to-do/things-to-see-and-do.asp?_mid_=686'>City of Oshawa</a>.<strong class='block mt-3 tracking-widest font-semibold'>TRAIL USER CODE:</strong><ul class='list-disc ml-5'><li>Stay on the designated recreational trail</li><li>Obey signs</li><li>Keep right except to pass</li><li>Cyclists must use a bell or verbal indication when passing and travel at a moderate speed</li><li>Keep dogs on a leash (not exceeding 2m)</li><li>Don’t litter</li></ul>",
+        "description": "Welcome to the City of Oshawa. <a target='_blank' href='https://waterfronttrail.org/'>The Great Lakes Waterfront Trail</a> stretches 3600 km connecting 155 communities and First Nations along the Canadian shores of the Great Lakes region. Oshawa’s portion of the Waterfront Trail is 11 km connecting you to a number of parks, recreation facilities, scenic views of Lake Ontario and nature along the way. Use these QR codes to find key destinations and learn more about the <a target='_blank' href='https://www.oshawa.ca/'>City of Oshawa</a>.<strong class='block mt-3 tracking-widest font-semibold'>TRAIL USER CODE:</strong><ul class='list-disc ml-5'><li>Stay on the designated recreational trail</li><li>Obey signs</li><li>Keep right except to pass</li><li>Cyclists must use a bell or verbal indication when passing and travel at a moderate speed</li><li>Keep dogs on a leash (not exceeding 2m)</li><li>Don’t litter</li></ul>",
         "hours_old": "",
         "coordinates": {
             "lat": 504.874241767195,

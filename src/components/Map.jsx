@@ -49,8 +49,12 @@ export default class Map extends Component {
 
         // helper event to locate coordinates and other metadata
         this.mapObject.on("click", (e) => {
-            console.log(`"lat": ${e.latlng.lat},\n"lng": ${e.latlng.lng}`)
-            console.log(e)
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            if ( urlParams.get("debug") ) {
+                console.log(`"lat": ${e.latlng.lat},\n"lng": ${e.latlng.lng}`)
+                console.log(e)
+            }
         })
 
         L.imageOverlay(mapPNG, [
