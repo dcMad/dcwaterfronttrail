@@ -20,7 +20,7 @@ const AmenitiesCard = (props) => {
     return (
         <div className="w-full px-2">
             <div className="flex items-center w-full shadow-lg overflow-hidden rounded-lg py-3 px-6 mb-4 bg-gray-100 transition cursor-pointer hover:bg-gray-200">
-                <div className="card-thumbnail w-12 mr-3 bg-no-repeat" style={{backgroundImage: `url(${props.thumbnail})`}}></div>
+                <div className="card-thumbnail w-12 mr-3 bg-no-repeat bg-cover" style={{backgroundImage: `url(${props.thumbnail})`}}></div>
                 <div className="card-info w-11/12" onClick={props.clicked.bind('msg')}>
                     <h3 className="tracking-wide font-medium">{props.title}</h3>
                 </div>
